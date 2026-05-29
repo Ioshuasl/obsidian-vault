@@ -1,0 +1,101 @@
+---
+tipo: automacao
+area: orius
+central: onr
+protocolo: soap
+operacao: SetPedidoDevolvidoOE
+tags: [orius, onr, n8n, proxy, SetPedidoDevolvidoOE]
+fonte_repositorio: C:/Users/kenio/soap-ui test/scripts/SetPedidoDevolvidoOe/Set Pedido Devolvido OE WebService ONR.md
+status: revisado
+plane_work_item_id: 871046fa-7023-4598-951b-24c54c631c1a
+plane_sequence_id: 34
+plane_key: AUTONR-34
+plane_url: http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/34
+plane_automation_status: done
+---> **Método SOAP:** [[Orius/integracoes/registro-imoveis/onr/webservice-wsoficio/metodos/OE/SetPedidoDevolvidoOE]]
+> **Scripts locais:** `C:\Users\kenio\soap-ui test\scripts\SetPedidoDevolvidoOe\`
+
+## Plane (gestão)
+
+| Campo | Valor |
+|-------|-------|
+| Card | **AUTONR-34** |
+| Work item ID | `871046fa-7023-4598-951b-24c54c631c1a` |
+| URL | http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/34 |
+| Automação | `done` |
+
+
+# Set Pedido Devolvido OE WebService ONR
+
+Proxy n8n HTTP -> SOAP para o metodo `SetPedidoDevolvidoOE` do modulo Oficios Eletronicos.
+
+## Endpoint n8n
+
+- Workflow: `Set Pedido Devolvido OE`
+- Workflow ID: `MislADZad80qNGws`
+- Webhook path: `f34f2f9f-6c01-475e-9871-ebd36e714f67`
+- Metodo HTTP: `POST`
+- Autenticacao: Basic Auth do n8n
+
+## Request JSON
+
+```json
+{
+  "hash": "HASH_SHA1_EM_HEXADECIMAL",
+  "id_pedido": 12345,
+  "motivo_devolucao": "Documentacao incompleta no oficio.",
+  "url_servico_onr": "https://hml3-wsoficio.onr.org.br/oficios.asmx"
+}
+```
+
+## Mapeamento JSON -> SOAP
+
+| Campo JSON | Campo SOAP | Obrigatorio | Observacao |
+|------------|------------|-------------|------------|
+| `hash` | `Hash` | sim | SHA-1 em hexadecimal, calculado com chave da serventia + token |
+| `id_pedido` | `IDPedido` | sim | Inteiro positivo |
+| `motivo_devolucao` | `MotivoDevolucao` | sim | Texto do motivo da devolucao |
+| `url_servico_onr` | Endpoint HTTP | sim | Default homologacao ONR |
+
+## Ordem do envelope SOAP
+
+1. `Hash`
+2. `IDPedido`
+3. `MotivoDevolucao`
+
+## Response JSON
+
+```json
+{
+  "status_http": 200,
+  "sucesso": true,
+  "codigo_erro": 0,
+  "mensagem_erro": "",
+  "dados": {
+    "id_pedido": 12345,
+    "motivo_devolucao": "Documentacao incompleta no oficio.",
+    "devolvido": true
+  }
+}
+```
+
+## Status HTTP
+
+| Situacao | HTTP |
+|----------|------|
+| `RETORNO=true` | `200` |
+| Validacao local ou codigos `2`, `10`, `11`, `12`, `13` | `400` |
+| Codigos de hash `45`, `46`, `47` | `401` |
+| Sem permissao (`52`) | `403` |
+| Pedido nao encontrado (`51`) | `404` |
+| Pedido ja respondido (`53`) | `409` |
+| Erro sistemico ONR / XML invalido / conexao | `502` |
+| Falha transitoria ONR | `503` |
+| Demais erros de negocio | `422` |
+
+## Validacoes locais
+
+- `hash` e obrigatorio e deve ter 40 caracteres hexadecimais.
+- `id_pedido` e obrigatorio e deve ser inteiro positivo.
+- `motivo_devolucao` e obrigatorio.
+- `url_servico_onr` e obrigatoria e deve ser URL `http` ou `https` valida.

@@ -1,0 +1,1178 @@
+{
+  "collection": "Orius.postman_collection.json",
+  "parsedAt": "2026-05-29",
+  "basePath": "/administrativo",
+  "tablesFound": 15,
+  "tables": [
+    "P_ANDAMENTO",
+    "P_ARQUIVO_TITULO",
+    "P_BANCO",
+    "P_CERTIDAO",
+    "P_ESPECIE",
+    "P_LIVRO_ANDAMENTO",
+    "P_LIVRO_NATUREZA",
+    "P_MOTIVOS",
+    "P_MOTIVOS_CANCELAMENTO",
+    "P_OCORRENCIAS",
+    "P_OCORRENCIA_ANDAMENTO",
+    "P_PESSOA",
+    "P_PESSOA_VINCULO",
+    "P_TEMPLATE",
+    "P_TITULO"
+  ],
+  "implemented": [
+    "P_ANDAMENTO",
+    "P_ARQUIVO_TITULO",
+    "P_BANCO",
+    "P_CERTIDAO",
+    "P_ESPECIE",
+    "P_LIVRO_ANDAMENTO",
+    "P_LIVRO_NATUREZA",
+    "P_MOTIVOS",
+    "P_MOTIVOS_CANCELAMENTO",
+    "P_OCORRENCIAS",
+    "P_OCORRENCIA_ANDAMENTO",
+    "P_PESSOA",
+    "P_PESSOA_VINCULO",
+    "P_TEMPLATE",
+    "P_TITULO"
+  ],
+  "partial": [],
+  "byTable": {
+    "P_BANCO": {
+      "table": "P_BANCO",
+      "prefix": "/administrativo/p_banco",
+      "description": "CRUD P_BANCO — prefix /administrativo/p_banco. Siglas: apontamento_pag_posterior e custas_na_confirmacao S/N. Variável {{bancoId}} preenchida no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_banco"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_banco"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_banco/{id}"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_banco/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_banco/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_banco": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_banco"
+        },
+        "SAVE:POST:administrativo/p_banco": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_banco"
+        },
+        "UPDATE:PUT:administrativo/p_banco/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_banco/{id}"
+        },
+        "SHOW:GET:administrativo/p_banco/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_banco/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_banco/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_banco/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_TITULO": {
+      "table": "P_TITULO",
+      "prefix": "/administrativo/p_titulo",
+      "description": "CRUD P_TITULO — prefix /administrativo/p_titulo. Index paginado (formato3: p, per_page, sort) retorna shape enxuto: numero_titulo, numero_apontamento, especie_id+descricao, valor_titulo, ocorrencia_id+descricao, banco_id+descricao, quantidade_pessoas_vinculadas, apresentante_nome/cpfcnpj (TIPO_VINCULO=APRESENTANTE). Filtros opcionais: busca_pessoa, numero_apontamento, nosso_numero, numero_titulo, numero_titulo_banco, ocorrencia_id, ocorrencia_andamento_id, banco_id, especie_id. Variável {{tituloId}} no Create. Show retorna título completo (inclui vinculos_selos). Request Selos: GET /{tituloId}/selos — lista selos vinculados (atual + legado).",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_titulo"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_titulo"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_titulo/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_titulo/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_titulo/{id}"
+        }
+      ],
+      "extras": [
+        {
+          "op": "EXTRA",
+          "method": "GET",
+          "name": "Selos",
+          "path": "administrativo/p_titulo/{id}/selos"
+        }
+      ],
+      "ops": {
+        "INDEX:GET:administrativo/p_titulo": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_titulo"
+        },
+        "SAVE:POST:administrativo/p_titulo": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_titulo"
+        },
+        "SHOW:GET:administrativo/p_titulo/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_titulo/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_titulo/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_titulo/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_titulo/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_titulo/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_PESSOA": {
+      "table": "P_PESSOA",
+      "prefix": "/administrativo/p_pessoa",
+      "description": "",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_pessoa"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_pessoa"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_pessoa/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_pessoa/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_pessoa/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_pessoa": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_pessoa"
+        },
+        "SAVE:POST:administrativo/p_pessoa": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_pessoa"
+        },
+        "SHOW:GET:administrativo/p_pessoa/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_pessoa/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_pessoa/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_pessoa/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_pessoa/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_pessoa/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_ESPECIE": {
+      "table": "P_ESPECIE",
+      "prefix": "/administrativo/p_especie",
+      "description": "CRUD P_ESPECIE — prefix /administrativo/p_especie. Sigla em especie (até 3 chars). Variável {{especieId}} preenchida no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_especie"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_especie"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_especie/{id}"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_especie/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_especie/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_especie": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_especie"
+        },
+        "SAVE:POST:administrativo/p_especie": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_especie"
+        },
+        "UPDATE:PUT:administrativo/p_especie/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_especie/{id}"
+        },
+        "SHOW:GET:administrativo/p_especie/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_especie/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_especie/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_especie/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_PESSOA_VINCULO": {
+      "table": "P_PESSOA_VINCULO",
+      "prefix": "/administrativo/p_pessoa_vinculo",
+      "description": "CRUD P_PESSOA_VINCULO — prefix /administrativo/p_pessoa_vinculo. tipo_vinculo: APRESENTANTE, CEDENTE, CREDOR, DEVEDOR. gerar_selo/devedor_microempresa: S/N. devedor_tipo_aceite: A/E. Variável {{pessoaVinculoId}} no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_pessoa_vinculo"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_pessoa_vinculo"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_pessoa_vinculo/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_pessoa_vinculo/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_pessoa_vinculo/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_pessoa_vinculo": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_pessoa_vinculo"
+        },
+        "SAVE:POST:administrativo/p_pessoa_vinculo": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_pessoa_vinculo"
+        },
+        "SHOW:GET:administrativo/p_pessoa_vinculo/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_pessoa_vinculo/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_pessoa_vinculo/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_pessoa_vinculo/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_pessoa_vinculo/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_pessoa_vinculo/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_MOTIVOS": {
+      "table": "P_MOTIVOS",
+      "prefix": "/administrativo/p_motivos",
+      "description": "CRUD P_MOTIVOS — prefix /administrativo/p_motivos. Situação A (ativo) / I (inativo). Busca index só por descricao. Variável {{motivosId}} no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_motivos"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_motivos"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_motivos/{id}"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_motivos/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_motivos/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_motivos": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_motivos"
+        },
+        "SAVE:POST:administrativo/p_motivos": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_motivos"
+        },
+        "UPDATE:PUT:administrativo/p_motivos/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_motivos/{id}"
+        },
+        "SHOW:GET:administrativo/p_motivos/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_motivos/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_motivos/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_motivos/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_ANDAMENTO": {
+      "table": "P_ANDAMENTO",
+      "prefix": "/administrativo/p_andamento",
+      "description": "CRUD P_ANDAMENTO — prefix /administrativo/p_andamento. arquivo_gerado: D=Aguardando, E=Exportado. Filtros index: titulo_id, data_ocorrencia, ocorrencia_andamento_id. Variável {{andamentoId}} no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_andamento"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_andamento"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_andamento/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_andamento/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_andamento/{id}"
+        }
+      ],
+      "extras": [
+        {
+          "op": "EXTRA",
+          "method": "GET",
+          "name": "All by Titulo (include ocorrencia)",
+          "path": "administrativo/p_andamento/titulo/316261"
+        }
+      ],
+      "ops": {
+        "INDEX:GET:administrativo/p_andamento": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_andamento"
+        },
+        "SAVE:POST:administrativo/p_andamento": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_andamento"
+        },
+        "SHOW:GET:administrativo/p_andamento/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_andamento/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_andamento/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_andamento/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_andamento/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_andamento/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_OCORRENCIA_ANDAMENTO": {
+      "table": "P_OCORRENCIA_ANDAMENTO",
+      "prefix": "/administrativo/p_ocorrencia_andamento",
+      "description": "CRUD P_OCORRENCIA_ANDAMENTO — prefix /administrativo/p_ocorrencia_andamento. Busca index só por descricao. Variável {{ocorrenciaAndamentoId}} no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_ocorrencia_andamento"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_ocorrencia_andamento"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_ocorrencia_andamento/{id}"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_ocorrencia_andamento/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_ocorrencia_andamento/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_ocorrencia_andamento": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_ocorrencia_andamento"
+        },
+        "SAVE:POST:administrativo/p_ocorrencia_andamento": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_ocorrencia_andamento"
+        },
+        "UPDATE:PUT:administrativo/p_ocorrencia_andamento/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_ocorrencia_andamento/{id}"
+        },
+        "SHOW:GET:administrativo/p_ocorrencia_andamento/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_ocorrencia_andamento/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_ocorrencia_andamento/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_ocorrencia_andamento/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_OCORRENCIAS": {
+      "table": "P_OCORRENCIAS",
+      "prefix": "/administrativo/p_ocorrencias",
+      "description": "CRUD P_OCORRENCIAS — prefix /administrativo/p_ocorrencias. Index: busca (DESCRICAO ou CODIGO), tipo (CADASTRO, APONTADO, INTIMACAO, ACEITE, DESISTENCIA, PAGAMENTO, CANCELAMENTO ou vazio). Variável {{ocorrenciasId}} no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_ocorrencias"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_ocorrencias"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_ocorrencias/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_ocorrencias/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_ocorrencias/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_ocorrencias": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_ocorrencias"
+        },
+        "SAVE:POST:administrativo/p_ocorrencias": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_ocorrencias"
+        },
+        "SHOW:GET:administrativo/p_ocorrencias/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_ocorrencias/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_ocorrencias/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_ocorrencias/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_ocorrencias/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_ocorrencias/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_CERTIDAO": {
+      "table": "P_CERTIDAO",
+      "prefix": "/administrativo/p_certidao",
+      "description": "CRUD P_CERTIDAO — prefix /administrativo/p_certidao. Siglas: tipo_certidao P=positiva, N=negativa, R=Serasa; tipo_remessa P=protesto Serasa, C=cancelamento Serasa; status A=ativo, C=cancelado. Index paginado com filtros tipo_certidao, data_certidao, status e busca em CPFCNPJ/NOME. Variável {{certidaoId}} no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_certidao"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_certidao"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_certidao/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_certidao/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_certidao/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_certidao": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_certidao"
+        },
+        "SAVE:POST:administrativo/p_certidao": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_certidao"
+        },
+        "SHOW:GET:administrativo/p_certidao/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_certidao/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_certidao/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_certidao/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_certidao/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_certidao/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_TEMPLATE": {
+      "table": "P_TEMPLATE",
+      "prefix": "/administrativo/p_template",
+      "description": "CRUD P_TEMPLATE — prefix /administrativo/p_template. Contrato inicial não manipula o BLOB TEXTO: index/show/create/update usam apenas template_id e descricao. Variável {{templateId}} no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_template"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_template"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_template/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_template/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_template/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_template": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_template"
+        },
+        "SAVE:POST:administrativo/p_template": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_template"
+        },
+        "SHOW:GET:administrativo/p_template/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_template/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_template/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_template/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_template/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_template/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_MOTIVOS_CANCELAMENTO": {
+      "table": "P_MOTIVOS_CANCELAMENTO",
+      "prefix": "/administrativo/p_motivos_cancelamento",
+      "description": "CRUD P_MOTIVOS_CANCELAMENTO — prefix /administrativo/p_motivos_cancelamento. Situação A (ativo) / I (inativo). Busca index só por descricao. Variável {{motivosCancelamentoId}} no Create.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_motivos_cancelamento"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_motivos_cancelamento"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_motivos_cancelamento/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_motivos_cancelamento/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_motivos_cancelamento/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_motivos_cancelamento": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_motivos_cancelamento"
+        },
+        "SAVE:POST:administrativo/p_motivos_cancelamento": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_motivos_cancelamento"
+        },
+        "SHOW:GET:administrativo/p_motivos_cancelamento/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_motivos_cancelamento/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_motivos_cancelamento/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_motivos_cancelamento/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_motivos_cancelamento/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_motivos_cancelamento/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_LIVRO_NATUREZA": {
+      "table": "P_LIVRO_NATUREZA",
+      "prefix": "/administrativo/p_livro_natureza",
+      "description": "CRUD P_LIVRO_NATUREZA — prefix /administrativo/p_livro_natureza. situacao A/I (I grava NULL). tipo omitido. Delete bloqueado com P_LIVRO_ANDAMENTO. Variável {{livroNaturezaId}}.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_livro_natureza"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_livro_natureza"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_livro_natureza/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_livro_natureza/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_livro_natureza/{id}"
+        }
+      ],
+      "extras": [],
+      "ops": {
+        "INDEX:GET:administrativo/p_livro_natureza": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_livro_natureza"
+        },
+        "SAVE:POST:administrativo/p_livro_natureza": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_livro_natureza"
+        },
+        "SHOW:GET:administrativo/p_livro_natureza/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_livro_natureza/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_livro_natureza/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_livro_natureza/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_livro_natureza/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_livro_natureza/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_LIVRO_ANDAMENTO": {
+      "table": "P_LIVRO_ANDAMENTO",
+      "prefix": "/administrativo/p_livro_andamento",
+      "description": "CRUD P_LIVRO_ANDAMENTO — prefix /administrativo/p_livro_andamento. Livro aberto = DATA_FECHAMENTO null; um aberto por natureza (409). Ordenação padrão data_abertura DESC. GET proximo-numero-livro/{livro_natureza_id}. Delete 409 com P_TITULO. Variável {{livroAndamentoId}}.",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_livro_andamento"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_livro_andamento"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_livro_andamento/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_livro_andamento/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_livro_andamento/{id}"
+        }
+      ],
+      "extras": [
+        {
+          "op": "EXTRA",
+          "method": "GET",
+          "name": "Proximo Numero Livro",
+          "path": "administrativo/p_livro_andamento/proximo-numero-livro/{id}"
+        },
+        {
+          "op": "EXTRA",
+          "method": "PUT",
+          "name": "Finalizar",
+          "path": "administrativo/p_livro_andamento/finalizar/{id}"
+        }
+      ],
+      "ops": {
+        "INDEX:GET:administrativo/p_livro_andamento": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_livro_andamento"
+        },
+        "SAVE:POST:administrativo/p_livro_andamento": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_livro_andamento"
+        },
+        "SHOW:GET:administrativo/p_livro_andamento/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_livro_andamento/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_livro_andamento/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_livro_andamento/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_livro_andamento/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_livro_andamento/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    },
+    "P_ARQUIVO_TITULO": {
+      "table": "P_ARQUIVO_TITULO",
+      "prefix": "/administrativo/p_arquivo_titulo",
+      "description": "",
+      "folderName": "All",
+      "endpoints": [
+        {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_arquivo_titulo"
+        },
+        {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_arquivo_titulo"
+        },
+        {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_arquivo_titulo/{id}"
+        },
+        {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_arquivo_titulo/{id}"
+        },
+        {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_arquivo_titulo/{id}"
+        }
+      ],
+      "extras": [
+        {
+          "op": "EXTRA",
+          "method": "GET",
+          "name": "Get Texto",
+          "path": "administrativo/p_arquivo_titulo/{id}/texto"
+        },
+        {
+          "op": "EXTRA",
+          "method": "GET",
+          "name": "Get Texto Importado",
+          "path": "administrativo/p_arquivo_titulo/{id}/texto_importado"
+        }
+      ],
+      "ops": {
+        "INDEX:GET:administrativo/p_arquivo_titulo": {
+          "op": "INDEX",
+          "method": "GET",
+          "name": "All",
+          "path": "administrativo/p_arquivo_titulo"
+        },
+        "SAVE:POST:administrativo/p_arquivo_titulo": {
+          "op": "SAVE",
+          "method": "POST",
+          "name": "Create",
+          "path": "administrativo/p_arquivo_titulo"
+        },
+        "SHOW:GET:administrativo/p_arquivo_titulo/{id}": {
+          "op": "SHOW",
+          "method": "GET",
+          "name": "Get",
+          "path": "administrativo/p_arquivo_titulo/{id}"
+        },
+        "UPDATE:PUT:administrativo/p_arquivo_titulo/{id}": {
+          "op": "UPDATE",
+          "method": "PUT",
+          "name": "Update",
+          "path": "administrativo/p_arquivo_titulo/{id}"
+        },
+        "DELETE:DELETE:administrativo/p_arquivo_titulo/{id}": {
+          "op": "DELETE",
+          "method": "DELETE",
+          "name": "Delete",
+          "path": "administrativo/p_arquivo_titulo/{id}"
+        }
+      },
+      "crudComplete": true,
+      "missingOps": []
+    }
+  }
+}

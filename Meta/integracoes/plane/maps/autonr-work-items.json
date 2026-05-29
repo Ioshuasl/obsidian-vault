@@ -1,0 +1,840 @@
+{
+  "project": "autonr",
+  "plane_project_id": "1c5d97b3-edfc-49e1-b0ba-da037b09bb84",
+  "plane_identifier": "AUTONR",
+  "plane_state_done": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+  "plane_state_todo": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+  "updated_at": "2026-05-29",
+  "items": {
+    "AtualizarStatusProcesso": {
+      "operacao": "AtualizarStatusProcesso",
+      "plane_work_item_id": "0be02326-93f7-43c4-93e6-4d0e29553275",
+      "plane_sequence_id": 85,
+      "plane_key": "AUTONR-85",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/85",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] AtualizarStatusProcesso - Proxy ctp webservice onr"
+    },
+    "ImportacaoArquivos": {
+      "operacao": "ImportacaoArquivos",
+      "plane_work_item_id": "f474a5bd-f387-460f-ad6c-60f7591adbc2",
+      "plane_sequence_id": 84,
+      "plane_key": "AUTONR-84",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/84",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ImportacaoArquivos - Proxy ctp webservice onr"
+    },
+    "ListStatusIN": {
+      "operacao": "ListStatusIN",
+      "plane_work_item_id": "1043d7d6-de90-4ddb-8e39-20c8a420cf92",
+      "plane_sequence_id": 83,
+      "plane_key": "AUTONR-83",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/83",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListStatusIN - Proxy Intimações webservice onr"
+    },
+    "ListPagamentosIN": {
+      "operacao": "ListPagamentosIN",
+      "plane_work_item_id": "ab5c2c14-509a-4fa9-baa1-fd1266749708",
+      "plane_sequence_id": 82,
+      "plane_key": "AUTONR-82",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/82",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListPagamentosIN - Proxy Intimações webservice onr"
+    },
+    "ExcluirEmolumentoIN": {
+      "operacao": "ExcluirEmolumentoIN",
+      "plane_work_item_id": "c0edc57e-68cc-4252-bc2c-2a193a2b4590",
+      "plane_sequence_id": 81,
+      "plane_key": "AUTONR-81",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/81",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ExcluirEmolumentoIN - Proxy Intimações webservice onr"
+    },
+    "AdicionarEmolumentoIN": {
+      "operacao": "AdicionarEmolumentoIN",
+      "plane_work_item_id": "06f148ab-b260-4131-85c3-d86721876ee4",
+      "plane_sequence_id": 80,
+      "plane_key": "AUTONR-80",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/80",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] AdicionarEmolumentoIN - Proxy Intimações webservice onr"
+    },
+    "GetEmolumentosIN": {
+      "operacao": "GetEmolumentosIN",
+      "plane_work_item_id": "0a148d9e-6798-4839-a051-ce0d7dd45e98",
+      "plane_sequence_id": 79,
+      "plane_key": "AUTONR-79",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/79",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] GetEmolumentosIN - Proxy Intimações webservice onr"
+    },
+    "GetMensagemIN": {
+      "operacao": "GetMensagemIN",
+      "plane_work_item_id": "47f342a5-0505-489b-a268-510b0de3580d",
+      "plane_sequence_id": 78,
+      "plane_key": "AUTONR-78",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/78",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] GetMensagemIN - Proxy Intimações webservice onr"
+    },
+    "GetDetalhesIN_V3": {
+      "operacao": "GetDetalhesIN_V3",
+      "plane_work_item_id": "c9be5bab-67a9-4071-b148-5e3c0745f12c",
+      "plane_sequence_id": 77,
+      "plane_key": "AUTONR-77",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/77",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] GetDetalhesIN_V3 - Proxy Intimações webservice onr"
+    },
+    "GetDetalhesIN_V2": {
+      "operacao": "GetDetalhesIN_V2",
+      "plane_work_item_id": "9c15bc41-960d-4d3f-a6a8-7118ea6c966c",
+      "plane_sequence_id": 76,
+      "plane_key": "AUTONR-76",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/76",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] GetDetalhesIN_V2 - Proxy Intimações webservice onr"
+    },
+    "AdicionarMensagemIN": {
+      "operacao": "AdicionarMensagemIN",
+      "plane_work_item_id": "603f6dd4-252c-4b2d-9675-2774f7066cbc",
+      "plane_sequence_id": 75,
+      "plane_key": "AUTONR-75",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/75",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] AdicionarMensagemIN - Proxy Intimações webservice onr"
+    },
+    "ListMensagensPedidoIN": {
+      "operacao": "ListMensagensPedidoIN",
+      "plane_work_item_id": "448f243c-4520-493c-b8a7-853b39fec109",
+      "plane_sequence_id": 74,
+      "plane_key": "AUTONR-74",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/74",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListMensagensPedidoIN - Proxy Intimações webservice onr"
+    },
+    "ListPedidosIN": {
+      "operacao": "ListPedidosIN",
+      "plane_work_item_id": "e44ad9dc-d945-4ccb-b3b3-cb790731487f",
+      "plane_sequence_id": 73,
+      "plane_key": "AUTONR-73",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/73",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListPedidosIN - Proxy Intimações webservice onr"
+    },
+    "ImportarPrenotacaoIN": {
+      "operacao": "ImportarPrenotacaoIN",
+      "plane_work_item_id": "3269fbb7-dbdc-4538-b329-e2e42087585f",
+      "plane_sequence_id": 72,
+      "plane_key": "AUTONR-72",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/72",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ImportarPrenotacaoIN - Proxy Intimações webservice onr"
+    },
+    "ContratoXMLtoPDF": {
+      "operacao": "ContratoXMLtoPDF",
+      "plane_work_item_id": "bfb8b2d1-ffba-4def-8c81-75327986e8ee",
+      "plane_sequence_id": 71,
+      "plane_key": "AUTONR-71",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/71",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ContratoXMLtoPDF - Proxy E-Protocolo webservice onr"
+    },
+    "ListDocumentosRepositorioAC": {
+      "operacao": "ListDocumentosRepositorioAC",
+      "plane_work_item_id": "40d13dfd-07d5-4bd3-bf27-d8a8bca22621",
+      "plane_sequence_id": 70,
+      "plane_key": "AUTONR-70",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/70",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListDocumentosRepositorioAC - Proxy E-Protocolo webservice onr"
+    },
+    "SetContratoDevolvidoAC": {
+      "operacao": "SetContratoDevolvidoAC",
+      "plane_work_item_id": "9e48972a-3769-4b1d-ab37-c27f3d43503a",
+      "plane_sequence_id": 69,
+      "plane_key": "AUTONR-69",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/69",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] SetContratoDevolvidoAC - Proxy E-Protocolo webservice onr"
+    },
+    "SetContratoExigenciaAC": {
+      "operacao": "SetContratoExigenciaAC",
+      "plane_work_item_id": "8639c5a5-9fe3-43de-aa39-561bcd895864",
+      "plane_sequence_id": 68,
+      "plane_key": "AUTONR-68",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/68",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] SetContratoExigenciaAC - Proxy E-Protocolo webservice onr"
+    },
+    "SetContratoAverbadoAC": {
+      "operacao": "SetContratoAverbadoAC",
+      "plane_work_item_id": "d79bbce6-362a-4887-ab4f-4f7b2a171321",
+      "plane_sequence_id": 67,
+      "plane_key": "AUTONR-67",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/67",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] SetContratoAverbadoAC - Proxy E-Protocolo webservice onr"
+    },
+    "SetPrenotacaoExameCalculoAC": {
+      "operacao": "SetPrenotacaoExameCalculoAC",
+      "plane_work_item_id": "2fe0b192-c78a-4c04-883d-b7a0537706bd",
+      "plane_sequence_id": 66,
+      "plane_key": "AUTONR-66",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/66",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] SetPrenotacaoExameCalculoAC - Proxy E-Protocolo webservice onr"
+    },
+    "SetCustasAC": {
+      "operacao": "SetCustasAC",
+      "plane_work_item_id": "7ef974ec-2605-46a1-8e1c-c2fd878d6906",
+      "plane_sequence_id": 65,
+      "plane_key": "AUTONR-65",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/65",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] SetCustasAC - Proxy E-Protocolo webservice onr"
+    },
+    "SetPrenotacaoAC": {
+      "operacao": "SetPrenotacaoAC",
+      "plane_work_item_id": "62be5ec9-5da0-4414-8e08-651085aa0334",
+      "plane_sequence_id": 64,
+      "plane_key": "AUTONR-64",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/64",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] SetPrenotacaoAC - Proxy E-Protocolo webservice onr"
+    },
+    "AlterarPedidoAC": {
+      "operacao": "AlterarPedidoAC",
+      "plane_work_item_id": "0241232a-3da4-4109-ac6c-fb365531ff00",
+      "plane_sequence_id": 63,
+      "plane_key": "AUTONR-63",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/63",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] AlterarPedidoAC - Proxy E-Protocolo webservice onr"
+    },
+    "GetPedidoAC_V3": {
+      "operacao": "GetPedidoAC_V3",
+      "plane_work_item_id": "748273b7-3d5b-4ab5-be8a-c89d971ee24d",
+      "plane_sequence_id": 62,
+      "plane_key": "AUTONR-62",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/62",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] GetPedidoAC_V3 - Proxy E-Protocolo webservice onr"
+    },
+    "SetBaixaBoletoAC": {
+      "operacao": "SetBaixaBoletoAC",
+      "plane_work_item_id": "1dd3e6c5-b3b1-4ab5-8b1c-de55adb78904",
+      "plane_sequence_id": 61,
+      "plane_key": "AUTONR-61",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/61",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] SetBaixaBoletoAC - Proxy E-Protocolo webservice onr"
+    },
+    "ListBoletosAC": {
+      "operacao": "ListBoletosAC",
+      "plane_work_item_id": "5c36f989-591b-46c3-9a24-c2c7c071b3fa",
+      "plane_sequence_id": 60,
+      "plane_key": "AUTONR-60",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/60",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListBoletosAC - Proxy E-Protocolo webservice onr"
+    },
+    "ListAnexosAC": {
+      "operacao": "ListAnexosAC",
+      "plane_work_item_id": "9639fe17-6d28-4003-baf4-6fc883383212",
+      "plane_sequence_id": 59,
+      "plane_key": "AUTONR-59",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/59",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListAnexosAC - Proxy E-Protocolo webservice onr"
+    },
+    "ListPedidosAC": {
+      "operacao": "ListPedidosAC",
+      "plane_work_item_id": "a23600ff-0b91-407d-8da2-98e2c186893d",
+      "plane_sequence_id": 58,
+      "plane_key": "AUTONR-58",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/58",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListPedidosAC - Proxy E-Protocolo webservice onr"
+    },
+    "GetExtratoXMLAC": {
+      "operacao": "GetExtratoXMLAC",
+      "plane_work_item_id": "ba8ecb7a-afe7-42aa-92c3-e07f1ae542e8",
+      "plane_sequence_id": 57,
+      "plane_key": "AUTONR-57",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/57",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] GetExtratoXMLAC - Proxy E-Protocolo webservice onr"
+    },
+    "ObterXMLSolicitacoesV2": {
+      "operacao": "ObterXMLSolicitacoesV2",
+      "plane_work_item_id": "868c313c-645b-4ec5-a810-edb08f84b777",
+      "plane_sequence_id": 56,
+      "plane_key": "AUTONR-56",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/56",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ObterXMLSolicitacoesV2 - Proxy Matrícula Online webservice onr"
+    },
+    "ObterXMLSolicitacoes": {
+      "operacao": "ObterXMLSolicitacoes",
+      "plane_work_item_id": "88134e44-ab31-4820-9b25-3be26d63a03b",
+      "plane_sequence_id": 55,
+      "plane_key": "AUTONR-55",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/55",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ObterXMLSolicitacoes - Proxy Matrícula Online webservice onr"
+    },
+    "InformarCustasCertidao": {
+      "operacao": "InformarCustasCertidao",
+      "plane_work_item_id": "2f72894b-3d94-487b-9600-7e11d1508dc3",
+      "plane_sequence_id": 54,
+      "plane_key": "AUTONR-54",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/54",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] InformarCustasCertidao - Proxy Certidões webservice onr"
+    },
+    "FinalizarRespostaCertidao": {
+      "operacao": "FinalizarRespostaCertidao",
+      "plane_work_item_id": "6b926672-ec21-4a93-9fab-e2b7a33595fc",
+      "plane_sequence_id": 53,
+      "plane_key": "AUTONR-53",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/53",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] FinalizarRespostaCertidao - Proxy Certidões webservice onr"
+    },
+    "EnviarAnexosListCertidao_DocID_V2": {
+      "operacao": "EnviarAnexosListCertidao_DocID_V2",
+      "plane_work_item_id": "b20f32b2-f551-4e13-915c-fe057c9c26f6",
+      "plane_sequence_id": 52,
+      "plane_key": "AUTONR-52",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/52",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] EnviarAnexosListCertidao_DocID_V2 - Proxy Certidões webservice onr"
+    },
+    "EnviarAnexosListCertidao_DocID": {
+      "operacao": "EnviarAnexosListCertidao_DocID",
+      "plane_work_item_id": "65fc23c7-cfab-4417-94d8-61a174dc90fc",
+      "plane_sequence_id": 51,
+      "plane_key": "AUTONR-51",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/51",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] EnviarAnexosListCertidao_DocID - Proxy Certidões webservice onr"
+    },
+    "EnviarAnexoCertidao_DocID_V2": {
+      "operacao": "EnviarAnexoCertidao_DocID_V2",
+      "plane_work_item_id": "d439c756-8bca-465b-84c2-171241fa7ed5",
+      "plane_sequence_id": 50,
+      "plane_key": "AUTONR-50",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/50",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] EnviarAnexoCertidao_DocID_V2 - Proxy Certidões webservice onr"
+    },
+    "EnviarAnexoCertidao_DocID": {
+      "operacao": "EnviarAnexoCertidao_DocID",
+      "plane_work_item_id": "fb670f2d-95c3-466e-b3a1-2a181e79d276",
+      "plane_sequence_id": 49,
+      "plane_key": "AUTONR-49",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/49",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] EnviarAnexoCertidao_DocID - Proxy Certidões webservice onr"
+    },
+    "EnviarAnexoCertidao": {
+      "operacao": "EnviarAnexoCertidao",
+      "plane_work_item_id": "ee38d8e7-9919-4f0f-893d-ddd7f38c8ada",
+      "plane_sequence_id": 48,
+      "plane_key": "AUTONR-48",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/48",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] EnviarAnexoCertidao - Proxy Certidões webservice onr"
+    },
+    "DevolverCertidao": {
+      "operacao": "DevolverCertidao",
+      "plane_work_item_id": "fa86939b-04dd-45c7-8351-39a7256817fd",
+      "plane_sequence_id": 47,
+      "plane_key": "AUTONR-47",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/47",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] DevolverCertidao - Proxy Certidões webservice onr"
+    },
+    "ObterXMLSolicitacoes_v6": {
+      "operacao": "ObterXMLSolicitacoes_v6",
+      "plane_work_item_id": "bebb4c3e-9854-42a4-8595-06fa60fef13f",
+      "plane_sequence_id": 46,
+      "plane_key": "AUTONR-46",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/46",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ObterXMLSolicitacoes_v6 - Proxy Certidões webservice onr"
+    },
+    "ObterXMLSolicitacoes_v5": {
+      "operacao": "ObterXMLSolicitacoes_v5",
+      "plane_work_item_id": "1f0b933a-70e1-4a90-acf7-e82cbcd71cbc",
+      "plane_sequence_id": 45,
+      "plane_key": "AUTONR-45",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/45",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ObterXMLSolicitacoes_v5 - Proxy Certidões webservice onr"
+    },
+    "ObterXMLSolicitacoes_v4": {
+      "operacao": "ObterXMLSolicitacoes_v4",
+      "plane_work_item_id": "575dc7c8-bd21-4472-ac3c-232f2fe2cfc5",
+      "plane_sequence_id": 44,
+      "plane_key": "AUTONR-44",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/44",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ObterXMLSolicitacoes_v4 - Proxy Certidões webservice onr"
+    },
+    "SetBDLightAtualizado": {
+      "operacao": "SetBDLightAtualizado",
+      "plane_work_item_id": "343bf7d7-a4f9-49fb-aeba-beaf789a3a3a",
+      "plane_sequence_id": 43,
+      "plane_key": "AUTONR-43",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/43",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] SetBDLightAtualizado - Proxy BD Light (legado) webservice onr [legado]"
+    },
+    "ImportarArquivoBDL": {
+      "operacao": "ImportarArquivoBDL",
+      "plane_work_item_id": "002b62d6-99a6-4181-9f6b-b504374eadd8",
+      "plane_sequence_id": 42,
+      "plane_key": "AUTONR-42",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/42",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ImportarArquivoBDL - Proxy BD Light (legado) webservice onr [legado]"
+    },
+    "GetArquivoXMLBDL": {
+      "operacao": "GetArquivoXMLBDL",
+      "plane_work_item_id": "909ad2e0-48fb-41ed-b177-5fdf86faeda2",
+      "plane_sequence_id": 41,
+      "plane_key": "AUTONR-41",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/41",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] GetArquivoXMLBDL - Proxy BD Light (legado) webservice onr [legado]"
+    },
+    "ListArquivosXMLBDL": {
+      "operacao": "ListArquivosXMLBDL",
+      "plane_work_item_id": "b2a6b88c-25c8-463f-9a05-66cb1efdf60e",
+      "plane_sequence_id": 40,
+      "plane_key": "AUTONR-40",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/40",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListArquivosXMLBDL - Proxy BD Light (legado) webservice onr [legado]"
+    },
+    "ListPedidosExportacaoPO_v2": {
+      "operacao": "ListPedidosExportacaoPO_v2",
+      "plane_work_item_id": "e3174b88-a9cf-4ff0-ab77-d39e97a81815",
+      "plane_sequence_id": 39,
+      "plane_key": "AUTONR-39",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/39",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListPedidosExportacaoPO_v2 - Proxy Penhora Online webservice onr"
+    },
+    "ListBoletosPO": {
+      "operacao": "ListBoletosPO",
+      "plane_work_item_id": "4518c73c-ba29-4d68-89d0-a2e65140b729",
+      "plane_sequence_id": 38,
+      "plane_key": "AUTONR-38",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/38",
+      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
+      "automation_status": "pending",
+      "card_name": "[n8n] ListBoletosPO - Proxy Penhora Online webservice onr"
+    },
+    "ListCartoriosRestransmitirOE": {
+      "operacao": "ListCartoriosRestransmitirOE",
+      "plane_work_item_id": "3ecb7bde-f8b7-4f12-b425-7f0c6dcff010",
+      "plane_sequence_id": 37,
+      "plane_key": "AUTONR-37",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/37",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] ListCartoriosRestransmitirOE - Listagem cartorios retransmitir oficio eletronico webservice onr"
+    },
+    "SetPedidoNegativaLoteOE": {
+      "operacao": "SetPedidoNegativaLoteOE",
+      "plane_work_item_id": "dc9bb8e2-996e-4e60-9ca7-59a80774fd2a",
+      "plane_sequence_id": 36,
+      "plane_key": "AUTONR-36",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/36",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoNegativaLoteOE - Pedido negativa em lote oficio eletronico webservice onr"
+    },
+    "SetPedidoRetransmitidoOE": {
+      "operacao": "SetPedidoRetransmitidoOE",
+      "plane_work_item_id": "255bd59e-c213-4f18-abf2-97398ea23c23",
+      "plane_sequence_id": 35,
+      "plane_key": "AUTONR-35",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/35",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoRetransmitidoOE - Pedido retransmitido oficio eletronico webservice onr"
+    },
+    "SetPedidoDevolvidoOE": {
+      "operacao": "SetPedidoDevolvidoOE",
+      "plane_work_item_id": "871046fa-7023-4598-951b-24c54c631c1a",
+      "plane_sequence_id": 34,
+      "plane_key": "AUTONR-34",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/34",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoDevolvidoOE - Pedido devolvido oficio eletronico webservice onr"
+    },
+    "SetPedidoRespondidoOE": {
+      "operacao": "SetPedidoRespondidoOE",
+      "plane_work_item_id": "d8f854a2-000e-4002-9d58-8d10faec13d3",
+      "plane_sequence_id": 33,
+      "plane_key": "AUTONR-33",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/33",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoRespondidoOE - Pedido respondido oficio eletronico webservice onr"
+    },
+    "ListPedidosOE_V2": {
+      "operacao": "ListPedidosOE_V2",
+      "plane_work_item_id": "49324bcc-698f-42dd-a8c4-d3162ef77d3f",
+      "plane_sequence_id": 32,
+      "plane_key": "AUTONR-32",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/32",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] ListPedidosOE_V2 - Listagem pedidos oficio eletronico V2 webservice onr"
+    },
+    "ListPedidosOE": {
+      "operacao": "ListPedidosOE",
+      "plane_work_item_id": "a86fb960-7da4-4e4b-a136-3c547117b436",
+      "plane_sequence_id": 31,
+      "plane_key": "AUTONR-31",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/31",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] ListPedidosOE - Listagem pedidos oficio eletronico webservice onr"
+    },
+    "ListInstituicoesOE": {
+      "operacao": "ListInstituicoesOE",
+      "plane_work_item_id": "4f697516-69f6-4d53-a59b-260b0c0fa5c2",
+      "plane_sequence_id": 30,
+      "plane_key": "AUTONR-30",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/30",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] ListInstituicoesOE - Listagem instituicoes oficio eletronico webservice onr"
+    },
+    "GetPedidoOE": {
+      "operacao": "GetPedidoOE",
+      "plane_work_item_id": "b516005a-5771-4e4e-a945-f1ff8095975f",
+      "plane_sequence_id": 29,
+      "plane_key": "AUTONR-29",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/29",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] GetPedidoOE - Busca de pedido oficio eletronico webservice onr"
+    },
+    "SetPedidoFinalizarPrenotacaoVencida": {
+      "operacao": "SetPedidoFinalizarPrenotacaoVencida",
+      "plane_work_item_id": "a6e9eced-b5f7-469f-8f27-3f21a970ea22",
+      "plane_sequence_id": 28,
+      "plane_key": "AUTONR-28",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/28",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoFinalizarPrenotacaoVencida - Finalizar prenotacao vencida penhora online webservice onr"
+    },
+    "ListPedidosExportacaoPO": {
+      "operacao": "ListPedidosExportacaoPO",
+      "plane_work_item_id": "0300c13c-c971-4129-be17-5e581fc3398c",
+      "plane_sequence_id": 27,
+      "plane_key": "AUTONR-27",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/27",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] ListPedidosExportacaoPO - Listagem exportacao pedidos penhora online webservice onr"
+    },
+    "SetPedidoNegativaLotePO": {
+      "operacao": "SetPedidoNegativaLotePO",
+      "plane_work_item_id": "741def62-9022-4d48-a602-36720e3b4665",
+      "plane_sequence_id": 26,
+      "plane_key": "AUTONR-26",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/26",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoNegativaLotePO - Pedido negativa em lote penhora online webservice onr"
+    },
+    "SetPedidoMatriculaDevolvidoPO": {
+      "operacao": "SetPedidoMatriculaDevolvidoPO",
+      "plane_work_item_id": "72b45d31-6dba-4789-8968-5a59fcddad92",
+      "plane_sequence_id": 25,
+      "plane_key": "AUTONR-25",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/25",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoMatriculaDevolvidoPO - Pedido matricula devolvido penhora online webservice onr"
+    },
+    "SetPedidoMatriculaRespondidoPO": {
+      "operacao": "SetPedidoMatriculaRespondidoPO",
+      "plane_work_item_id": "2995769b-063a-4263-bce3-d06b4f0c1124",
+      "plane_sequence_id": 24,
+      "plane_key": "AUTONR-24",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/24",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoMatriculaRespondidoPO - Pedido matricula respondido penhora online webservice onr"
+    },
+    "SetPedidoPessoaDevolvidoPO": {
+      "operacao": "SetPedidoPessoaDevolvidoPO",
+      "plane_work_item_id": "fc3d64fc-9d8c-4cbd-99bc-b103f86cc971",
+      "plane_sequence_id": 23,
+      "plane_key": "AUTONR-23",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/23",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoPessoaDevolvidoPO - Pedido pessoa devolvido penhora online webservice onr"
+    },
+    "SetPedidoPessoaRespondidoPO": {
+      "operacao": "SetPedidoPessoaRespondidoPO",
+      "plane_work_item_id": "73ab2666-fbd1-462a-9fd9-9b8d29b57fa9",
+      "plane_sequence_id": 22,
+      "plane_key": "AUTONR-22",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/22",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPedidoPessoaRespondidoPO - Pedido pessoa respondido penhora online webservice onr"
+    },
+    "SetPenhoraExigenciaPO": {
+      "operacao": "SetPenhoraExigenciaPO",
+      "plane_work_item_id": "77d43e60-ca0a-476b-a559-f353952bc149",
+      "plane_sequence_id": 21,
+      "plane_key": "AUTONR-21",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/21",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPenhoraExigenciaPO - Penhora exigencia penhora online webservice onr"
+    },
+    "SetPenhoraAverbadoPO": {
+      "operacao": "SetPenhoraAverbadoPO",
+      "plane_work_item_id": "6135a567-4520-4c38-acbc-4a14ab6dee18",
+      "plane_sequence_id": 20,
+      "plane_key": "AUTONR-20",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/20",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPenhoraAverbadoPO - Penhora averbado penhora online webservice onr"
+    },
+    "SetBaixaBoletoPO": {
+      "operacao": "SetBaixaBoletoPO",
+      "plane_work_item_id": "e9411da7-57c8-4a12-9329-f266022cd872",
+      "plane_sequence_id": 19,
+      "plane_key": "AUTONR-19",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/19",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetBaixaBoletoPO - Baixa de boleto penhora online webservice onr"
+    },
+    "SetCustasPO": {
+      "operacao": "SetCustasPO",
+      "plane_work_item_id": "392c3bfd-77d0-42ca-a762-7b8680df9a0c",
+      "plane_sequence_id": 18,
+      "plane_key": "AUTONR-18",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/18",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetCustasPO - Definir custas penhora online webservice onr"
+    },
+    "SetPrenotacaoPO": {
+      "operacao": "SetPrenotacaoPO",
+      "plane_work_item_id": "ead81782-a9b2-4323-8918-784049d734c1",
+      "plane_sequence_id": 17,
+      "plane_key": "AUTONR-17",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/17",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] SetPrenotacaoPO - Definir prenotacao penhora online webservice onr"
+    },
+    "ListVarasPO": {
+      "operacao": "ListVarasPO",
+      "plane_work_item_id": "280a4707-6c2c-4cc3-8fa2-d740016085b4",
+      "plane_sequence_id": 16,
+      "plane_key": "AUTONR-16",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/16",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] ListVarasPO - Listagem de varas penhora online webservice onr"
+    },
+    "GetPedidoPO": {
+      "operacao": "GetPedidoPO",
+      "plane_work_item_id": "c41b1287-d6ec-4a77-bcff-f7d3b1492eae",
+      "plane_sequence_id": 15,
+      "plane_key": "AUTONR-15",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/15",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] GetPedidoPO - Busca de pedido penhora online webservice onr"
+    },
+    "ListPedidosPO": {
+      "operacao": "ListPedidosPO",
+      "plane_work_item_id": "c4ef491c-bb9a-4809-8294-c2ed73af23fa",
+      "plane_sequence_id": 14,
+      "plane_key": "AUTONR-14",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/14",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[n8n] ListPedidosPO - Listagem de pedidos penhora online webservice onr"
+    },
+    "CENSEC_UploadJSON": {
+      "operacao": "CENSEC_UploadJSON",
+      "plane_work_item_id": "d89dd33c-66b0-49e1-a85b-871ac2cfd7b4",
+      "plane_sequence_id": 13,
+      "plane_key": "AUTONR-13",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/13",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Automação envio de carga censec json"
+    },
+    "UpdateStatusAT": {
+      "operacao": "UpdateStatusAT",
+      "plane_work_item_id": "8276c549-12dc-4d90-b53e-aec78504c5b4",
+      "plane_sequence_id": 12,
+      "plane_key": "AUTONR-12",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/12",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Atualizar status de titulo webservice onr"
+    },
+    "InsertStatusAT": {
+      "operacao": "InsertStatusAT",
+      "plane_work_item_id": "997051ce-9390-4fa6-a8fa-a2001c24eaac",
+      "plane_sequence_id": 11,
+      "plane_key": "AUTONR-11",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/11",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Inserir status de titulo webservice onr"
+    },
+    "DeleteTituloAT": {
+      "operacao": "DeleteTituloAT",
+      "plane_work_item_id": "3dd55243-ad3e-49a6-9115-8b8633d174b2",
+      "plane_sequence_id": 10,
+      "plane_key": "AUTONR-10",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/10",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Deletar titulo webservice onr"
+    },
+    "UpdateTituloAT": {
+      "operacao": "UpdateTituloAT",
+      "plane_work_item_id": "957a9692-34fa-4cea-bd6f-ccbee50a82ca",
+      "plane_sequence_id": 9,
+      "plane_key": "AUTONR-9",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/9",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Atualizar titulo webservice onr"
+    },
+    "InsertTituloAT": {
+      "operacao": "InsertTituloAT",
+      "plane_work_item_id": "8a6ce372-1ca2-4a59-9f8a-7a6c54d9259b",
+      "plane_sequence_id": 8,
+      "plane_key": "AUTONR-8",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/8",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Cadastro de titulo webservice onr"
+    },
+    "GetStatusAT": {
+      "operacao": "GetStatusAT",
+      "plane_work_item_id": "b6b7dbd3-5d75-43fe-82a9-80d69c18165e",
+      "plane_sequence_id": 7,
+      "plane_key": "AUTONR-7",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/7",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Busca de status webservice onr"
+    },
+    "GetTituloAT": {
+      "operacao": "GetTituloAT",
+      "plane_work_item_id": "69861a52-b972-4c52-b8e9-9d2a6a663393",
+      "plane_sequence_id": 6,
+      "plane_key": "AUTONR-6",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/6",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Busca de titulo webservice onr"
+    },
+    "ListStatusAT": {
+      "operacao": "ListStatusAT",
+      "plane_work_item_id": "dea83743-38db-4ae0-9ce4-16a50513ea31",
+      "plane_sequence_id": 5,
+      "plane_key": "AUTONR-5",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/5",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Listagem de status webservice onr"
+    },
+    "ListTitulosAT": {
+      "operacao": "ListTitulosAT",
+      "plane_work_item_id": "2e64c38f-cdee-4bab-8ae6-1f4c8e9b612f",
+      "plane_sequence_id": 4,
+      "plane_key": "AUTONR-4",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/4",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "Listar titulos webservice onr"
+    },
+    "LoginUsuarioCertificado": {
+      "operacao": "LoginUsuarioCertificado",
+      "plane_work_item_id": "2c4e82e2-abca-45f5-b535-ab030f199d39",
+      "plane_sequence_id": 2,
+      "plane_key": "AUTONR-2",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/2",
+      "plane_state": "eb47829e-8e98-4a02-8951-d4bac7db2264",
+      "automation_status": "done",
+      "card_name": "[Aut] - Integração da API de Autenticação ONR via SOAP (WSDL) no n8n"
+    }
+  }
+}

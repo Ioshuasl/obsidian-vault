@@ -1,0 +1,13 @@
+{
+  "name": "orius-plane-scripts",
+  "private": true,
+  "description": "Markdown to HTML and Plane description sync (Obsidian vault)",
+  "type": "commonjs",
+  "scripts": {
+    "md2html": "node md-to-html.js",
+    "sync": "node sync-plane-descriptions.js"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}

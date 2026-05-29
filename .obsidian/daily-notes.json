@@ -1,0 +1,5 @@
+{
+  "format": "YYYY/MM/DD",
+  "folder": "Pessoal/diario",
+  "template": "Pessoal/diario/_template-nota-diaria"
+}

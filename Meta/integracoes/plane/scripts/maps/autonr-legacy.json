@@ -1,0 +1,47 @@
+{
+  "_comment": "Cards AUTONR-2 … 13 (títulos antigos sem prefixo [n8n] Op). Usar com --no-card-prefix.",
+  "auth-n8n.md": {
+    "op": "LoginUsuarioCertificado",
+    "titleIncludes": "Autentica"
+  },
+  "ListTitulosAT.md": {
+    "op": "ListTitulosAT",
+    "titleIncludes": "Listar titulos"
+  },
+  "ListStatusAT.md": {
+    "op": "ListStatusAT",
+    "titleIncludes": "Listagem de status"
+  },
+  "GetTituloAT.md": {
+    "op": "GetTituloAT",
+    "titleIncludes": "Busca de titulo"
+  },
+  "GetStatusAT.md": {
+    "op": "GetStatusAT",
+    "titleIncludes": "Busca de status"
+  },
+  "InsertTituloAT.md": {
+    "op": "InsertTituloAT",
+    "titleIncludes": "Cadastro de titulo"
+  },
+  "UpdateTituloAT.md": {
+    "op": "UpdateTituloAT",
+    "titleIncludes": "Atualizar titulo"
+  },
+  "DeleteTituloAT.md": {
+    "op": "DeleteTituloAT",
+    "titleIncludes": "Deletar titulo"
+  },
+  "InsertStatusAT.md": {
+    "op": "InsertStatusAT",
+    "titleIncludes": "Inserir status"
+  },
+  "UpdateStatusAT.md": {
+    "op": "UpdateStatusAT",
+    "titleIncludes": "Atualizar status"
+  },
+  "n8n-upload-json-gateway.md": {
+    "op": "CENSEC_UploadJSON",
+    "titleIncludes": "censec json"
+  }
+}

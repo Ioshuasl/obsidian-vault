@@ -29,6 +29,7 @@ Proxies **n8n** para o WebService SOAP **WSOficio** (ONR) e carga **CENSEC** (JS
 | Por método SOAP | `Orius/integracoes/registro-imoveis/onr/webservice-wsoficio/automacao/por-metodo/` |
 | Auth login | [[Orius/integracoes/registro-imoveis/onr/webservice-wsoficio/automacao/auth-n8n]] |
 | CENSEC gateway | [[Orius/integracoes/tabelionato-notas/censec/automacao/n8n-upload-json-gateway]] |
+| DOI validador JSON | [[Orius/integracoes/tabelionato-notas/doi/automacao/n8n-validate-json-gateway]] |
 
 ## Código local
 
@@ -58,8 +59,9 @@ PLANE_STATE_IN_PROGRESS=33eae62a-0fc6-49b1-b7ca-d69cb7dc6705
 | Situação | Qtd | Cards |
 |----------|-----|-------|
 | **Concluídas** (Done) | 35 | `AUTONR-2` … `AUTONR-37` (Auth, AT, PO, OE, CENSEC) |
+| **Em andamento** (In Progress) | 1 | `AUTONR-87` (DOI Validate JSON) |
 | **Pendentes** (Todo) | 48 | `AUTONR-38` … `AUTONR-85` (restante WSOficio) |
-| **Total** | 83 | |
+| **Total** | 84 | |
 
 Pendentes por módulo: PO (2), BD Light legado (4), Certidões (11), Matrícula (2), E-Protocolo (15), Intimações (12), CTP (2).
 

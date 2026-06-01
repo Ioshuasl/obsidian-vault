@@ -5,9 +5,7 @@ plane_sequence_id: 45
 plane_key: AUTONR-45
 plane_url: http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/45
 plane_automation_status: pending
----
-
-## Plane (gestão)
+---## Plane (gestão)
 
 | Campo | Valor |
 |-------|-------|

@@ -1,13 +1,11 @@
 ---
+plane_automation_status: pending
 operacao: ListBoletosPO
 plane_work_item_id: 4518c73c-ba29-4d68-89d0-a2e65140b729
 plane_sequence_id: 38
 plane_key: AUTONR-38
 plane_url: http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/38
-plane_automation_status: pending
----
-
-## Plane (gestão)
+---## Plane (gestão)
 
 | Campo | Valor |
 |-------|-------|

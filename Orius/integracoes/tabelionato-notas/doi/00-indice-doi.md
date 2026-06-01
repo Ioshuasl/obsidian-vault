@@ -27,7 +27,8 @@ A DOI é enviada pelos cartórios extrajudiciais que praticam atos com operaçã
 
 A mesma estrutura JSON e regras de validação valem para todos; variam os campos obrigatórios conforme `tipoServico` e `tipoAto` — ver [[Orius/integracoes/tabelionato-notas/doi/campos-json/ficha-dados-iniciais]] e [[Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/tipoServico]].
 
-> Documentação técnica centralizada nesta pasta (`tabelionato-notas/doi/`) por histórico de migração; aplica-se igualmente ao **Registro de Imóveis**.
+> Documentação técnica centralizada nesta pasta (`tabelionato-notas/doi/`) por histórico de migração; aplica-se igualmente ao **Registro de Imóveis**.  
+> **Validação:** esta base substitui o espelho CTP incompleto em [[Orius/integracoes/tabelionato-notas/censec/regras-validacao/ctp]] — ver [[Orius/integracoes/tabelionato-notas/doi/automacao/n8n-validate-json-gateway]].
 
 ## Visão geral e importação
 

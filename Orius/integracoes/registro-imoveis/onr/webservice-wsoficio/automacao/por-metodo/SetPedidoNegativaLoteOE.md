@@ -1,11 +1,10 @@
 ---
-status: revisado
+plane_automation_status: done
 operacao: SetPedidoNegativaLoteOE
 plane_work_item_id: dc9bb8e2-996e-4e60-9ca7-59a80774fd2a
 plane_sequence_id: 36
 plane_key: AUTONR-36
 plane_url: http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/36
-plane_automation_status: done
 ---> **Método SOAP:** [[Orius/integracoes/registro-imoveis/onr/webservice-wsoficio/metodos/OE/SetPedidoNegativaLoteOE]]
 > **Scripts locais:** `C:\Users\kenio\soap-ui test\scripts\SetPedidoNegativaLoteOe`
 

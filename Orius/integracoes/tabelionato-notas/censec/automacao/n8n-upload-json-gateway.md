@@ -12,9 +12,7 @@ plane_sequence_id: 13
 plane_key: AUTONR-13
 plane_url: http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/13
 plane_automation_status: done
----
-
-## Plane (gestão)
+---## Plane (gestão)
 
 | Campo | Valor |
 |-------|-------|
@@ -83,7 +81,7 @@ Homologação: trocar base para `https://hml.censec.org.br` no nó HTTP quando t
 |---------|------------|---------------------|----------------|
 | CEP | `atosCep` | Sim | [[Orius/integracoes/tabelionato-notas/censec/regras-validacao/cep]] |
 | CESDI | `atosCesdi` | Sim | [[Orius/integracoes/tabelionato-notas/censec/regras-validacao/cesdi]] |
-| CTP | `declaracoes` | Sim | [[Orius/integracoes/tabelionato-notas/censec/regras-validacao/ctp]] |
+| CTP | `declaracoes` | Sim (via validador DOI compartilhado) | [[Orius/integracoes/tabelionato-notas/doi/regras-validacao/00-indice-regras-validacao]] (completo); legado [[Orius/integracoes/tabelionato-notas/censec/regras-validacao/ctp]] |
 | RCTO | `testamentos` | **Não** (envio direto se presente no payload) | — |
 
 Se o bloco de uma central **não existir** no payload (`undefined`), o validador correspondente é ignorado.
@@ -93,7 +91,7 @@ Se o bloco de uma central **não existir** no payload (`undefined`), o validador
 - Campos obrigatórios por ato (livro, folha, data `YYYY-MM-DD`, partes)
 - CPF/CNPJ quando `tipoDocumento` / `documentoTipo` indicar
 - `referentes` obrigatório em revogação, substabelecimento, rerratificação
-- CTP: soma de `participacao` entre 99–100; CEP/IBGE; regras de pagamento a prazo; apenas `tipoDeclaracao` **Original** em lote
+- CTP (`declaracoes`): mesma lógica do validador DOI — domínios 1–12, regras por `tipoServico`, cônjuge/representante, área urbano/rural, CIB, ITBI/ITCMD, pagamento a prazo, etc. Código: `automacoes e testes/scripts/doi/doi-validate-payload.cjs` (regenerar com `node scripts/doi/build-validate-workflows.cjs`).
 
 Resposta de erro local (antes da CENSEC): `success: false`, lista `errors[]` com `central`, `path`, `code`, `message`.
 

@@ -1,17 +1,10 @@
 ---
-tipo: automacao
-area: orius
-central: onr
-protocolo: soap
+plane_automation_status: done
 operacao: InsertStatusAT
-tags: [orius, onr, n8n, proxy, InsertStatusAT]
-fonte_repositorio: C:/Users/kenio/soap-ui test/scripts/InsertStatusAt/Insert Status AT WebService ONR.md
-status: revisado
 plane_work_item_id: 997051ce-9390-4fa6-a8fa-a2001c24eaac
 plane_sequence_id: 11
 plane_key: AUTONR-11
 plane_url: http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/11
-plane_automation_status: done
 ---> **Método SOAP:** [[Orius/integracoes/registro-imoveis/onr/webservice-wsoficio/metodos/AT/InsertStatusAT]]
 > **Scripts locais:** `C:\Users\kenio\soap-ui test\scripts\InsertStatusAt\`
 

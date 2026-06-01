@@ -42,6 +42,18 @@ function findMdForOp(op) {
     );
     if (fs.existsSync(p)) return p;
   }
+  if (op === 'DOI_ValidateJSON') {
+    const p = path.join(
+      VAULT_ROOT,
+      'Orius',
+      'integracoes',
+      'tabelionato-notas',
+      'doi',
+      'automacao',
+      'n8n-validate-json-gateway.md'
+    );
+    if (fs.existsSync(p)) return p;
+  }
   const porMetodo = path.join(WSOFICIO, 'automacao', 'por-metodo', `${op}.md`);
   if (fs.existsSync(porMetodo)) return porMetodo;
   const metodosRoot = path.join(WSOFICIO, 'metodos');

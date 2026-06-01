@@ -10,6 +10,11 @@ status: revisado
 
 > **Automação:** [[Orius/integracoes/tabelionato-notas/censec/automacao/n8n-upload-json-gateway]] · **Domínios:** [[Orius/integracoes/tabelionato-notas/censec/tabelas-dominio/ctp]] · **Campos:** [[Orius/integracoes/tabelionato-notas/censec/ctp]]
 
+> [!important] Fonte de verdade para validação DOI/CTP
+> Este JSON espelha o legado CENSEC e **está incompleto** frente ao manual DOI-Web.
+> Para domínios, fichas de campo e regras completas, use [[Orius/integracoes/tabelionato-notas/doi/00-indice-doi|base DOI]] (`campos-json/`, `tabelas-dominio/`, `regras-validacao/`).
+> O validador n8n (gateway CENSEC e [[Orius/integracoes/tabelionato-notas/doi/automacao/n8n-validate-json-gateway|DOI Validate JSON]]) usa `scripts/doi/doi-validate-payload.cjs`, alinhado à base DOI.
+
 # Regras de Validacao CTP
 
 ```json

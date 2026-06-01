@@ -4,8 +4,18 @@
   "plane_identifier": "AUTONR",
   "plane_state_done": "eb47829e-8e98-4a02-8951-d4bac7db2264",
   "plane_state_todo": "9a73743b-e03e-4736-87a7-e5360efe61b5",
-  "updated_at": "2026-05-29",
+  "updated_at": "2026-06-01",
   "items": {
+    "DOI_ValidateJSON": {
+      "operacao": "DOI_ValidateJSON",
+      "plane_work_item_id": "79f5102a-457e-4be0-93eb-a8ac46c404f8",
+      "plane_sequence_id": 87,
+      "plane_key": "AUTONR-87",
+      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/87",
+      "plane_state": "33eae62a-0fc6-49b1-b7ca-d69cb7dc6705",
+      "automation_status": "pending",
+      "card_name": "[n8n] DOI_ValidateJSON - Validacao local payload DOI-Web"
+    },
     "AtualizarStatusProcesso": {
       "operacao": "AtualizarStatusProcesso",
       "plane_work_item_id": "0be02326-93f7-43c4-93e6-4d0e29553275",
@@ -425,46 +435,6 @@
       "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
       "automation_status": "pending",
       "card_name": "[n8n] ObterXMLSolicitacoes_v4 - Proxy Certidões webservice onr"
-    },
-    "SetBDLightAtualizado": {
-      "operacao": "SetBDLightAtualizado",
-      "plane_work_item_id": "343bf7d7-a4f9-49fb-aeba-beaf789a3a3a",
-      "plane_sequence_id": 43,
-      "plane_key": "AUTONR-43",
-      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/43",
-      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
-      "automation_status": "pending",
-      "card_name": "[n8n] SetBDLightAtualizado - Proxy BD Light (legado) webservice onr [legado]"
-    },
-    "ImportarArquivoBDL": {
-      "operacao": "ImportarArquivoBDL",
-      "plane_work_item_id": "002b62d6-99a6-4181-9f6b-b504374eadd8",
-      "plane_sequence_id": 42,
-      "plane_key": "AUTONR-42",
-      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/42",
-      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
-      "automation_status": "pending",
-      "card_name": "[n8n] ImportarArquivoBDL - Proxy BD Light (legado) webservice onr [legado]"
-    },
-    "GetArquivoXMLBDL": {
-      "operacao": "GetArquivoXMLBDL",
-      "plane_work_item_id": "909ad2e0-48fb-41ed-b177-5fdf86faeda2",
-      "plane_sequence_id": 41,
-      "plane_key": "AUTONR-41",
-      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/41",
-      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
-      "automation_status": "pending",
-      "card_name": "[n8n] GetArquivoXMLBDL - Proxy BD Light (legado) webservice onr [legado]"
-    },
-    "ListArquivosXMLBDL": {
-      "operacao": "ListArquivosXMLBDL",
-      "plane_work_item_id": "b2a6b88c-25c8-463f-9a05-66cb1efdf60e",
-      "plane_sequence_id": 40,
-      "plane_key": "AUTONR-40",
-      "plane_url": "http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/40",
-      "plane_state": "9a73743b-e03e-4736-87a7-e5360efe61b5",
-      "automation_status": "pending",
-      "card_name": "[n8n] ListArquivosXMLBDL - Proxy BD Light (legado) webservice onr [legado]"
     },
     "ListPedidosExportacaoPO_v2": {
       "operacao": "ListPedidosExportacaoPO_v2",

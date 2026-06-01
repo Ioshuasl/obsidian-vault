@@ -15,6 +15,8 @@ status: documentado
 
 Situação de uma **cobrança** gerada no RIB (PIX, boleto, etc.).
 
+> **Não confundir** com [[TBD-05-status-tipo-pagamento|TBD-05]] (`StatusTipoPagamento`), que é o status do **cadastro de tipo de pagamento** na intranet.
+
 ## Valores
 
 | Código | Descrição |

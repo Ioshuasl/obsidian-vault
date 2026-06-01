@@ -52,9 +52,10 @@ Código da **situação** do título/protocolo no acompanhamento registral. O ma
 | Envio de protocolo | `status.status` em [[RFP-01-envio-online]], [[RFP-02-envio-lote]] |
 | [[RFP-05-listagem-protocolos]] | `status.codigo` (string no exemplo) |
 | [[RFP-06-detalhe-protocolo-v1]] | `status.status` (int) |
+| [[RFP-07-detalhe-protocolo-v2]] | `listaStatus[].status` |
 
 **Tipo no JSON:** `int` (tamanho 11 no manual para `status.status`).
 
-**Formato da descrição:** campo `status.tipoDescricao` — tabela **TBD-06** `ACTipoDescricao` (pendente no índice de domínio).
+**Formato da descrição:** [[TBD-06-actipo-descricao]] em `status.tipoDescricao` / `listaStatus[].tipoDescricao`.
 
 **Manual bruto:** seção `[TBD-03] - ACCodigoStatus`

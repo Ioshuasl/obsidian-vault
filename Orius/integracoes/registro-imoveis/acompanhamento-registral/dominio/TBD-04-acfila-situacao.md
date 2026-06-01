@@ -43,4 +43,9 @@ Situação do **processamento em fila** após `POST /v1/protocolo/lote` ([[RFP-0
 
 **Tipo no JSON:** `int` (tamanho 1 no manual).
 
-**Manual bruto:** seção `[TBD-04] - ACFilaSituacao`
+## Relacionado
+
+- [[TBD-03-accodigo-status]] — situação do **protocolo** (após processar fila com sucesso)
+- [[RFP-05-listagem-protocolos]] — consultar protocolos integrados
+
+**Manual bruto:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[TBD-04] - ACFilaSituacao` (pág. 95 do PDF v2.2)

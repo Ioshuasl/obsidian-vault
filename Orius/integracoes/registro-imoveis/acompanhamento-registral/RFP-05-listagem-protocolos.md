@@ -10,7 +10,7 @@ status: documentado
 ---
 
 > **Índice:** [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]]
-> **Detalhe completo:** [[RFP-06-detalhe-protocolo-v1]] · [[RFP-07-detalhe-protocolo-v2]] (pendente)
+> **Detalhe completo:** [[RFP-07-detalhe-protocolo-v2]] (recomendado) · [[RFP-06-detalhe-protocolo-v1]] (legado)
 > **Autenticação:** [[RFG-01-autenticacao]]
 
 # [RFP-05] — Listagem dos protocolos integrados
@@ -33,7 +33,7 @@ status: documentado
 ## Pré-requisitos
 
 - [x] Token JWT — [[RFG-01-autenticacao]]
-- [ ] Para detalhes, anexos ou cobrança: usar `protocolo` retornado em [[RFP-06-detalhe-protocolo-v1]] ou V2
+- [ ] Para detalhes: [[RFP-07-detalhe-protocolo-v2]] (ou [[RFP-06-detalhe-protocolo-v1]])
 
 ---
 
@@ -149,10 +149,10 @@ Padrão: `codigo`, `descricao`, `campos` — [[visao-geral#Formato das respostas
 flowchart LR
   A[GET /v1/protocolo] --> B{dados[]}
   B --> C[usarSenhaDetalhes?]
-  C -->|Sim| D[POST .../token + senha]
-  C -->|Não| E[GET .../detalhes]
+  C -->|Sim| D[POST /v2/.../token]
+  C -->|Não| E[GET /v2/.../detalhes]
   D --> E
-  E --> F[hashCobranca / arquivos]
+  E --> F[listaStatus / hashCobranca]
 ```
 
 ---
@@ -172,8 +172,8 @@ flowchart LR
 
 | Código | Relação |
 |--------|---------|
-| [[RFP-06-detalhe-protocolo-v1]] | Detalhe API V1 |
-| RFP-07 | Detalhe API V2 (pendente) |
+| [[RFP-07-detalhe-protocolo-v2]] | Detalhe API V2 (recomendado) |
+| [[RFP-06-detalhe-protocolo-v1]] | Detalhe API V1 (legado) |
 | [[RFP-01-envio-online]] / [[RFP-02-envio-lote]] | Cadastro |
 | [[RFP-04-exclusao-protocolo]] | Remove da listagem |
 

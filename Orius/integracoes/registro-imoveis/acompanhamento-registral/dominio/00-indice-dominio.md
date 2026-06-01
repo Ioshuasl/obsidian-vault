@@ -13,22 +13,22 @@ manual: v2.2
 
 Enums e códigos referenciados nos bodies e respostas da API RIB (manual v2.2). Cada nota abaixo espelha uma seção **TBD-xx** do manual oficial.
 
-## Documentadas (protocolo + fila + cobrança base)
+## Documentadas
 
 | Código | Nome no manual | Nota | Uso principal |
 |--------|----------------|------|----------------|
-| **TBD-01** | `StatusCobranca` | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-01-status-cobranca]] | Status de cobrança (RFC-02, RFC-03) |
-| **TBD-02** | `ACTipoSolicitacao` | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-02-actipo-solicitacao]] | Campo `tipoSolicitacao` (RFP-01, RFP-02, RFP-03) |
-| **TBD-03** | `ACCodigoStatus` | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-03-accodigo-status]] | Campo `status.status` do protocolo |
-| **TBD-04** | `ACFilaSituacao` | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-04-acfila-situacao]] | Fila de processamento (RFP-02, RFP-03) |
+| **TBD-01** | `StatusCobranca` | [[TBD-01-status-cobranca]] | Status da **cobrança** (RFC-01, RFC-02, RFC-03) |
+| **TBD-02** | `ACTipoSolicitacao` | [[TBD-02-actipo-solicitacao]] | `tipoSolicitacao` (RFP-01 … RFP-07) |
+| **TBD-03** | `ACCodigoStatus` | [[TBD-03-accodigo-status]] | Código da situação do protocolo |
+| **TBD-04** | `ACFilaSituacao` | [[TBD-04-acfila-situacao]] | Fila de lote (RFP-02, RFP-03) |
+| **TBD-05** | `StatusTipoPagamento` | [[TBD-05-status-tipo-pagamento]] | Status do **tipo de pagamento** (RFC-05); ≠ TBD-01 |
+| **TBD-06** | `ACTipoDescricao` | [[TBD-06-actipo-descricao]] | Formato de `status.descricao` / `listaStatus[].descricao` |
 
-## Pendentes (resto do manual)
+## Pendentes (atendimento eletrônico)
 
 | Código | Nome | Uso previsto |
 |--------|------|----------------|
-| TBD-05 | `StatusTipoPagamento` | Campo `tipoPagamento` em [[RFC-01-geracao-cobranca]] · RFC-05 |
-| TBD-06 | `ACTipoDescricao` | `status.tipoDescricao`, histórico |
-| TBD-07 … TBD-14 | Atendimento eletrônico | RAE-01 … RAE-03 |
+| TBD-07 … TBD-14 | AE* | RAE-01 … RAE-03 |
 
 ---
 

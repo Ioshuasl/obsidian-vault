@@ -319,7 +319,7 @@ sequenceDiagram
 2. `POST /v1/protocolo/lote` → guardar `hash`.
 3. Polling em `GET .../{hashFila}` até `situacao` ∈ {2, 3, 4}.
 4. Tratar `alertas` do POST e situação **3** (alertas) ou **4** (erros) no detalhe da fila.
-5. Localizar protocolos via [[RFP-05-listagem-protocolos]] e detalhe [[RFP-06-detalhe-protocolo-v1]] (ou RFP-07).
+5. Localizar protocolos via [[RFP-05-listagem-protocolos]] e detalhe [[RFP-07-detalhe-protocolo-v2]].
 
 Fluxos conceituais do manual: **FFP-01**, **FFP-02** (pendentes no índice).
 

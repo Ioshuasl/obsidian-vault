@@ -38,7 +38,7 @@ No cadastro o RIB valida os campos; problemas não fatais aparecem em **`alertas
 - [ ] `protocolo` e `tipoSolicitacao` definidos pelo cartório
 - [ ] `apresentante.documento` (CPF/CNPJ, só números)
 - [ ] Se enviar `cobranca`: PIX ou BOLETO + pagador + `servicos` + vencimento
-- [ ] Domínios: [[dominio/TBD-02-actipo-solicitacao|TBD-02]], [[dominio/TBD-03-accodigo-status|TBD-03]]; `tipoDescricao` → TBD-06 (pendente)
+- [ ] Domínios: [[dominio/TBD-02-actipo-solicitacao|TBD-02]], [[dominio/TBD-03-accodigo-status|TBD-03]], [[dominio/TBD-06-actipo-descricao|TBD-06]]
 
 ---
 
@@ -98,7 +98,7 @@ No cadastro o RIB valida os campos; problemas não fatais aparecem em **`alertas
 | `status` | int | 11 | Não | [[dominio/TBD-03-accodigo-status|ACCodigoStatus]] |
 | `data` | datetime | 19 | Não | Data da situação (`YYYY-MM-DD HH:mm:ss`) |
 | `descricao` | string | — | Não | Texto da situação |
-| `tipoDescricao` | string | 20 | Não | `ACTipoDescricao` (TBD-06, pendente) |
+| `tipoDescricao` | string | 20 | Não | [[dominio/TBD-06-actipo-descricao|ACTipoDescricao]] |
 
 ### Objeto `cobranca` (opcional no raiz; se enviado, preencher obrigatórios)
 
@@ -281,7 +281,7 @@ Ver [[Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral#Fo
 | **Cobrança no mesmo POST** | Objeto `cobranca` opcional; se presente, todos os subcampos obrigatórios da cobrança devem ser enviados |
 | **Alertas ≠ erro HTTP** | `alertas` preenchido indica inconsistências leves; tratar no sistema e exibir ao operador |
 | **Cobrança automática dedicada** | Fluxo alternativo: [[RFP-03-cobranca-automatizada|RFP-03]] (após protocolo já existir) |
-| **Consulta posterior** | [[RFP-05-listagem-protocolos]] · [[RFP-06-detalhe-protocolo-v1]] · RFP-07 (pendente) |
+| **Consulta posterior** | [[RFP-05-listagem-protocolos]] · [[RFP-07-detalhe-protocolo-v2]] |
 
 ---
 
@@ -291,7 +291,7 @@ Ver [[Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral#Fo
 |-------|--------|
 | `tipoSolicitacao` | [[dominio/TBD-02-actipo-solicitacao]] |
 | `status.status` | [[dominio/TBD-03-accodigo-status]] |
-| `status.tipoDescricao` | TBD-06 (pendente) |
+| `status.tipoDescricao` | [[dominio/TBD-06-actipo-descricao]] |
 | Status da cobrança gerada | [[dominio/TBD-01-status-cobranca]] |
 
 Índice completo: [[dominio/00-indice-dominio]].
@@ -323,7 +323,7 @@ Fluxo completo de envio/processamento: **FFP-01**, **FFP-02** (pendente no índi
 | [[RFP-02-envio-lote]] | Protocolo com anexos e fila |
 | [[RFP-03-cobranca-automatizada]] | Cobrança após cadastro (lote) |
 | [[RFP-04-exclusao-protocolo]] | Exclusão do protocolo no RIB |
-| [[RFP-05-listagem-protocolos]] / [[RFP-06-detalhe-protocolo-v1]] | Listar e detalhar |
+| [[RFP-05-listagem-protocolos]] / [[RFP-07-detalhe-protocolo-v2]] | Listar e detalhar |
 | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | Nota legada sobre `/v1/cobranca` |
 
 **Manual bruto (repo):** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — seção `[RFP-01]` (págs. 11–16 do PDF v2.2)

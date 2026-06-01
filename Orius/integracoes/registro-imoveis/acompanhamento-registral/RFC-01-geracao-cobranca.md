@@ -70,7 +70,7 @@ Mesmas regras de [[RFP-03-cobranca-automatizada#Webhook de pagamento]]:
 | `dataVencimento` | date | 10 | Sim | `YYYY-MM-DD` |
 | `observacao` | string | 30 | Não | Texto na cobrança |
 | `identificadorCliente` | string | 100 | Não | ID livre do cartório/sistema |
-| `tipoPagamento` | int | 11 | Não | Tipo de pagamento cadastrado (RFC-05) |
+| `tipoPagamento` | int | 11 | Não | `id` do tipo ativo (RFC-05) — status do tipo: [[dominio/TBD-05-status-tipo-pagamento]] |
 | `dadosPagador` | object | — | Sim | Pagador |
 | `servicos` | array | — | Sim | Itens cobrados |
 | `webhook` | object | — | Não | Callback de status |

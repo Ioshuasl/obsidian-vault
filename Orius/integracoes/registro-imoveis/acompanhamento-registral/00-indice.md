@@ -42,7 +42,7 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 | **RFP-04** | Exclusão do protocolo | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-04-exclusao-protocolo]] | documentado |
 | **RFP-05** | Listagem dos protocolos integrados | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-05-listagem-protocolos]] | documentado |
 | **RFP-06** | Detalhamento do protocolo — V1 | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-06-detalhe-protocolo-v1]] | documentado |
-| **RFP-07** | Detalhamento do protocolo — V2 | — | pendente |
+| **RFP-07** | Detalhamento do protocolo — V2 | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-07-detalhe-protocolo-v2]] | documentado |
 
 **Fluxos (comportamento, não endpoint isolado):**
 
@@ -87,7 +87,9 @@ Hub: [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/00-in
 | **TBD-02** | ACTipoSolicitacao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-02-actipo-solicitacao]] | documentado |
 | **TBD-03** | ACCodigoStatus | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-03-accodigo-status]] | documentado |
 | **TBD-04** | ACFilaSituacao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-04-acfila-situacao]] | documentado |
-| TBD-05 … TBD-14 | Demais enums | — | pendente |
+| **TBD-05** | StatusTipoPagamento | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-05-status-tipo-pagamento]] | documentado |
+| **TBD-06** | ACTipoDescricao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-06-actipo-descricao]] | documentado |
+| TBD-07 … TBD-14 | Atendimento eletrônico | — | pendente |
 
 ---
 

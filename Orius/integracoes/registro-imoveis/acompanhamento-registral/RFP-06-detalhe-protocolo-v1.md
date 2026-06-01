@@ -11,7 +11,7 @@ status: documentado
 
 > **Índice:** [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]]
 > **Listagem:** [[RFP-05-listagem-protocolos]]
-> **Versão mais nova:** RFP-07 (pendente) — pode exigir CPF/CNPJ do apresentante além da senha
+> **Versão mais nova:** [[RFP-07-detalhe-protocolo-v2]] — `listaStatus` + rotas `/v2/`
 > **Autenticação API:** [[RFG-01-autenticacao]]
 
 # [RFP-06] — Detalhamento do protocolo (V1)
@@ -167,7 +167,7 @@ sequenceDiagram
 | `dataCadastro` / `dataAtualizacao` | Sim | Timestamps RIB |
 | `datas`, `valores` | Sim | Mesma semântica do [[RFP-01-envio-online]] |
 | `apresentante`, `interessado` | Sim | Dados completos |
-| `status` | Sim | `status` ([[dominio/TBD-03-accodigo-status]]), `data`, `descricao`, `tipoDescricao` (TBD-06 pendente) |
+| `status` | Sim | `status` ([[dominio/TBD-03-accodigo-status]]), `data`, `descricao`, `tipoDescricao` ([[dominio/TBD-06-actipo-descricao]]) |
 | `hashCobranca` | Sim | UUID para `GET /v1/cobranca/{hashCobranca}` |
 | `arquivos` | Sim | `hash` + `nome` de cada anexo |
 | `dataUltimaAtualizacaoSistema` | Sim | Última atualização recebida **do cartório** (independente do protocolo — v2.2) |
@@ -234,10 +234,11 @@ Documentação dedicada: **RFC-03** (pendente) · [[RFC-01-geracao-cobranca]] ·
 
 ## RFP-06 vs RFP-07
 
-| | V1 (esta nota) | V2 (pendente) |
+| | V1 (esta nota) | [[RFP-07-detalhe-protocolo-v2|V2]] |
 |--|----------------|---------------|
 | Detalhe | `GET /v1/protocolo/.../detalhes` | `GET /v2/protocolo/.../detalhes` |
-| Token | Senha do protocolo | Senha **ou** documento do apresentante |
+| Situação | `status` único | `listaStatus[]` com `arquivos` por andamento |
+| Token | Senha do protocolo | Senha (+ documento apresentante no texto do manual) |
 | Quando usar | Integrações legadas | Preferir V2 em projetos novos (manual v1.5+) |
 
 ---

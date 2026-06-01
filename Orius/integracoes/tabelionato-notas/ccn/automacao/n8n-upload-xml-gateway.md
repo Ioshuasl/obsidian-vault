@@ -70,7 +70,8 @@ Credenciais HML: [[env#CCN — Cadastro de pessoas e-notariado (homologação)]]
 | Coleção | `postman/CCN-Upload-XML-n8n.postman_collection.json` |
 | Environment (template) | `postman/CCN-Upload-XML-n8n.postman_environment.template.json` |
 | XML mínimo (cópia local) | `scripts/ccn/exemplo-ccn-minimo.xml` |
-| XML inválido (teste raiz) | `scripts/ccn/exemplo-ccn-sem-pessoas.xml` |
+| XML sem `<pessoa>` (lista vazia) | `scripts/ccn/exemplo-ccn-sem-pessoas.xml` |
+| XML inválido (teste raiz) | `scripts/ccn/exemplo-ccn-raiz-invalida.xml` |
 
 ### Variáveis do environment
 
@@ -83,13 +84,13 @@ Credenciais HML: [[env#CCN — Cadastro de pessoas e-notariado (homologação)]]
 | `CCN_X_AMBIENTE` | `homologacao` |
 | `CCN_XML_PATH` | Caminho absoluto do XML — ver abaixo |
 
-**`CCN_XML_PATH` (Windows):**
+**`CCN_XML_PATH` (Windows — use barras `/`):**
 
 ```
-c:\Users\kenio\automacoes e testes\scripts\ccn\exemplo-ccn-minimo.xml
+c:/Users/kenio/automacoes e testes/scripts/ccn/exemplo-ccn-minimo.xml
 ```
 
-No Postman, o request **Upload XML CCN — HML** usa esse caminho no campo `file` (pre-request). Se preferir, selecione o arquivo manualmente no body **form-data**.
+Se o Postman enviar o **caminho como texto** em vez do arquivo, o workflow retorna `arquivo_invalido` com orientação. Alternativa: selecione o `.xml` manualmente no body **form-data** (tipo **File**).
 
 ### Passo a passo
 
@@ -99,21 +100,15 @@ No Postman, o request **Upload XML CCN — HML** usa esse caminho no campo `file
 4. Envie **Upload XML CCN — HML** — esperado HTTP `200`, `success: true`, `upload.id` e `upload.location` (salvos no env como `ccn_upload_id` / `ccn_upload_location`).
 5. Requests de erro (422): sem arquivo, sem API key, raiz inválida.
 
-### Exemplo XML mínimo (válido)
+### Exemplo XML (estrutura CCN16052023-1)
 
-Arquivo espelhado em `scripts/ccn/exemplo-ccn-minimo.xml`. Raiz `<pessoas>` + um CPF/nome — suficiente para passar na validação local e no upload HML.
+Arquivo local: `scripts/ccn/exemplo-ccn-minimo.xml` — mesma **árvore de tags** de `CCN16052023-1.xml` (referência de homologação), com imagens em base64 mínimo (`iVBORw0KGgo…`) para manter o arquivo leve (~4 KB vs. ~1 MB do original).
 
-```xml
-<?xml version="1.0" encoding="ISO8859-1"?>
-<pessoas>
-  <pessoa>
-    <cpf>11144477735</cpf>
-    <nome>Joao da Silva</nome>
-  </pessoa>
-</pessoas>
-```
+Blocos presentes (ordem igual ao original): identificação, `endereco`, `observacao`, `documento`, `carteiraHabilitacao`, duas `biometria`, `ficha` (3× `imagensFicha`), `imagemFoto`, `anexo`, `enderecoTrabalho`, flags PLD, `conjuge`, `fichaBloqueada`.
 
-XML completo com todos os grupos de campos: [[Orius/integracoes/tabelionato-notas/ccn/xml/exemplo-xml]].
+> **Nota:** o original **não** inclui `chaveRegistro`, `dataRegistro`, `cartorio`, `termoTitularidade`, `certidaoCasamento` nem `fotoVerificada` — estes foram omitidos de propósito para espelhar o arquivo real.
+
+XML completo de referência (1 pessoa, imagens reais): `C:\Users\kenio\Downloads\CCN16052023-1.xml` · Documentação de campos: [[Orius/integracoes/tabelionato-notas/ccn/xml/exemplo-xml]].
 
 ## Push
 

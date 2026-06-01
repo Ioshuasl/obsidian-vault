@@ -25,7 +25,7 @@ flowchart TB
     POL[Mapa API polígonos]
   end
   subgraph rib [RIB - registrodeimoveis.org.br]
-    ACOMP[Acompanhamento + Pagamentos]
+    APIRI[API Registro de Imóveis]
     COB[Cobrança]
     ED[Edital eletrônico]
   end
@@ -33,7 +33,7 @@ flowchart TB
   RI --> PROT
   RI --> MAPA
   RI --> POL
-  RI --> ACOMP
+  RI --> APIRI
   RI --> COB
   RI --> ED
   ACOMP --> RIBhub[[RIB swagger]]
@@ -41,7 +41,7 @@ flowchart TB
   PROT --> ONRhub
   MAPA --> ONRhub
   POL --> ONRhub
-  ACOMP -. mesmo swagger .-> COB
+  APIRI -. mesmo swagger .-> COB
   COB -. mesmo swagger .-> ED
 ```
 
@@ -64,8 +64,8 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 | **Protocolo ONR** | protocolo, exame e cálculo, registro eletrônico | [[Orius/integracoes/registro-imoveis/onr-protocolo]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / estatísticas ONR** | mapa ONR, estatísticas, extrato, DOI, DOIWEB, hash | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] · [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia|guia]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / API polígonos (SIG-RI)** | polígono, shapefile, SIG-RI, SIGEF, IERI-e, georreferenciamento | [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos]] | [[Orius/integracoes/centrais/onr]] |
-| **Acompanhamento registral + pagamentos RIB** | protocolo, acompanhamento, exigência, PIX, RFP, RFC, RAE | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]] · [[Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral|visão geral]] | api.registrodeimoveis.org.br |
-| **Cobrança RIB** | cobrança, pagamento, hash, RFC | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice#Cobrança e pagamentos|RFC-01…07]] · [[Orius/integracoes/registro-imoveis/rib-cobranca|legado]] | registrodeimoveis.org.br |
+| **API Registro de Imóveis (RIB)** | protocolo, acompanhamento, exigência, PIX, RFP, RFC, RAE | [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice]] · [[Orius/integracoes/registro-imoveis/api-registro-imoveis/visao-geral|visão geral]] · [Swagger](https://www.registrodeimoveis.org.br/swagger/index.html) | api.registrodeimoveis.org.br |
+| **Cobrança RIB** (mesma API) | cobrança, pagamento, hash, RFC | [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice#Cobrança e pagamentos|RFC-01…07]] · [[Orius/integracoes/registro-imoveis/rib-cobranca|legado]] | mesmo Swagger |
 | **Edital RIB** | edital, diário registral, JWT | [[Orius/integracoes/registro-imoveis/rib-edital]] | api.registrodeimoveis.org.br |
 
 ## URLs de referência

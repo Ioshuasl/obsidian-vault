@@ -85,7 +85,7 @@ MAPA_ONR_API_BEARER_POLIGONOS=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkI
 
 > `POST /v1/auth/token` em `api.registrodeimoveis.org.br` (homolog: `testes-api.registrodeimoveis.org.br`).  
 > **Não** repetir `client_secret` nas notas — só referenciar esta seção.  
-> **Docs:** [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFG-01-autenticacao]] · [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]]
+> **Docs:** [[Orius/integracoes/registro-imoveis/api-registro-imoveis/RFG-01-autenticacao]] · [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice]]
 
 | Ambiente | Base URL |
 |----------|----------|

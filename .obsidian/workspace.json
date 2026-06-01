@@ -183,6 +183,14 @@
   },
   "active": "2f384d181413af64",
   "lastOpenFiles": [
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-04-acfila-situacao.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-03-accodigo-status.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-02-actipo-solicitacao.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-01-status-cobranca.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/00-indice-dominio.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-04-exclusao-protocolo.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-03-cobranca-automatizada.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-02-envio-lote.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-01-envio-online.md",
@@ -204,13 +212,6 @@
     "Bem-vindo.md",
     "Orius/desenvolvimento/frontend/protesto/telas/P_TITULO.md",
     "Orius/desenvolvimento/frontend/protesto/telas/P_TEMPLATE.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_PESSOA_VINCULO.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_PESSOA.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_OCORRENCIA_ANDAMENTO.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_OCORRENCIAS.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_MOTIVOS_CANCELAMENTO.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_MOTIVOS.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_LIVRO_NATUREZA.md",
     "Sem título.base",
     "Orius/empresa/produtos/notas",
     "Orius/empresa/produtos/imoveis",
@@ -218,7 +219,6 @@
     "Orius/desenvolvimento/frontend/protesto/telas",
     "Orius/desenvolvimento/frontend/protesto",
     "Orius/desenvolvimento/frontend",
-    "Meta/integracoes/plane/scripts/create-protesto-frontend-tasks.js",
     "Sem título.canvas"
   ]
 }

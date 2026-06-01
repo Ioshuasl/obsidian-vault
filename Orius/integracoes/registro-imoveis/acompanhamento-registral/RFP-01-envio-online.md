@@ -38,7 +38,7 @@ No cadastro o RIB valida os campos; problemas não fatais aparecem em **`alertas
 - [ ] `protocolo` e `tipoSolicitacao` definidos pelo cartório
 - [ ] `apresentante.documento` (CPF/CNPJ, só números)
 - [ ] Se enviar `cobranca`: PIX ou BOLETO + pagador + `servicos` + vencimento
-- [ ] Domínios: ver seção [Tabelas de domínio](#tabelas-de-domínio) abaixo (manual TBD-02, TBD-03, TBD-06)
+- [ ] Domínios: [[dominio/TBD-02-actipo-solicitacao|TBD-02]], [[dominio/TBD-03-accodigo-status|TBD-03]]; `tipoDescricao` → TBD-06 (pendente)
 
 ---
 
@@ -58,7 +58,7 @@ No cadastro o RIB valida os campos; problemas não fatais aparecem em **`alertas
 | `protocolo` | string | 30 | Sim | Número do protocolo no cartório |
 | `codigoSecundario` | string | 50 | Não | Código auxiliar ao protocolo (v2.1+) |
 | `senha` | string | 20 | Não | Senha/código verificador para consulta pública |
-| `tipoSolicitacao` | int | 1 | Sim | `ACTipoSolicitacao` — ver [TBD-02](#tbd-02-actiposolicitacao) |
+| `tipoSolicitacao` | int | 1 | Sim | [[dominio/TBD-02-actipo-solicitacao|ACTipoSolicitacao]] |
 | `datas` | object | — | Não | Datas do título |
 | `valores` | object | — | Não | Valores financeiros |
 | `apresentante` | object | — | Sim | Quem apresenta o título |
@@ -95,10 +95,10 @@ No cadastro o RIB valida os campos; problemas não fatais aparecem em **`alertas
 
 | Campo | Tipo | Tam. | Obrig. | Descrição |
 |-------|------|------|--------|-----------|
-| `status` | int | 11 | Não | Código `ACCodigoStatus` — [TBD-03](#tbd-03-accodigostatus) |
+| `status` | int | 11 | Não | [[dominio/TBD-03-accodigo-status|ACCodigoStatus]] |
 | `data` | datetime | 19 | Não | Data da situação (`YYYY-MM-DD HH:mm:ss`) |
 | `descricao` | string | — | Não | Texto da situação |
-| `tipoDescricao` | string | 20 | Não | Formato do conteúdo — [TBD-06](#tbd-06-actipodescricao) |
+| `tipoDescricao` | string | 20 | Não | `ACTipoDescricao` (TBD-06, pendente) |
 
 ### Objeto `cobranca` (opcional no raiz; se enviado, preencher obrigatórios)
 
@@ -280,45 +280,21 @@ Ver [[Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral#Fo
 | **Sem anexo** | Arquivos PDF/imagem etc. → [[RFP-02-envio-lote|RFP-02]] (fila em background) |
 | **Cobrança no mesmo POST** | Objeto `cobranca` opcional; se presente, todos os subcampos obrigatórios da cobrança devem ser enviados |
 | **Alertas ≠ erro HTTP** | `alertas` preenchido indica inconsistências leves; tratar no sistema e exibir ao operador |
-| **Cobrança automática dedicada** | Fluxo alternativo: **RFP-03** (após protocolo já existir) |
+| **Cobrança automática dedicada** | Fluxo alternativo: [[RFP-03-cobranca-automatizada|RFP-03]] (após protocolo já existir) |
 | **Consulta posterior** | Listagem/detalhe: **RFP-05**, **RFP-06**, **RFP-07** — [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice|índice]] |
 
 ---
 
-## Tabelas de domínio
+## Tabelas de domínio (neste endpoint)
 
-Valores completos no manual bruto (final do PDF). Resumo dos mais usados neste endpoint:
+| Campo | Tabela |
+|-------|--------|
+| `tipoSolicitacao` | [[dominio/TBD-02-actipo-solicitacao]] |
+| `status.status` | [[dominio/TBD-03-accodigo-status]] |
+| `status.tipoDescricao` | TBD-06 (pendente) |
+| Status da cobrança gerada | [[dominio/TBD-01-status-cobranca]] |
 
-### TBD-02 — ACTipoSolicitacao
-
-| Código | Descrição |
-|--------|-----------|
-| 1 | Registro |
-| 2 | Exame e cálculo |
-
-### TBD-03 — ACCodigoStatus
-
-| Código | Descrição cartório | Descrição usuário (site) |
-|--------|-------------------|--------------------------|
-| 1 | Título com reingresso | Exame |
-| 2 | Cancelado | Cancelado |
-| 3 | Título pronto para retirada | Pronto |
-| 4 | Título prenotado | Exame |
-| 5 | Exame e cálculo concluído | Pronto |
-| 6 | Título Registrado - não disponível para retirada | Registrado |
-| 7 | Nota de exigência | Pendente |
-| 8 | Título entregue | Entregue |
-| … | … | … (códigos 9–23 no manual) |
-
-### TBD-06 — ACTipoDescricao
-
-| Valor | Significado |
-|-------|-------------|
-| `texto` | Texto puro |
-| `html` | HTML |
-| `pdf`, `csv`, `rtf`, `zip`, `rar`, `7z`, `json` | Conteúdo em **base64** do arquivo |
-
-> Notas `dominio/TBD-xx` no vault: a criar no hub [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice#Tabelas de domínio]].
+Índice completo: [[dominio/00-indice-dominio]].
 
 ---
 
@@ -344,8 +320,9 @@ Fluxo completo de envio/processamento: **FFP-01**, **FFP-02** (pendente no índi
 | Código | Relação |
 |--------|---------|
 | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFG-01-autenticacao]] | Token obrigatório |
-| RFP-02 | Protocolo com anexos (pendente) |
-| RFP-03 | Cobrança após cadastro (pendente) |
+| [[RFP-02-envio-lote]] | Protocolo com anexos e fila |
+| [[RFP-03-cobranca-automatizada]] | Cobrança após cadastro (lote) |
+| [[RFP-04-exclusao-protocolo]] | Exclusão do protocolo no RIB |
 | RFP-05 / 06 / 07 | Listar e detalhar (pendente) |
 | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | Nota legada sobre `/v1/cobranca` |
 

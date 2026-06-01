@@ -18,6 +18,7 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 |-----|----------|
 | Visão geral (URLs, Swagger, auth global) | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral]] |
 | Template para novas notas | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/_template-funcionalidade]] |
+| Tabelas de domínio (TBD) | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/00-indice-dominio]] |
 
 **Credenciais:** [[env]] (seção RIB — quando cadastrada). **Outras APIs no mesmo Swagger:** [[Orius/integracoes/registro-imoveis/rib-cobranca]], [[Orius/integracoes/registro-imoveis/rib-edital]].
 
@@ -37,8 +38,8 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 |--------|-----------|------|--------|
 | **RFP-01** | Envio online (sem anexo) | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-01-envio-online]] | documentado |
 | **RFP-02** | Envio em lote (com anexos, background) | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-02-envio-lote]] | documentado |
-| **RFP-03** | Cobrança automatizada no protocolo | — | pendente |
-| **RFP-04** | Exclusão do protocolo | — | pendente |
+| **RFP-03** | Cobrança automatizada no protocolo | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-03-cobranca-automatizada]] | documentado |
+| **RFP-04** | Exclusão do protocolo | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-04-exclusao-protocolo]] | documentado |
 | **RFP-05** | Listagem dos protocolos integrados | — | pendente |
 | **RFP-06** | Detalhamento do protocolo — V1 | — | pendente |
 | **RFP-07** | Detalhamento do protocolo — V2 | — | pendente |
@@ -78,9 +79,15 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 
 ## Tabelas de domínio
 
-| Código | Descrição | Nota | Status |
-|--------|-----------|------|--------|
-| TBD-01 … TBD-14 | Enums (status, tipos, filas, etc.) | pasta `dominio/` (futuro) | pendente |
+Hub: [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/00-indice-dominio]]
+
+| Código | Nome | Nota | Status |
+|--------|------|------|--------|
+| **TBD-01** | StatusCobranca | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-01-status-cobranca]] | documentado |
+| **TBD-02** | ACTipoSolicitacao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-02-actipo-solicitacao]] | documentado |
+| **TBD-03** | ACCodigoStatus | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-03-accodigo-status]] | documentado |
+| **TBD-04** | ACFilaSituacao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-04-acfila-situacao]] | documentado |
+| TBD-05 … TBD-14 | Demais enums | — | pendente |
 
 ---
 

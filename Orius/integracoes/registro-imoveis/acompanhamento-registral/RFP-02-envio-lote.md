@@ -71,7 +71,7 @@ Estrutura **igual ao RFP-01** por item, mais o campo **`arquivos`**:
 | `protocolo` | string | 30 | Sim | Número do protocolo no cartório |
 | `codigoSecundario` | string | 50 | Não | Código auxiliar |
 | `senha` | string | 20 | Não | Código verificador para consulta pública |
-| `tipoSolicitacao` | int | 1 | Sim | `ACTipoSolicitacao` (TBD-02) |
+| `tipoSolicitacao` | int | 1 | Sim | [[dominio/TBD-02-actipo-solicitacao|ACTipoSolicitacao]] |
 | `datas` | object | — | Não | `protocolo`, `previsaoEntrega` (dates) |
 | `valores` | object | — | Não | `deposito`, `emolumentos` |
 | `apresentante` | object | — | Sim | `documento` obrigatório |
@@ -189,7 +189,7 @@ Lista filas de processamento do cartório (paginado).
 |-----------|------|------|--------|-----------|
 | `registrosPorPagina` | int | 3 | Não | Padrão **50**, máximo **100** |
 | `numeroPagina` | int | — | Não | Página (base conforme API) |
-| `situacao` | int | 1 | Não | Filtro `ACFilaSituacao` (TBD-04) |
+| `situacao` | int | 1 | Não | Filtro [[dominio/TBD-04-acfila-situacao|ACFilaSituacao]] |
 | `dataInicialCadastro` | date | 10 | Não | Filtro início (`YYYY-MM-DD`) |
 | `dataFinalCadastro` | date | 10 | Não | Filtro fim |
 
@@ -289,19 +289,14 @@ Detalhe de uma fila, com histórico de situações.
 
 ---
 
-## Tabela de domínio — ACFilaSituacao (TBD-04)
+## Tabelas de domínio (neste endpoint)
 
-Usada em `situacao` (listagem, detalhe e histórico):
+| Contexto | Tabela |
+|----------|--------|
+| `situacao` da fila (GET) | [[dominio/TBD-04-acfila-situacao]] |
+| `tipoSolicitacao`, `status.status` no body | [[dominio/TBD-02-actipo-solicitacao]], [[dominio/TBD-03-accodigo-status]] |
 
-| Código | Descrição |
-|--------|-----------|
-| 0 | Pendente |
-| 1 | Em processamento |
-| 2 | Processado com sucesso |
-| 3 | Processado com alertas |
-| 4 | Processado com erros |
-
-Outros domínios do protocolo (tipo solicitação, status do título, cobrança): ver [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-01-envio-online#Tabelas de domínio|RFP-01 — Tabelas de domínio]].
+Índice: [[dominio/00-indice-dominio]].
 
 ---
 
@@ -337,7 +332,7 @@ Fluxos conceituais do manual: **FFP-01**, **FFP-02** (pendentes no índice).
 | **Anexos por URL** | RIB faz download a partir de `arquivos[].url`; garantir disponibilidade até o processamento |
 | **Lote ≠ transação única** | Vários protocolos no mesmo POST compartilham uma fila |
 | **Alertas não bloqueiam fila** | Validações com aviso ainda enfileiram; revisar `alertas` e depois `situacao` |
-| **Cobrança no lote** | Mesma estrutura RFP-01; webhook de pagamento documentado também em RFP-03 |
+| **Cobrança no lote** | Mesma estrutura RFP-01; fluxo dedicado pós-cadastro: [[RFP-03-cobranca-automatizada]] |
 | **Sem lote para 1 protocolo simples** | Se não há anexo, preferir [[RFP-01-envio-online]] (resposta imediata com `hash` do protocolo) |
 
 ---
@@ -347,7 +342,8 @@ Fluxos conceituais do manual: **FFP-01**, **FFP-02** (pendentes no índice).
 | Código | Relação |
 |--------|---------|
 | [[RFP-01-envio-online]] | Envio instantâneo sem anexo |
-| RFP-03 | Cobrança automatizada pós-protocolo (pendente) |
+| [[RFP-03-cobranca-automatizada]] | Cobrança automatizada pós-protocolo |
+| [[RFP-04-exclusao-protocolo]] | Exclusão (cobrança não cancela sozinha) |
 | RFP-05 / 06 / 07 | Consultar protocolos após processamento (pendente) |
 | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]] | Hub |
 

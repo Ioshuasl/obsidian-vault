@@ -85,7 +85,7 @@ flowchart LR
 | Protocolo | RFP-01 … RFP-07, FFP-01/02 | Cadastro online/lote, listagem, detalhe V1/V2, exclusão |
 | Cobrança | RFC-01 … RFC-07 | Gerar, listar, detalhar, cancelar, tipos de pagamento, PIX, vínculo protocolo |
 | Atendimento eletrônico | RAE-01 … RAE-03 | Listar/detalhar exigência, cadastrar interação |
-| Domínio | TBD-01 … TBD-14 | Tabelas de status, tipos, filas (referenciadas nos bodies) |
+| Domínio | TBD-01 … TBD-14 | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/00-indice-dominio|Tabelas de domínio]] |
 
 Índice completo com status de cada nota: [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]].
 
@@ -127,7 +127,7 @@ flowchart LR
 
 1. Uma nota por **código** (`RFP-01`, `RFC-02`, …) usando o [[Orius/integracoes/registro-imoveis/acompanhamento-registral/_template-funcionalidade|template]].
 2. Manual convertido no repo = **fonte bruta**; as notas do vault = resumo operacional + links cruzados.
-3. Tabelas de domínio centralizadas em `dominio/` (a criar), referenciadas pelas notas de endpoint.
+3. Tabelas de domínio em [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/00-indice-dominio|dominio/]], referenciadas pelas notas de endpoint.
 
 ---
 

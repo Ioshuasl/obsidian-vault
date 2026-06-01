@@ -92,7 +92,11 @@ Hub: [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/00-in
 | **TBD-07** | AETipoAtendimento | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-07-aetipo-atendimento]] | documentado |
 | **TBD-08** | AESituacao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-08-aesituacao]] | documentado |
 | **TBD-09** | AEAtendimentoPrioritario | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-09-aeatendimento-prioritario]] | documentado |
-| TBD-10 … TBD-14 | Demais enums AE | — | pendente |
+| **TBD-10** | AEFormaAtendimento | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-10-aeforma-atendimento]] | documentado |
+| **TBD-11** | AETipoContato | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-11-aetipo-contato]] | documentado |
+| **TBD-12** | AEOrigem | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-12-aeorigem]] | documentado |
+| **TBD-13** | AEAcao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-13-aeacao]] | documentado |
+| **TBD-14** | AEExtensoesArquivos | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-14-aeextensoes-arquivos]] | documentado |
 
 ---
 

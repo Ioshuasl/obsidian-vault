@@ -26,12 +26,13 @@ Enums e códigos referenciados nos bodies e respostas da API RIB (manual v2.2). 
 | **TBD-07** | `AETipoAtendimento` | [[TBD-07-aetipo-atendimento]] | `tipoAtendimento` (RAE; cód. 90/91 para RI) |
 | **TBD-08** | `AESituacao` | [[TBD-08-aesituacao]] | `status` do atendimento eletrônico (RAE) |
 | **TBD-09** | `AEAtendimentoPrioritario` | [[TBD-09-aeatendimento-prioritario]] | `atendimentoPrioritario` (RAE) |
+| **TBD-10** | `AEFormaAtendimento` | [[TBD-10-aeforma-atendimento]] | `formaAtendimento` (RAE-02, RAE-03) |
+| **TBD-11** | `AETipoContato` | [[TBD-11-aetipo-contato]] | `destinoContato` (RAE-02) |
+| **TBD-12** | `AEOrigem` | [[TBD-12-aeorigem]] | `interacoes[].origem` (RAE-02) |
+| **TBD-13** | `AEAcao` | [[TBD-13-aeacao]] | Body `acao` em RAE-03 |
+| **TBD-14** | `AEExtensoesArquivos` | [[TBD-14-aeextensoes-arquivos]] | `arquivos[].tipo` em RAE-03 (slugs) |
 
-## Pendentes (atendimento eletrônico)
-
-| Código | Nome | Uso previsto |
-|--------|------|----------------|
-| TBD-10 … TBD-14 | AE* (forma, contato, origem, ação, extensões) | RAE-01 … RAE-03 |
+> **Atendimento eletrônico:** TBD-07 … TBD-14 cobrem todos os enums AE do manual v2.2.
 
 ---
 

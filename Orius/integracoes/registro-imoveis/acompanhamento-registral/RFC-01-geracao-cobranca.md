@@ -11,7 +11,7 @@ status: documentado
 
 > **Índice:** [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]]
 > **Autenticação:** [[RFG-01-autenticacao]]
-> **Listagem / detalhe:** [[RFC-02-listagem-cobrancas]] · RFC-03 (pendente)
+> **Listagem / detalhe:** [[RFC-02-listagem-cobrancas]] · [[RFC-03-detalhe-cobranca]]
 > **Nota legada:** [[Orius/integracoes/registro-imoveis/rib-cobranca]]
 
 # [RFC-01] — Geração de cobrança
@@ -183,8 +183,8 @@ Mesmas regras de [[RFP-03-cobranca-automatizada#Webhook de pagamento]]:
 |------|---------|
 | **Avulsa vs protocolo** | RFC-01 não exige `protocolo` no body; vincular no sistema via `identificadorCliente` ou depois RFC-07 |
 | **Valores** | Sempre formato numérico “centavos × 1000” conforme exemplos do manual (R$ 100,00 = `100000`) |
-| **Consulta** | Resumo em [[RFC-02-listagem-cobrancas]]; completo em RFC-03 |
-| **Cancelamento** | RFC-04 (pendente) |
+| **Consulta** | Resumo em [[RFC-02-listagem-cobrancas]]; completo em [[RFC-03-detalhe-cobranca]] |
+| **Cancelamento** | [[RFC-04-cancelamento-cobranca]] |
 
 ---
 

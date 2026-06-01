@@ -98,14 +98,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 | **Atualizar dados** | Reenviar protocolo (RFP-01 / RFP-02) — **sobrescreve** conteúdo e situação; **não** precisa DELETE |
 | **Excluir registro** | DELETE — protocolo **some** das consultas (RFP-05/06/07) |
 | **Cobrança existente** | **Não** é cancelada automaticamente na exclusão do protocolo |
-| **Cancelar cobrança** | Usar **RFC-04** (cancelamento de cobrança) separadamente, se aplicável |
+| **Cancelar cobrança** | [[RFC-04-cancelamento-cobranca]] separadamente, se aplicável |
 
 ```mermaid
 flowchart LR
   A[Quer só corrigir dados?] -->|Sim| B[POST RFP-01 ou lote RFP-02]
   A -->|Não, remover do RIB| C[DELETE RFP-04]
   C --> D{Cobrança ativa?}
-  D -->|Sim| E[RFC-04 cancelar cobrança]
+  D -->|Sim| E[[RFC-04-cancelamento-cobranca]]
   D -->|Não| F[Fim]
 ```
 
@@ -119,7 +119,7 @@ flowchart LR
 | [[RFP-02-envio-lote]] | Cadastro em lote |
 | [[RFP-03-cobranca-automatizada]] | Cobrança não cancelada no DELETE |
 | [[RFP-05-listagem-protocolos]] / [[RFP-06-detalhe-protocolo-v1]] | Consultas após integração |
-| RFC-04 | Cancelamento de cobrança (pendente) |
+| [[RFC-04-cancelamento-cobranca]] | Cancelamento de cobrança |
 
 **Manual bruto:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[RFP-04]` (pág. 37 do PDF v2.2)
 

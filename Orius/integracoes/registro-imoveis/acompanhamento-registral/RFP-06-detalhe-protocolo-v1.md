@@ -228,7 +228,7 @@ Consulta cobrança a partir do `hashCobranca` retornado no detalhe.
 | `valorTotal` / `servicos[].valor` | Formato numérico inteiro — ex.: R$ 100,00 → `100000` (conforme manual) |
 | `url` | Link de pagamento PIX/boleto |
 
-Documentação dedicada: **RFC-03** (pendente) · [[RFC-01-geracao-cobranca]] · [[RFC-02-listagem-cobrancas]] · [[rib-cobranca|legado]].
+Documentação dedicada: [[RFC-03-detalhe-cobranca]] · [[RFC-01-geracao-cobranca]] · [[RFC-02-listagem-cobrancas]] · [[rib-cobranca|legado]].
 
 ---
 

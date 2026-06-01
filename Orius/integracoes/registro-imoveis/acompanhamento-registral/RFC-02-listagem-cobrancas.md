@@ -11,12 +11,12 @@ status: documentado
 
 > **Índice:** [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]]
 > **Autenticação:** [[RFG-01-autenticacao]]
-> **Gerar cobrança:** [[RFC-01-geracao-cobranca]] · **Detalhe:** RFC-03 (pendente)
+> **Gerar cobrança:** [[RFC-01-geracao-cobranca]] · **Detalhe:** [[RFC-03-detalhe-cobranca]]
 > **Nota legada:** [[Orius/integracoes/registro-imoveis/rib-cobranca]]
 
 # [RFC-02] — Listagem das cobranças
 
-**Uma frase:** consultar **todas as cobranças** do cartório com **paginação e filtros**, retornando dados **resumidos** — detalhamento completo em **RFC-03** (`GET /v1/cobranca/{hash}`).
+**Uma frase:** consultar **todas as cobranças** do cartório com **paginação e filtros**, retornando dados **resumidos** — detalhamento completo em [[RFC-03-detalhe-cobranca]] (`GET /v1/cobranca/{hash}`).
 
 ---
 
@@ -116,7 +116,7 @@ Authorization: Bearer …
 
 | Campo | Tam. | Descrição |
 |-------|------|-----------|
-| `hash` | 36 | UUID — detalhe em RFC-03 |
+| `hash` | 36 | UUID — [[RFC-03-detalhe-cobranca]] |
 | `status` | 11 | [[dominio/TBD-01-status-cobranca]] |
 | `dataStatus` | 10 | Data da situação |
 | `url` | — | Link de acesso |
@@ -146,7 +146,7 @@ Padrão RIB: `codigo`, `descricao`, `campos`.
 flowchart LR
   A[[RFC-01-geracao-cobranca]] --> B[hash]
   B --> C[GET /v1/cobranca]
-  C --> D[RFC-03 detalhe]
+  C --> D[[RFC-03-detalhe-cobranca]]
 ```
 
 ---
@@ -155,7 +155,7 @@ flowchart LR
 
 | Regra | Detalhe |
 |-------|---------|
-| **Somente resumo** | Sem `dadosPagador` completo nem `servicos[]` — RFC-03 |
+| **Somente resumo** | Sem `dadosPagador` completo nem `servicos[]` — [[RFC-03-detalhe-cobranca]] |
 | **Filtro de status + data** | `dataInicialStatus` / `dataFinalStatus` exigem `status` na query |
 | **Mesmo path do POST** | `GET` e `POST` em `/v1/cobranca` — métodos diferentes |
 | **Protocolo** | `hash` pode vir também de [[RFP-06-detalhe-protocolo-v1|`hashCobranca`]] |
@@ -167,8 +167,8 @@ flowchart LR
 | Código | Relação |
 |--------|---------|
 | [[RFC-01-geracao-cobranca]] | Criação |
-| RFC-03 | `GET /v1/cobranca/{hash}` (pendente) |
-| RFC-04 | Cancelamento (pendente) |
+| [[RFC-03-detalhe-cobranca]] | `GET /v1/cobranca/{hash}` |
+| [[RFC-04-cancelamento-cobranca]] | `PATCH /v1/cobranca/{hash}` |
 | RFC-06 | Devolução PIX (pendente) |
 
 **Manual bruto:** `[RFC-02]` (págs. 69–70 do PDF v2.2)

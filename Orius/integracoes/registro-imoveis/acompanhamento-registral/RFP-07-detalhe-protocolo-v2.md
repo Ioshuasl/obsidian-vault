@@ -224,9 +224,7 @@ Mesma especificação da [[RFP-06-detalhe-protocolo-v1#4. GET `/v1/protocolo/{nu
 
 ## 5. GET `/v1/cobranca/{hashCobranca}`
 
-Detalhe da cobrança a partir de `hashCobranca` — mesma estrutura documentada em [[RFP-06-detalhe-protocolo-v1#5. GET `/v1/cobranca/{hashCobranca}` (acoplado ao detalhe V1)|RFP-06 §5]] e futura **RFC-03**.
-
-Resumo: `status` ([[dominio/TBD-01-status-cobranca]]), `url`, `valorTotal`, `tipoCobranca`, `dadosPagador`, `servicos[]`.
+Detalhe da cobrança: [[RFC-03-detalhe-cobranca]] (`GET /v1/cobranca/{hashCobranca}` — mesmo endpoint citado em [[RFP-06-detalhe-protocolo-v1#5. GET `/v1/cobranca/{hashCobranca}`]]).
 
 ---
 
@@ -247,7 +245,7 @@ Resumo: `status` ([[dominio/TBD-01-status-cobranca]]), `url`, `valorTotal`, `tip
 |--------|---------|
 | [[RFP-06-detalhe-protocolo-v1]] | Versão legada |
 | [[RFP-05-listagem-protocolos]] | Entrada do fluxo |
-| [[RFC-02-listagem-cobrancas]] / RFC-03 | Cobrança pelo `hash` |
+| [[RFC-02-listagem-cobrancas]] / [[RFC-03-detalhe-cobranca]] | Cobrança pelo `hash` |
 
 **Manual bruto:** `[RFP-07]` (págs. 51–62 do PDF v2.2)
 

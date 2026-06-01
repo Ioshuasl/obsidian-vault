@@ -167,7 +167,7 @@ Mesma documentação técnica do [[RFP-02-envio-lote#2. GET `/v1/fila/processame
 - Detalhe: `GET /v1/fila/processamento/protocolo/{hashFila}`
 - Situação: [[dominio/TBD-04-acfila-situacao|ACFilaSituacao]] — aguardar `2` (sucesso), `3` (alertas) ou `4` (erros)
 
-Após sucesso, consultar cobrança via [[RFC-02-listagem-cobrancas]] / RFC-03 ou [[RFP-06-detalhe-protocolo-v1]] (`hashCobranca`).
+Após sucesso, consultar cobrança via [[RFC-02-listagem-cobrancas]] / [[RFC-03-detalhe-cobranca]] ou [[RFP-06-detalhe-protocolo-v1]] (`hashCobranca`).
 
 ---
 

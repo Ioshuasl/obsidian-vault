@@ -183,6 +183,8 @@
   },
   "active": "2f384d181413af64",
   "lastOpenFiles": [
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-04-cancelamento-cobranca.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-03-detalhe-cobranca.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-06-actipo-descricao.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-05-status-tipo-pagamento.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-07-detalhe-protocolo-v2.md",
@@ -209,8 +211,6 @@
     "Orius/integracoes/registro-imoveis/rib-cobranca.md",
     "Orius/integracoes/registro-imoveis/rib-edital.md",
     "env.md",
-    "Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos.md",
-    "Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-referencia-api.md",
     "Orius/integracoes/registro-imoveis/onr-mapa-estatisticas.postman-collection.json",
     "Sem título.base",
     "Orius/empresa/produtos/notas",

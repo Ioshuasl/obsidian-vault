@@ -31,12 +31,12 @@ Situação de uma **cobrança** gerada no RIB (PIX, boleto, etc.).
 |----------|-------------|
 | Listagem de cobranças | Query `status` em [[RFC-02-listagem-cobrancas]] |
 | Geração / retorno | `status` em [[RFC-01-geracao-cobranca]] |
-| Detalhe da cobrança | **RFC-03** (pendente) · `GET /v1/cobranca/{hash}` em [[RFP-06-detalhe-protocolo-v1]] |
+| Detalhe da cobrança | [[RFC-03-detalhe-cobranca]] · também em [[RFP-06-detalhe-protocolo-v1]] / [[RFP-07-detalhe-protocolo-v2]] |
 | Filtros e painéis | [[Orius/integracoes/registro-imoveis/rib-cobranca]] |
 
 ## Relacionado
 
 - Geração: [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-01-envio-online#Objeto `cobranca`]], [[RFP-03-cobranca-automatizada]], RFC-01 (pendente)
-- Cancelamento: RFC-04 (pendente) — código `2` após cancelar
+- Cancelamento: [[RFC-04-cancelamento-cobranca]] — código `2` após cancelar
 
 **Manual bruto:** seção `[TBD-01] - StatusCobranca`

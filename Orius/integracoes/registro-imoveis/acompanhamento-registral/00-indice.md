@@ -59,8 +59,8 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 |--------|-----------|------|--------|
 | **RFC-01** | Geração de cobrança | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-01-geracao-cobranca]] | documentado |
 | **RFC-02** | Listagem das cobranças | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-02-listagem-cobrancas]] · [[Orius/integracoes/registro-imoveis/rib-cobranca|legado]] | documentado |
-| **RFC-03** | Detalhes da cobrança | — | pendente |
-| **RFC-04** | Cancelamento da cobrança | — | pendente |
+| **RFC-03** | Detalhes da cobrança | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-03-detalhe-cobranca]] | documentado |
+| **RFC-04** | Cancelamento da cobrança | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-04-cancelamento-cobranca]] | documentado |
 | **RFC-05** | Listagem dos tipos de pagamento | — | pendente |
 | **RFC-06** | Devolução de valores pagos no PIX | — | pendente |
 | **RFC-07** | Atualização do protocolo vinculado ao pagamento | — | pendente |

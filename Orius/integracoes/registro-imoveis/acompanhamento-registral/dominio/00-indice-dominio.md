@@ -21,14 +21,17 @@ Enums e códigos referenciados nos bodies e respostas da API RIB (manual v2.2). 
 | **TBD-02** | `ACTipoSolicitacao` | [[TBD-02-actipo-solicitacao]] | `tipoSolicitacao` (RFP-01 … RFP-07) |
 | **TBD-03** | `ACCodigoStatus` | [[TBD-03-accodigo-status]] | Código da situação do protocolo |
 | **TBD-04** | `ACFilaSituacao` | [[TBD-04-acfila-situacao]] | Fila de lote (RFP-02, RFP-03) |
-| **TBD-05** | `StatusTipoPagamento` | [[TBD-05-status-tipo-pagamento]] | Status do **tipo de pagamento** (RFC-05); ≠ TBD-01 |
+| **TBD-05** | `StatusTipoPagamento` | [[TBD-05-status-tipo-pagamento]] | [[RFC-05-listagem-tipos-pagamento]]; ≠ TBD-01 |
 | **TBD-06** | `ACTipoDescricao` | [[TBD-06-actipo-descricao]] | Formato de `status.descricao` / `listaStatus[].descricao` |
+| **TBD-07** | `AETipoAtendimento` | [[TBD-07-aetipo-atendimento]] | `tipoAtendimento` (RAE; cód. 90/91 para RI) |
+| **TBD-08** | `AESituacao` | [[TBD-08-aesituacao]] | `status` do atendimento eletrônico (RAE) |
+| **TBD-09** | `AEAtendimentoPrioritario` | [[TBD-09-aeatendimento-prioritario]] | `atendimentoPrioritario` (RAE) |
 
 ## Pendentes (atendimento eletrônico)
 
 | Código | Nome | Uso previsto |
 |--------|------|----------------|
-| TBD-07 … TBD-14 | AE* | RAE-01 … RAE-03 |
+| TBD-10 … TBD-14 | AE* (forma, contato, origem, ação, extensões) | RAE-01 … RAE-03 |
 
 ---
 

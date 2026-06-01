@@ -61,9 +61,9 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 | **RFC-02** | Listagem das cobranças | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-02-listagem-cobrancas]] · [[Orius/integracoes/registro-imoveis/rib-cobranca|legado]] | documentado |
 | **RFC-03** | Detalhes da cobrança | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-03-detalhe-cobranca]] | documentado |
 | **RFC-04** | Cancelamento da cobrança | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-04-cancelamento-cobranca]] | documentado |
-| **RFC-05** | Listagem dos tipos de pagamento | — | pendente |
-| **RFC-06** | Devolução de valores pagos no PIX | — | pendente |
-| **RFC-07** | Atualização do protocolo vinculado ao pagamento | — | pendente |
+| **RFC-05** | Listagem dos tipos de pagamento | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-05-listagem-tipos-pagamento]] | documentado |
+| **RFC-06** | Devolução de valores pagos no PIX | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-06-devolucao-pix]] | documentado |
+| **RFC-07** | Atualização do protocolo vinculado ao pagamento | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-07-atualizacao-protocolo-pagamento]] | documentado |
 
 ---
 
@@ -89,7 +89,10 @@ Hub: [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/00-in
 | **TBD-04** | ACFilaSituacao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-04-acfila-situacao]] | documentado |
 | **TBD-05** | StatusTipoPagamento | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-05-status-tipo-pagamento]] | documentado |
 | **TBD-06** | ACTipoDescricao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-06-actipo-descricao]] | documentado |
-| TBD-07 … TBD-14 | Atendimento eletrônico | — | pendente |
+| **TBD-07** | AETipoAtendimento | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-07-aetipo-atendimento]] | documentado |
+| **TBD-08** | AESituacao | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-08-aesituacao]] | documentado |
+| **TBD-09** | AEAtendimentoPrioritario | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-09-aeatendimento-prioritario]] | documentado |
+| TBD-10 … TBD-14 | Demais enums AE | — | pendente |
 
 ---
 

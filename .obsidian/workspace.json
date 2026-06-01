@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice.md",
+                "file": "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-07-atualizacao-protocolo-pagamento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-indice"
+              "title": "RFC-07-atualizacao-protocolo-pagamento"
             }
           }
         ]
@@ -183,12 +183,19 @@
   },
   "active": "2f384d181413af64",
   "lastOpenFiles": [
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-02-listagem-cobrancas.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-09-aeatendimento-prioritario.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-08-aesituacao.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-07-aetipo-atendimento.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-07-atualizacao-protocolo-pagamento.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-06-devolucao-pix.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-05-listagem-tipos-pagamento.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-04-cancelamento-cobranca.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-03-detalhe-cobranca.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-06-actipo-descricao.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio/TBD-05-status-tipo-pagamento.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-07-detalhe-protocolo-v2.md",
-    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-02-listagem-cobrancas.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-01-geracao-cobranca.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-06-detalhe-protocolo-v1.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-01-envio-online.md",
@@ -203,14 +210,7 @@
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-03-cobranca-automatizada.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-02-envio-lote.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral.md",
-    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFG-01-autenticacao.md",
-    "Orius/integracoes/registro-imoveis/onr-protocolo.md",
-    "Orius/integracoes/registro-imoveis/acompanhamento-registral/_template-funcionalidade.md",
-    "Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral",
-    "Orius/integracoes/registro-imoveis/rib-cobranca.md",
-    "Orius/integracoes/registro-imoveis/rib-edital.md",
-    "env.md",
     "Orius/integracoes/registro-imoveis/onr-mapa-estatisticas.postman-collection.json",
     "Sem título.base",
     "Orius/empresa/produtos/notas",

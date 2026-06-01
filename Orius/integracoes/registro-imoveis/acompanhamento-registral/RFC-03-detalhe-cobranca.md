@@ -129,12 +129,12 @@ Igual [[RFC-01-geracao-cobranca#Request]] — pagador com endereço obrigatório
 | Campo | Obrig. | Descrição |
 |-------|--------|-----------|
 | `hash` | Sim | UUID da operação de devolução |
-| `status` | Sim | Situação da devolução (enum não nomeado no manual — ver RFC-06) |
+| `status` | Sim | Situação da devolução (acompanhar via [[RFC-06-devolucao-pix]]) |
 | `valor` | Sim | Valor devolvido (formato inteiro) |
 | `dataCadastro` | Sim | Solicitação (`DateTime`) |
 | `dataAtualizacao` | Sim | Última atualização |
 
-Solicitar devolução: **RFC-06** (pendente).
+Solicitar devolução: [[RFC-06-devolucao-pix]].
 
 ### `pagamentoVinculado`
 
@@ -163,6 +163,8 @@ Padrão: `codigo`, `descricao`, `campos`.
 | Código | Relação |
 |--------|---------|
 | [[RFC-04-cancelamento-cobranca]] | `status` → `2` (cancelado) no portal RIB |
+| [[RFC-06-devolucao-pix]] | Solicitar devolução PIX |
+| [[RFC-07-atualizacao-protocolo-pagamento]] | Vincular protocolo à cobrança |
 | [[RFP-06-detalhe-protocolo-v1]] / [[RFP-07-detalhe-protocolo-v2]] | Origem do `hashCobranca` |
 | [[dominio/TBD-01-status-cobranca]] | Enum `status` |
 

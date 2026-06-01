@@ -106,7 +106,8 @@ flowchart LR
 | [[RFC-01-geracao-cobranca]] | Origem da cobrança |
 | [[RFC-03-detalhe-cobranca]] | Consulta completa antes/depois |
 | [[RFP-04-exclusao-protocolo]] | Excluir protocolo ≠ cancelar cobrança |
-| RFC-06 | Devolução PIX (outro fluxo) |
+| [[RFC-06-devolucao-pix]] | Devolução PIX (pagamento confirmado) |
+| [[RFC-07-atualizacao-protocolo-pagamento]] | Vincular protocolo (outro PATCH) |
 
 **Manual bruto:** `[RFC-04]` (pág. 78 do PDF v2.2)
 

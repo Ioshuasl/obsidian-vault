@@ -28,8 +28,8 @@ Situação de um **tipo de pagamento** cadastrado pelo cartório na intranet RIB
 
 | Contexto | Campo |
 |----------|-------|
-| **RFC-05** (pendente) | `GET /v1/cobranca/tipo/pagamento` — query `status` (filtro); item `dados[].status` |
-| [[RFC-01-geracao-cobranca]] | Body opcional `tipoPagamento` = **`id`** retornado pela RFC-05 (tipo **ativo**, código `1`) |
+| [[RFC-05-listagem-tipos-pagamento]] | `GET /v1/cobranca/tipo/pagamento` — query `status`; item `dados[].status` |
+| [[RFC-01-geracao-cobranca]] | Body opcional `tipoPagamento` = **`id`** (tipo **ativo**, `status=1`) |
 
 ### Fluxo típico
 

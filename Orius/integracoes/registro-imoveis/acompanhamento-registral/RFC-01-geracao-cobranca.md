@@ -29,7 +29,7 @@ Diferente de cobrança **no protocolo**: [[RFP-01-envio-online#Objeto `cobranca`
 | **Módulo de pagamentos** | Ativar na intranet RIB |
 | Manual | [manual-modulo-pagamentos](https://www.registrodeimoveis.org.br/manual-modulo-pagamentos) |
 | **Token** | [[RFG-01-autenticacao]] |
-| **tipoPagamento** (opcional) | Código pré-cadastrado — listar em **RFC-05** (pendente) |
+| **tipoPagamento** (opcional) | `id` de tipo ativo — [[RFC-05-listagem-tipos-pagamento]] |
 
 ---
 

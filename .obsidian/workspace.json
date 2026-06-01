@@ -183,6 +183,10 @@
   },
   "active": "2f384d181413af64",
   "lastOpenFiles": [
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/_template-funcionalidade.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral",
     "Orius/integracoes/registro-imoveis/rib-cobranca.md",
     "Orius/integracoes/registro-imoveis/rib-edital.md",
     "Orius/integracoes/registro-imoveis/onr-protocolo.md",
@@ -207,9 +211,6 @@
     "Orius/desenvolvimento/frontend/protesto/telas/P_LIVRO_ANDAMENTO.md",
     "Orius/desenvolvimento/frontend/protesto/telas/P_ESPECIE.md",
     "Orius/desenvolvimento/frontend/protesto/telas/P_CERTIDAO.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_BANCO.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_ARQUIVO_TITULO.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_ANDAMENTO.md",
     "Sem título.base",
     "Orius/empresa/produtos/notas",
     "Orius/empresa/produtos/imoveis",
@@ -218,7 +219,6 @@
     "Orius/desenvolvimento/frontend/protesto",
     "Orius/desenvolvimento/frontend",
     "Meta/integracoes/plane/scripts/create-protesto-frontend-tasks.js",
-    "Orius/desenvolvimento/api/protesto/rotas",
     "Sem título.canvas"
   ]
 }

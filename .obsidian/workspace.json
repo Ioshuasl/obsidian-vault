@@ -181,8 +181,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bdabd5d1c66e9496",
+  "active": "5e183696c2b71f3e",
   "lastOpenFiles": [
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/CNIB-04-responder-ordem.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/CNIB-03-visualizar-ordens.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/CNIB-02-consultar.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/CNIB-01-autenticacao.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/dominio/tipo-matricula.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/dominio/envelope-resposta.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/dominio/00-indice-dominio.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/dominio",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/00-indice.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/visao-geral.md",
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/visao-geral.md",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/FFP-01-fluxo-envio-protocolo.md",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice.md",
@@ -200,15 +211,6 @@
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-06-actipo-descricao.md",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-05-status-tipo-pagamento.md",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-04-acfila-situacao.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-03-accodigo-status.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-02-actipo-solicitacao.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-01-status-cobranca.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/00-indice-dominio.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/_template-funcionalidade.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/RFP-07-detalhe-protocolo-v2.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/RFP-06-detalhe-protocolo-v1.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/RFP-05-listagem-protocolos.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/RFP-04-exclusao-protocolo.md",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio",
@@ -217,8 +219,6 @@
     "Sem título.base",
     "Orius/empresa/produtos/notas",
     "Orius/empresa/produtos/imoveis",
-    "Orius/empresa/produtos/protesto",
-    "Orius/desenvolvimento/frontend/protesto/telas",
     "Sem título.canvas"
   ]
 }

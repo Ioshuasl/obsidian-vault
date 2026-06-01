@@ -167,7 +167,7 @@ Mesma documentação técnica do [[RFP-02-envio-lote#2. GET `/v1/fila/processame
 - Detalhe: `GET /v1/fila/processamento/protocolo/{hashFila}`
 - Situação: [[dominio/TBD-04-acfila-situacao|ACFilaSituacao]] — aguardar `2` (sucesso), `3` (alertas) ou `4` (erros)
 
-Após sucesso, consultar cobrança gerada via **RFC-02** / **RFC-03** ou detalhe do protocolo (**RFP-06** / **RFP-07**).
+Após sucesso, consultar cobrança via [[RFC-02-listagem-cobrancas]] / RFC-03 ou [[RFP-06-detalhe-protocolo-v1]] (`hashCobranca`).
 
 ---
 
@@ -206,7 +206,7 @@ sequenceDiagram
 | [[RFP-02-envio-lote]] | Endpoints e fila (referência técnica completa) |
 | [[RFP-01-envio-online]] | Cobrança no mesmo POST do cadastro |
 | [[RFP-04-exclusao-protocolo]] | Excluir protocolo (cobrança permanece) |
-| RFC-01 / RFC-02 | APIs de cobrança avulsas (pendente no índice) |
+| [[RFC-01-geracao-cobranca]] / [[RFC-02-listagem-cobrancas]] | Cobrança avulsa (sem protocolo) |
 | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | Nota legada RIB |
 
 **Manual bruto:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[RFP-03]` (págs. 27–36 do PDF v2.2)

@@ -27,8 +27,9 @@ Situação de uma **cobrança** gerada no RIB (PIX, boleto, etc.).
 
 | Contexto | Campo / API |
 |----------|-------------|
-| Listagem de cobranças | Query `status` em **RFC-02** (pendente) |
-| Detalhe da cobrança | Resposta **RFC-03** (pendente) |
+| Listagem de cobranças | Query `status` em [[RFC-02-listagem-cobrancas]] |
+| Geração / retorno | `status` em [[RFC-01-geracao-cobranca]] |
+| Detalhe da cobrança | **RFC-03** (pendente) · `GET /v1/cobranca/{hash}` em [[RFP-06-detalhe-protocolo-v1]] |
 | Filtros e painéis | [[Orius/integracoes/registro-imoveis/rib-cobranca]] |
 
 ## Relacionado

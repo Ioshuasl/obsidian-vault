@@ -118,7 +118,7 @@ flowchart LR
 | [[RFP-01-envio-online]] | Cadastro / sobrescrita online |
 | [[RFP-02-envio-lote]] | Cadastro em lote |
 | [[RFP-03-cobranca-automatizada]] | Cobrança não cancelada no DELETE |
-| RFP-05 / 06 / 07 | Consultas após integração (pendente) |
+| [[RFP-05-listagem-protocolos]] / [[RFP-06-detalhe-protocolo-v1]] | Consultas após integração |
 | RFC-04 | Cancelamento de cobrança (pendente) |
 
 **Manual bruto:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[RFP-04]` (pág. 37 do PDF v2.2)

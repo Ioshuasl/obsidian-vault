@@ -281,7 +281,7 @@ Ver [[Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral#Fo
 | **Cobrança no mesmo POST** | Objeto `cobranca` opcional; se presente, todos os subcampos obrigatórios da cobrança devem ser enviados |
 | **Alertas ≠ erro HTTP** | `alertas` preenchido indica inconsistências leves; tratar no sistema e exibir ao operador |
 | **Cobrança automática dedicada** | Fluxo alternativo: [[RFP-03-cobranca-automatizada|RFP-03]] (após protocolo já existir) |
-| **Consulta posterior** | Listagem/detalhe: **RFP-05**, **RFP-06**, **RFP-07** — [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice|índice]] |
+| **Consulta posterior** | [[RFP-05-listagem-protocolos]] · [[RFP-06-detalhe-protocolo-v1]] · RFP-07 (pendente) |
 
 ---
 
@@ -323,7 +323,7 @@ Fluxo completo de envio/processamento: **FFP-01**, **FFP-02** (pendente no índi
 | [[RFP-02-envio-lote]] | Protocolo com anexos e fila |
 | [[RFP-03-cobranca-automatizada]] | Cobrança após cadastro (lote) |
 | [[RFP-04-exclusao-protocolo]] | Exclusão do protocolo no RIB |
-| RFP-05 / 06 / 07 | Listar e detalhar (pendente) |
+| [[RFP-05-listagem-protocolos]] / [[RFP-06-detalhe-protocolo-v1]] | Listar e detalhar |
 | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | Nota legada sobre `/v1/cobranca` |
 
 **Manual bruto (repo):** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — seção `[RFP-01]` (págs. 11–16 do PDF v2.2)

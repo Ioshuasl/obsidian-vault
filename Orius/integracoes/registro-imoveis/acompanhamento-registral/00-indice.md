@@ -40,8 +40,8 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 | **RFP-02** | Envio em lote (com anexos, background) | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-02-envio-lote]] | documentado |
 | **RFP-03** | Cobrança automatizada no protocolo | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-03-cobranca-automatizada]] | documentado |
 | **RFP-04** | Exclusão do protocolo | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-04-exclusao-protocolo]] | documentado |
-| **RFP-05** | Listagem dos protocolos integrados | — | pendente |
-| **RFP-06** | Detalhamento do protocolo — V1 | — | pendente |
+| **RFP-05** | Listagem dos protocolos integrados | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-05-listagem-protocolos]] | documentado |
+| **RFP-06** | Detalhamento do protocolo — V1 | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-06-detalhe-protocolo-v1]] | documentado |
 | **RFP-07** | Detalhamento do protocolo — V2 | — | pendente |
 
 **Fluxos (comportamento, não endpoint isolado):**
@@ -57,8 +57,8 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 
 | Código | Descrição | Nota | Status |
 |--------|-----------|------|--------|
-| **RFC-01** | Geração de cobrança | — | pendente |
-| **RFC-02** | Listagem das cobranças | ver também [[Orius/integracoes/registro-imoveis/rib-cobranca]] | pendente |
+| **RFC-01** | Geração de cobrança | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-01-geracao-cobranca]] | documentado |
+| **RFC-02** | Listagem das cobranças | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-02-listagem-cobrancas]] · [[Orius/integracoes/registro-imoveis/rib-cobranca|legado]] | documentado |
 | **RFC-03** | Detalhes da cobrança | — | pendente |
 | **RFC-04** | Cancelamento da cobrança | — | pendente |
 | **RFC-05** | Listagem dos tipos de pagamento | — | pendente |

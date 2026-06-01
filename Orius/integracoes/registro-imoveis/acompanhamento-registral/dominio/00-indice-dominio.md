@@ -26,7 +26,7 @@ Enums e códigos referenciados nos bodies e respostas da API RIB (manual v2.2). 
 
 | Código | Nome | Uso previsto |
 |--------|------|----------------|
-| TBD-05 | `StatusTipoPagamento` | RFC-05 |
+| TBD-05 | `StatusTipoPagamento` | Campo `tipoPagamento` em [[RFC-01-geracao-cobranca]] · RFC-05 |
 | TBD-06 | `ACTipoDescricao` | `status.tipoDescricao`, histórico |
 | TBD-07 … TBD-14 | Atendimento eletrônico | RAE-01 … RAE-03 |
 

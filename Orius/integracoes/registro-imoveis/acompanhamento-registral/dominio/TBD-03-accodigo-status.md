@@ -50,7 +50,8 @@ Código da **situação** do título/protocolo no acompanhamento registral. O ma
 | Contexto | Campo |
 |----------|-------|
 | Envio de protocolo | `status.status` em [[RFP-01-envio-online]], [[RFP-02-envio-lote]] |
-| Consulta / andamento | Retornos **RFP-06** / **RFP-07** (pendente) — às vezes como `codigo` no andamento |
+| [[RFP-05-listagem-protocolos]] | `status.codigo` (string no exemplo) |
+| [[RFP-06-detalhe-protocolo-v1]] | `status.status` (int) |
 
 **Tipo no JSON:** `int` (tamanho 11 no manual para `status.status`).
 

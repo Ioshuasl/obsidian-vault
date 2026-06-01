@@ -29,7 +29,8 @@ Tipo de **solicitação** do acompanhamento registral enviado pelo cartório.
 | [[RFP-01-envio-online]] | `tipoSolicitacao` (obrigatório) |
 | [[RFP-02-envio-lote]] | `tipoSolicitacao` em cada item do array |
 | [[RFP-03-cobranca-automatizada]] | `tipoSolicitacao` (obrigatório no lote) |
-| RFP-05 / RFP-06 / RFP-07 | Filtro ou retorno em consultas (pendente) |
+| [[RFP-05-listagem-protocolos]] | Query `tipoSolicitacao` |
+| [[RFP-06-detalhe-protocolo-v1]] | Body `POST .../token` e retorno detalhe |
 
 **Tipo no JSON:** `int` (tamanho 1 no manual).
 

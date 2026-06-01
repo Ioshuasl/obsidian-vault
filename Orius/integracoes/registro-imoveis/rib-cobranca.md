@@ -9,7 +9,10 @@ fonte: migracao-desktop
 ---
 
 > **Produto:** [[Orius/empresa/produtos/registro-imoveis|Registro de Imóveis]] · **Índice:** [[Orius/integracoes/registro-imoveis/00-indice|Integrações RI]]
+> **Documentação canônica (manual v2.2):** [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-01-geracao-cobranca|RFC-01]] · [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFC-02-listagem-cobrancas|RFC-02]] · [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice|hub acompanhamento]]
 > **Portal:** registrodeimoveis.org.br · Relacionado: [[Orius/integracoes/registro-imoveis/rib-edital]]
+>
+> Esta nota é **legado** (migração desktop). Preferir as notas RFC acima para integração nova.
 
 ---
 

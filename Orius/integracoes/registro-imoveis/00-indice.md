@@ -65,7 +65,7 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 | **Mapa / estatísticas ONR** | mapa ONR, estatísticas, extrato, DOI, DOIWEB, hash | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] · [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia|guia]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / API polígonos (SIG-RI)** | polígono, shapefile, SIG-RI, SIGEF, IERI-e, georreferenciamento | [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos]] | [[Orius/integracoes/centrais/onr]] |
 | **Acompanhamento registral + pagamentos RIB** | protocolo, acompanhamento, exigência, PIX, RFP, RFC, RAE | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]] · [[Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral|visão geral]] | api.registrodeimoveis.org.br |
-| **Cobrança RIB** | cobrança, pagamento, hash | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | registrodeimoveis.org.br |
+| **Cobrança RIB** | cobrança, pagamento, hash, RFC | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice#Cobrança e pagamentos|RFC-01…07]] · [[Orius/integracoes/registro-imoveis/rib-cobranca|legado]] | registrodeimoveis.org.br |
 | **Edital RIB** | edital, diário registral, JWT | [[Orius/integracoes/registro-imoveis/rib-edital]] | api.registrodeimoveis.org.br |
 
 ## URLs de referência

@@ -105,7 +105,9 @@ N8N_BASIC_AUTH_USER=orius
 N8N_BASIC_AUTH_PASSWORD=master@orius
 ```
 
-**Ambientes n8nac** (`n8nac-config.json`): `extensao n8n teste` · `n8n-censec` (mesma instância).
+**Ambientes n8nac** (`n8nac-config.json`): `extensao n8n teste` (36 workflows, pasta `workflows/n8n/extensao-n8n-teste`) · `n8n-censec` (mesma instância).
+
+**Manutenção (2026-06-01):** após migração para Easypanel, duplicatas locais/remotas foram removidas (`node scripts/n8n-dedupe-workflows.cjs`). IDs antigos da instância anterior (ex. `zFridVBOT4YlSDVG`, `8EkzwmAjIxkPNrcm`) não existem mais no servidor.
 
 **Webhook exemplo (Parse Memorial SIGEF):** `POST {N8N_BASE_URL}/webhook/sigef/memorial/parse` — produção, workflow ativo. Teste: `/webhook-test/…` + *Execute workflow* no editor.
 

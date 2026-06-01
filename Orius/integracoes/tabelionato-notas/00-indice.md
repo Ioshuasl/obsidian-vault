@@ -54,7 +54,7 @@ flowchart TB
 | ↳ RCTO | testamento | [[Orius/integracoes/tabelionato-notas/censec/rcto]] | — |
 | ↳ CTP | prefeitura, ITBI | [[Orius/integracoes/tabelionato-notas/censec/ctp]] | — |
 | **TABINF** | TABINF, IBGE, TABINF07 | [[Orius/integracoes/tabelionato-notas/tabinf-ibge]] | [[Orius/integracoes/centrais/tabinf-ibge]] |
-| **DOI** | DOI, Receita Federal, declaração imóvel | [[Orius/integracoes/tabelionato-notas/doi]] | (RFB; ver [[Orius/integracoes/centrais/onr|ONR]] para MNE) |
+| **DOI** | DOI, Receita Federal, declaração imóvel, DOI-Web | [[Orius/integracoes/tabelionato-notas/doi/00-indice-doi]] (compartilhado com [[Orius/integracoes/registro-imoveis/00-indice\|RI]]) | RFB · [[Orius/integracoes/centrais/onr\|ONR]] (MNE/CNM) |
 
 Índice CENSEC: [[Orius/integracoes/tabelionato-notas/censec/00-indice-censec]]
 

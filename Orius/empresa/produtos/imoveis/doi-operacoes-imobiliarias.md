@@ -10,7 +10,7 @@ atualizado: 2026-05-29
 
 # DOI — Declaração sobre Operações Imobiliárias
 
-Comunicação dos cartórios à **Receita Federal** informando que houve operação com imóvel (aquisição ou alienação).
+Comunicação dos cartórios de **Tabelionato de Notas** e **Registro de Imóveis** à **Receita Federal**, informando que houve operação com imóvel (aquisição ou alienação).
 
 ## Analogia
 
@@ -37,10 +37,17 @@ Tabelas dedicadas no legado:
 
 - `R_DOI`, `R_DOI_ADQUIRENTE`, `R_DOI_ALIENANTE`, `R_DOI_COMPLEMENTO`
 
-Transmissão atual: **DOIWeb** (Receita Federal).
+Transmissão atual: **DOI-Web** (Receita Federal).
+
+## Documentação técnica (JSON, domínios, validação)
+
+Layout de importação em lote — compartilhado entre **Notas** e **Registro de Imóveis**:
+
+→ [[Orius/integracoes/tabelionato-notas/doi/00-indice-doi]]
 
 ## Relacionado
 
 - [[fluxo-operacional-registro-imoveis]]
 - [[mapa-dominio-software-imoveis]]
+- Integrações Notas (mesma DOI): [[Orius/integracoes/tabelionato-notas/00-indice]]
 - [Receita Federal — DOI](https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/doi)

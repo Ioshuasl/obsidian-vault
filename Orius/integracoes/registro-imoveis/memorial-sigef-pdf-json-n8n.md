@@ -48,9 +48,9 @@ flowchart LR
 | Item | Valor |
 |------|--------|
 | Nome | **Parse Memorial SIGEF** |
-| ID | `zFridVBOT4YlSDVG` |
+| ID | `drRULxhBQUk10wbw` |
 | Instância | `https://api-n8n.gbrqne.easypanel.host` |
-| Editor | [Abrir workflow](https://api-n8n.gbrqne.easypanel.host/workflow/zFridVBOT4YlSDVG) |
+| Editor | [Abrir workflow](https://api-n8n.gbrqne.easypanel.host/workflow/drRULxhBQUk10wbw) |
 | Código (n8n-as-code) | `c:\Users\kenio\automacoes e testes\workflows\n8n\extensao-n8n-teste\Parse Memorial SIGEF.workflow.ts` |
 | Status inicial | Inativo — ativar para URL de produção |
 
@@ -129,6 +129,13 @@ A regra de negócio foi portada do projeto Python (referência, **não** usada e
 
 - Extração de PDF: nó **Read PDF** do n8n (não `pdfplumber`) — validar com PDFs reais do SIGEF.
 - Geometria: UTM e WKT reimplementados em JavaScript no Code node; pequenas divergências numéricas são possíveis.
+
+## Histórico de IDs (instância)
+
+| Instância | Workflow ID | Observação |
+|-----------|-------------|------------|
+| Easypanel (atual) | `drRULxhBQUk10wbw` | Canônico após deduplicação 2026-06-01 |
+| Anterior | `zFridVBOT4YlSDVG`, `8EkzwmAjIxkPNrcm` | Removidos do servidor na limpeza pós-migração |
 
 ## Relacionado
 

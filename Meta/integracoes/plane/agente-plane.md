@@ -63,6 +63,19 @@ ou, para web:
 - Remover frontmatter YAML antes de converter.
 - Resolver wikilinks `[[path|label]]` → texto legível.
 
+**Padrão AUTONR (runbook de uso — espelho no Plane):**
+
+Cada automação n8n deve ter um `.md` enxuto com **4 seções** (corpo após frontmatter + `## Plane`):
+
+1. **Endpoint** — método e URL do webhook
+2. **Autenticação** — Basic Auth, headers obrigatórios (ou “Nenhuma”)
+3. **Corpo da requisição (exemplo)** — JSON mínimo funcional + caminho do exemplo completo
+4. **Resposta esperada** — sucesso e erros com HTTP e JSON de exemplo
+
+Referências: [[Orius/integracoes/tabelionato-notas/censec/automacao/n8n-upload-json-gateway|AUTONR-13]] · [[Orius/integracoes/tabelionato-notas/doi/automacao/n8n-validate-json-gateway|AUTONR-87]]
+
+Sync: `node sync-plane-descriptions.js --project autonr --md-dir <pasta-automacao> --file <nota>.md`
+
 **Estado inicial:**
 
 - Implementação já pronta → `done` / `Feito` / `Done` (ver UUID na nota do projeto).

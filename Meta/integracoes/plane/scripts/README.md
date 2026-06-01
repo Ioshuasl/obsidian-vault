@@ -42,6 +42,12 @@ Biblioteca: `lib/md-to-html.js` (frontmatter removido, wikilinks resolvidos, GFM
 
 Atualiza a descrição dos cards existentes no Plane a partir de pastas `.md`.
 
+### Padrão de documentação AUTONR (descrição do card)
+
+Runbook enxuto no vault → HTML no Plane. Quatro seções: **Endpoint**, **Autenticação**, **Corpo (exemplo)**, **Resposta esperada**.
+
+Exemplos: `AUTONR-13` (CENSEC), `AUTONR-87` (DOI). Ver [[../agente-plane#4. Criar demanda (padrão)]].
+
 ### AUTONR — proxies n8n (`[n8n] GetPedidoPO - …`)
 
 ```powershell

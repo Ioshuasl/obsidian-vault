@@ -1,9 +1,9 @@
 ---
-tipo: automacao
+tipo: runbook
 area: orius
 produto: notas
 central: censec
-tags: [orius, notas, censec, n8n, validacao, upload-json]
+tags: [orius, notas, censec, n8n, upload-json]
 status: revisado
 tem-n8n: true
 operacao: CENSEC_UploadJSON
@@ -12,105 +12,108 @@ plane_sequence_id: 13
 plane_key: AUTONR-13
 plane_url: http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/13
 plane_automation_status: done
----## Plane (gestão)
+---
 
-| Campo | Valor |
-|-------|-------|
-| Card | **AUTONR-13** |
-| Work item ID | `d89dd33c-66b0-49e1-a85b-871ac2cfd7b4` |
-| URL | http://192.168.1.100:8090/saas/projects/1c5d97b3-edfc-49e1-b0ba-da037b09bb84/issues/13 |
-| Automação | `done` |
+## Plane
 
+**AUTONR-13** — CENSEC Upload JSON Gateway
 
-# Automação n8n — CENSEC Upload JSON Gateway
+# Como usar
 
-Gateway que **valida localmente** o payload (CEP, CESDI, CTP) e, se aprovado, envia para a API oficial da CENSEC.
+## 1. Endpoint
 
-> **Visão geral API:** [[Orius/integracoes/tabelionato-notas/censec/visao-geral-e-api]] · **Índice CENSEC:** [[Orius/integracoes/tabelionato-notas/censec/00-indice-censec]]
-
-## Artefatos (código fora do vault)
-
-| Artefato | Caminho local |
-|----------|----------------|
-| Workflow TypeScript (fonte) | `C:\Users\kenio\soap-ui test\workflows\n8n-censec\censec-upload-json.workflow.ts` |
-| Export JSON n8n | `C:\Users\kenio\soap-ui test\censec\CENSEC Upload JSON Gateway.json` |
-| Regras de validação (espelho vault) | `C:\Users\kenio\soap-ui test\censec\regras-validacao-*.md` |
-
-## Fluxo
-
-```mermaid
-flowchart LR
-  WH[Webhook POST] --> N[Normalize Payload]
-  N --> V1[Validate CEP]
-  V1 --> V2[Validate CESDI]
-  V2 --> V3[Validate CTP]
-  V3 --> IF{Erros?}
-  IF -->|sim| ERR[422 validação local]
-  IF -->|não| API[POST CENSEC upload-json]
-  API --> OK[Resposta upload]
+```
+POST https://api-n8n.gbrqne.easypanel.host/webhook/censec/cargas/upload-json
 ```
 
-## Entrada (webhook n8n)
+## 2. Autenticação
 
-| | |
-|---|---|
-| **Método** | `POST` |
-| **Path** | `censec/cargas/upload-json` |
-| **Auth** | Basic Auth (credencial no n8n) |
-| **Body** | JSON único com blocos `atosCep`, `atosCesdi`, `declaracoes`, `testamentos`, `cns`, `quinzena` |
+| Tipo | Onde |
+|------|------|
+| **Basic Auth** | Usuário e senha do webhook n8n |
+| **Header `X-Api-Key`** | Chave do cartório na CENSEC (`NOME\|token`) |
+| **Header `Content-Type`** | `application/json` |
 
-Header obrigatório no encaminhamento à CENSEC (repassado pelo workflow):
+## 3. Corpo da requisição (exemplo)
 
-| Header | Uso |
-|--------|-----|
-| `X-Api-Key` | Chave do cartório na CENSEC |
+```json
+{
+  "cns": 995936,
+  "quinzena": {
+    "anoReferencia": 2026,
+    "quinzenaReferencia": 1,
+    "mesReferencia": "Maio"
+  },
+  "atosCep": [
+    {
+      "tipoAtoCep": "Escritura",
+      "naturezaEscritura": "CompraEVenda",
+      "livro": "1500",
+      "folha": "12",
+      "data": "2026-05-02",
+      "valor": 500000,
+      "partes": [
+        {
+          "nome": "Joao da Silva",
+          "qualidade": "Outorgante",
+          "tipoDocumento": "Cpf",
+          "numeroDocumento": "52998224725",
+          "estrangeiro": false
+        }
+      ]
+    }
+  ],
+  "declaracoes": []
+}
+```
 
-## Saída para a API CENSEC
+Envie só os blocos que tiver dados: `atosCep`, `atosCesdi`, `declaracoes`, `testamentos`.
 
-| | |
-|---|---|
-| **URL** | `https://censec.org.br/api/cargas/upload-json` |
-| **Método** | `POST` |
-| **Body** | Payload normalizado (mesmo JSON recebido no webhook) |
+Payload completo: `automacoes e testes/censec/exemplo-censec-json.json`
 
-Homologação: trocar base para `https://hml.censec.org.br` no nó HTTP quando testar. Chaves HML: [[Orius/integracoes/tabelionato-notas/ambiente-homologacao-api#CENSEC — transmissão JSON]].
+## 4. Resposta esperada
 
-## Validação local (por central)
+**Sucesso (HTTP 200)**
 
-| Central | Bloco JSON | Implementado no n8n | Regras (vault) |
-|---------|------------|---------------------|----------------|
-| CEP | `atosCep` | Sim | [[Orius/integracoes/tabelionato-notas/censec/regras-validacao/cep]] |
-| CESDI | `atosCesdi` | Sim | [[Orius/integracoes/tabelionato-notas/censec/regras-validacao/cesdi]] |
-| CTP | `declaracoes` | Sim (via validador DOI compartilhado) | [[Orius/integracoes/tabelionato-notas/doi/regras-validacao/00-indice-regras-validacao]] (completo); legado [[Orius/integracoes/tabelionato-notas/censec/regras-validacao/ctp]] |
-| RCTO | `testamentos` | **Não** (envio direto se presente no payload) | — |
+```json
+{
+  "success": true,
+  "message": "Carga JSON enviada para a CENSEC.",
+  "censec": { }
+}
+```
 
-Se o bloco de uma central **não existir** no payload (`undefined`), o validador correspondente é ignorado.
+**Erro de validação local (HTTP 400)** — JSON não foi enviado à CENSEC
 
-### Exemplos do que o gateway valida
+```json
+{
+  "success": false,
+  "message": "Payload rejeitado pela validacao local antes do envio para a CENSEC.",
+  "errors": [
+    {
+      "central": "CEP",
+      "path": "atosCep[0].partes[0].numeroDocumento",
+      "code": "cpf_invalid",
+      "message": "CPF invalido."
+    }
+  ]
+}
+```
 
-- Campos obrigatórios por ato (livro, folha, data `YYYY-MM-DD`, partes)
-- CPF/CNPJ quando `tipoDocumento` / `documentoTipo` indicar
-- `referentes` obrigatório em revogação, substabelecimento, rerratificação
-- CTP (`declaracoes`): mesma lógica do validador DOI — domínios 1–12, regras por `tipoServico`, cônjuge/representante, área urbano/rural, CIB, ITBI/ITCMD, pagamento a prazo, etc. Código: `automacoes e testes/scripts/doi/doi-validate-payload.cjs` (regenerar com `node scripts/doi/build-validate-workflows.cjs`).
+**Erro da CENSEC (HTTP 4xx/5xx)**
 
-Resposta de erro local (antes da CENSEC): `success: false`, lista `errors[]` com `central`, `path`, `code`, `message`.
+```json
+{
+  "success": false,
+  "message": "...",
+  "error": {
+    "code": "...",
+    "message": "...",
+    "source": "CENSEC"
+  }
+}
+```
 
-## Tabelas de domínio usadas na montagem do JSON
+---
 
-- [[Orius/integracoes/tabelionato-notas/censec/tabelas-dominio/cep]]
-- [[Orius/integracoes/tabelionato-notas/censec/tabelas-dominio/cesdi]]
-- [[Orius/integracoes/tabelionato-notas/censec/tabelas-dominio/ctp]]
-
-## Módulos de carga (especificação de campos)
-
-| Módulo | Nota |
-|--------|------|
-| CEP | [[Orius/integracoes/tabelionato-notas/censec/cep]] |
-| CESDI | [[Orius/integracoes/tabelionato-notas/censec/cesdi]] |
-| RCTO | [[Orius/integracoes/tabelionato-notas/censec/rcto]] |
-| CTP | [[Orius/integracoes/tabelionato-notas/censec/ctp]] |
-
-## Relacionado
-
-- [[Orius/integracoes/tabelionato-notas/censec/artefatos/00-indice-artefatos|Postman e exemplos JSON]]
-- [[Orius/integracoes/tabelionato-notas/censec/00-briefing-documentacao-automacao|Briefing documentação + automação]]
+Mais detalhes: [[Orius/integracoes/tabelionato-notas/censec/visao-geral-e-api]] · [[Orius/integracoes/tabelionato-notas/censec/00-indice-censec]]

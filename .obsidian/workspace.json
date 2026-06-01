@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Orius/integracoes/tabelionato-notas/ccn.md",
+                "file": "Orius/integracoes/tabelionato-notas/doi/automacao/n8n-validate-json-gateway.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ccn"
+              "title": "n8n-validate-json-gateway"
             }
           }
         ]
@@ -194,12 +194,30 @@
   },
   "active": "e33ad7c475dab943",
   "lastOpenFiles": [
+    "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-uploads.md",
+    "Orius/integracoes/tabelionato-notas/ccn/automacao/n8n-upload-xml-gateway.md",
+    "Orius/integracoes/tabelionato-notas/ccn/automacao",
+    "Orius/integracoes/tabelionato-notas/ccn.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/exemplo-xml.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/validacoes-xml.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes/regime-bem.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes/tipo-nacionalidade.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes/tipo-documento.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes/00-indice-enumeracoes.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/tipos-anexos-complementares.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-conjuge.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-biometria.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-carteira-habilitacao.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-documento.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-endereco.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/entidade-pessoa.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/estrutura-raiz.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/00-indice-xml.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml",
     "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-erros.md",
     "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-get.md",
     "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-post.md",
-    "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-uploads.md",
     "Orius/integracoes/tabelionato-notas/ccn/api/fluxo-importacao.md",
     "Orius/integracoes/tabelionato-notas/ccn/api/00-indice-endpoints.md",
     "Orius/integracoes/tabelionato-notas/ccn/api",
@@ -207,29 +225,11 @@
     "Orius/integracoes/tabelionato-notas/ccn/00-indice-ccn.md",
     "Orius/integracoes/tabelionato-notas/ccn",
     "Meta/integracoes/plane/projetos/autonr.md",
-    "Orius/integracoes/tabelionato-notas/censec/automacao/n8n-upload-json-gateway.md",
-    "Orius/integracoes/tabelionato-notas/doi/campos-json/exemplo-json.md",
-    "Orius/integracoes/tabelionato-notas/doi/automacao/n8n-validate-json-gateway.md",
     "Orius/integracoes/tabelionato-notas/doi/automacao",
-    "Orius/integracoes/tabelionato-notas/doi/regras-validacao/ficha-partes.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/tipoImovel.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/tipoOperacaoImobiliaria.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/regimeBens.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/motivoNaoIdentificacaoNi.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/destinacao.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/tipoParteTransacionada.md",
-    "Orius/integracoes/tabelionato-notas/doi/campos-json/ficha-alienantes-adquirentes.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/formaPagamento.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/naturezaTitulo.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/tipoLivro.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/tipoAto.md",
-    "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio/tipoServico.md",
     "Orius/integracoes/tabelionato-notas/doi/regras-validacao",
     "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio",
     "Orius/integracoes/tabelionato-notas/doi/campos-json",
     "Orius/integracoes/tabelionato-notas/doi",
-    "Orius/integracoes/registro-imoveis/api-cnib-serventias/dominio",
-    "Orius/integracoes/registro-imoveis/api-cnib-serventias",
     "Sem título.canvas"
   ]
 }

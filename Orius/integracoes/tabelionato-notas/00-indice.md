@@ -46,7 +46,7 @@ flowchart TB
 | Integração | Palavras-chave | Documentação | Central (resumo) |
 |------------|----------------|--------------|----------------|
 | **Homologação API** | api-key, hml, CNS 995936 | [[Orius/integracoes/tabelionato-notas/ambiente-homologacao-api]] | — |
-| **CCN** | CCN, e-notariado, pessoas, CPF | [[Orius/integracoes/tabelionato-notas/ccn]] | [[Orius/integracoes/centrais/ccn]] |
+| **CCN** | CCN, e-notariado, pessoas, CPF | [[Orius/integracoes/tabelionato-notas/ccn/00-indice-ccn]] | [[Orius/integracoes/centrais/ccn]] |
 | **CENSEC** | CENSEC, quinzena, x-api-key, upload-json, n8n | [[Orius/integracoes/tabelionato-notas/censec/00-indice-censec]] | [[Orius/integracoes/centrais/censec]] |
 | **Assinaturas** | e-notariado, assinatura | [[Orius/integracoes/tabelionato-notas/fluxo-assinaturas]] | e-notariado |
 | ↳ CEP | escritura, procuração, MNE | [[Orius/integracoes/tabelionato-notas/censec/cep]] | — |

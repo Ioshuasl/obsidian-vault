@@ -47,6 +47,10 @@ Central de Cadastro de Notários — importação de cadastros de **pessoas fís
 
 Índice: [[Orius/integracoes/tabelionato-notas/ccn/xml/00-indice-xml]]
 
+## Automação n8n
+
+[[Orius/integracoes/tabelionato-notas/ccn/automacao/n8n-upload-xml-gateway]] — webhook `POST /ccn/uploads` → validação local → `POST /api/uploads` e-notariado.
+
 ## Referências externas
 
 | Recurso | Link |

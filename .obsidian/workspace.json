@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "env.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para env"
+              "title": "Links inversos"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "env.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para env"
+              "title": "Links de saída"
             }
           },
           {
@@ -156,13 +154,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "env.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de env"
+              "title": "Sumário"
             }
           }
         ]
@@ -180,11 +177,29 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Criar nova base": false
+      "bases:Criar nova base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "c1342047f03a5296",
   "lastOpenFiles": [
+    "Bem-vindo.md",
+    "env.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_TITULO.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_TEMPLATE.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_PESSOA_VINCULO.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_PESSOA.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_OCORRENCIA_ANDAMENTO.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_OCORRENCIAS.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_MOTIVOS_CANCELAMENTO.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_MOTIVOS.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_LIVRO_NATUREZA.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_LIVRO_ANDAMENTO.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_ESPECIE.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_CERTIDAO.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_BANCO.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_ARQUIVO_TITULO.md",
+    "Orius/desenvolvimento/frontend/protesto/telas/P_ANDAMENTO.md",
     "Orius/desenvolvimento/banco-de-dados/produtos/protesto/tabelas/P_ARQUIVO_TITULO.md",
     "Orius/desenvolvimento/banco-de-dados/produtos/protesto/00-indice-protesto-db.md",
     "Orius/desenvolvimento/banco-de-dados/produtos/protesto/tabelas/P_LAYOUT_ARQUIVO.md",
@@ -195,24 +210,7 @@
     "Orius/empresa/produtos/imoveis/onr-ri-digital-negocio.md",
     "Orius/empresa/produtos/imoveis/tipos-de-atos-registrais.md",
     "Orius/empresa/produtos/tabelionato-protesto.md",
-    "Orius/empresa/produtos/notas/mapa-dominio-software-notas.md",
-    "Orius/empresa/produtos/notas/glossario-notas.md",
-    "Orius/empresa/produtos/notas/fluxo-ato-notarial.md",
-    "Orius/empresa/produtos/protesto/00-indice-protesto-negocio.md",
-    "Orius/empresa/produtos/notas/atos-protocolares.md",
-    "Orius/empresa/produtos/tabelionato-notas.md",
-    "Orius/empresa/produtos/notas/atos-extraprotocolares.md",
-    "Orius/empresa/produtos/notas/conceito-tabelionato-de-notas.md",
-    "Orius/empresa/produtos/notas/00-indice-notas-negocio.md",
     "Orius/empresa/produtos/notas",
-    "Orius/empresa/produtos/imoveis/livros-oficiais-registro-imoveis.md",
-    "Orius/empresa/produtos/imoveis/mapa-dominio-software-imoveis.md",
-    "Orius/empresa/produtos/imoveis/doi-operacoes-imobiliarias.md",
-    "Orius/empresa/produtos/imoveis/fluxo-operacional-registro-imoveis.md",
-    "Orius/empresa/produtos/imoveis/glossario-imoveis.md",
-    "Orius/empresa/produtos/imoveis/conceitos-fundamentais-registro.md",
-    "Orius/empresa/produtos/imoveis/conceito-registro-de-imoveis.md",
-    "Orius/empresa/produtos/imoveis/00-indice-imoveis-negocio.md",
     "Orius/empresa/produtos/imoveis",
     "Orius/empresa/produtos/protesto",
     "Orius/desenvolvimento/frontend/protesto/telas",

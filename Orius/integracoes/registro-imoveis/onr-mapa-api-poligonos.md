@@ -573,7 +573,7 @@ Conforme o manual técnico (seção 5.2): polígonos enviados pela API devem ter
 
 | Onde | Arquivo | Conteúdo |
 |------|---------|----------|
-| Vault | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] | API Mapa **estatísticas/DOI** (`/api-estatisticas`) — não confundir |
+| Vault | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] · [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia]] | API Mapa **estatísticas/DOI** (`/api-estatisticas`) — não confundir |
 | Vault | [[Orius/integracoes/registro-imoveis/onr-protocolo]] | Protocolo eletrônico ONR |
 | Vault | [[Orius/integracoes/registro-imoveis/onr/00-indice-onr]] | Hub ONR (SOAP WSOficio + REST) |
 | Repo `automacoes e testes/mapa-onr/` | `manual-tecnico-mapa-v12.md` | Operação do Mapa, SIGEF, sobreposições, IERI-e |

@@ -58,7 +58,7 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 |------------|----------------|--------------|------------------|
 | **CNIB** | CNIB, indisponibilidade, IA, IE | [[Orius/integracoes/registro-imoveis/cnib]] | [[Orius/integracoes/centrais/cnib]] |
 | **Protocolo ONR** | protocolo, exame e cálculo, registro eletrônico | [[Orius/integracoes/registro-imoveis/onr-protocolo]] | [[Orius/integracoes/centrais/onr]] |
-| **Mapa / estatísticas ONR** | mapa ONR, estatísticas, extrato, DOI | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] | [[Orius/integracoes/centrais/onr]] |
+| **Mapa / estatísticas ONR** | mapa ONR, estatísticas, extrato, DOI, DOIWEB, hash | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] · [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia|guia]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / API polígonos (SIG-RI)** | polígono, shapefile, SIG-RI, SIGEF, IERI-e, georreferenciamento | [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos]] | [[Orius/integracoes/centrais/onr]] |
 | **Cobrança RIB** | cobrança, pagamento, hash | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | registrodeimoveis.org.br |
 | **Edital RIB** | edital, diário registral, JWT | [[Orius/integracoes/registro-imoveis/rib-edital]] | api.registrodeimoveis.org.br |

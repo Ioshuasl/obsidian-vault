@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia.md",
+                "file": "Orius/integracoes/registro-imoveis/api-cnib-serventias/CNIB-01-autenticacao.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "onr-mapa-estatisticas-guia"
+              "title": "CNIB-01-autenticacao"
             }
           }
         ]
@@ -194,12 +194,13 @@
   },
   "active": "e33ad7c475dab943",
   "lastOpenFiles": [
+    "Orius/integracoes/registro-imoveis/api-cnib-serventias/visao-geral.md",
+    "Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia.md",
     "Orius/integracoes/tabelionato-notas/censec/regras-validacao/cep.md",
     "Orius/integracoes/registro-imoveis/api-cnib-serventias/CNIB-04-responder-ordem.md",
     "Orius/integracoes/registro-imoveis/api-cnib-serventias/dominio/tipo-matricula.md",
     "Orius/integracoes/registro-imoveis/api-cnib-serventias/dominio/envelope-resposta.md",
     "Orius/integracoes/registro-imoveis/api-cnib-serventias/dominio/00-indice-dominio.md",
-    "Orius/integracoes/registro-imoveis/api-cnib-serventias/visao-geral.md",
     "Orius/integracoes/registro-imoveis/cnib.md",
     "Orius/integracoes/registro-imoveis/onr/00-indice-onr.md",
     "Orius/integracoes/registro-imoveis/api-cnib-serventias/CNIB-06-documentos-tipos.md",
@@ -221,7 +222,6 @@
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-12-aeorigem.md",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-11-aetipo-contato.md",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-10-aeforma-atendimento.md",
-    "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio/TBD-09-aeatendimento-prioritario.md",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis/dominio",
     "Orius/integracoes/registro-imoveis/api-registro-imoveis",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/dominio",

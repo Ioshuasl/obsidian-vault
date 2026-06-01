@@ -151,6 +151,8 @@ Situações que o manual descreve:
 
 O fluxo usual é: imóvel certificado no SIGEF → cartório **importa ou recebe** o polígono no Mapa (portal ou API) → oficial **aprova** → passa a integrar o registro geográfico da serventia. O atributo `SIGEF` no shapefile identifica a certificação de origem quando o arquivo é montado corretamente.
 
+**Automação relacionada:** extrair dados do memorial PDF para JSON (vértices, WKT, UUID) — [[Orius/integracoes/registro-imoveis/memorial-sigef-pdf-json-n8n|Memorial SIGEF PDF→JSON (n8n)]].
+
 ---
 
 ## IERI-e

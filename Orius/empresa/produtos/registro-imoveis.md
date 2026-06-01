@@ -45,6 +45,13 @@ Scripts/código: `C:\Users\kenio\soap-ui test`
 | Mapa / estatísticas ONR | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] |
 | Cobrança (RIB) | [[Orius/integracoes/registro-imoveis/rib-cobranca]] |
 | Edital eletrônico (RIB) | [[Orius/integracoes/registro-imoveis/rib-edital]] |
+| Memorial SIGEF PDF→JSON (n8n) | [[Orius/integracoes/registro-imoveis/memorial-sigef-pdf-json-n8n]] |
+
+### Automação interna
+
+| Integração | Doc |
+|------------|-----|
+| Memorial descritivo SIGEF → JSON | [[Orius/integracoes/registro-imoveis/memorial-sigef-pdf-json-n8n]] |
 
 Centrais: [[Orius/integracoes/centrais/cnib]], [[Orius/integracoes/centrais/onr]]
 

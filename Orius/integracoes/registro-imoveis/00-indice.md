@@ -24,6 +24,9 @@ flowchart TB
     MAPA[Mapa estatísticas DOI]
     POL[Mapa API polígonos]
   end
+  subgraph automacao [Automação interna]
+    MEM[SIGEF memorial PDF→JSON n8n]
+  end
   subgraph rib [RIB - registrodeimoveis.org.br]
     APIRI[API Registro de Imóveis]
     COB[Cobrança]
@@ -36,6 +39,7 @@ flowchart TB
   RI --> APIRI
   RI --> COB
   RI --> ED
+  RI --> MEM
   ACOMP --> RIBhub[[RIB swagger]]
   CNIB --> ONRhub[[ONR]]
   PROT --> ONRhub
@@ -67,6 +71,13 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 | **API Registro de Imóveis (RIB)** | protocolo, acompanhamento, exigência, PIX, RFP, RFC, RAE | [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice]] · [[Orius/integracoes/registro-imoveis/api-registro-imoveis/visao-geral|visão geral]] · [Swagger](https://www.registrodeimoveis.org.br/swagger/index.html) | api.registrodeimoveis.org.br |
 | **Cobrança RIB** (mesma API) | cobrança, pagamento, hash, RFC | [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice#Cobrança e pagamentos|RFC-01…07]] · [[Orius/integracoes/registro-imoveis/rib-cobranca|legado]] | mesmo Swagger |
 | **Edital RIB** | edital, diário registral, JWT | [[Orius/integracoes/registro-imoveis/rib-edital]] | api.registrodeimoveis.org.br |
+| **Memorial SIGEF PDF→JSON** | memorial descritivo, SIGEF, INCRA, parser, vértices, WKT, n8n | [[Orius/integracoes/registro-imoveis/memorial-sigef-pdf-json-n8n]] | n8n (`zFridVBOT4YlSDVG`) |
+
+## Automação interna (n8n)
+
+| Integração | Doc |
+|------------|-----|
+| Memorial descritivo SIGEF → JSON | [[Orius/integracoes/registro-imoveis/memorial-sigef-pdf-json-n8n]] |
 
 ## URLs de referência
 
@@ -76,6 +87,7 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 | Mapa ONR — estatísticas | https://mapa.onr.org.br/api-estatisticas |
 | Mapa ONR — polígonos | https://www.mapa.onr.org.br/sistemas/api/v1/poligonos/ |
 | RIB (cobrança + edital) | https://www.registrodeimoveis.org.br/swagger |
+| n8n — Parse Memorial SIGEF | `https://api-n8n.gbrqne.easypanel.host/webhook/sigef/memorial/parse` (produção, workflow ativo) |
 
 ## Relacionado
 

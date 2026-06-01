@@ -19,6 +19,6 @@ _(tabela de integrações conforme documentar)_
 
 | Integração | Produto(s) | Central / sistema | Nota |
 |------------|------------|-----------------|------|
-| | | | |
+| Memorial SIGEF PDF→JSON (n8n) | Imóveis | INCRA/SIGEF · automação n8n | [[Orius/integracoes/registro-imoveis/memorial-sigef-pdf-json-n8n]] |
 
 Voltar: [[Orius/00-indice]]

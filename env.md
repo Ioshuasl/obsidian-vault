@@ -115,6 +115,41 @@ N8N_BASIC_AUTH_PASSWORD=master@orius
 
 ---
 
+## CCN — Cadastro de pessoas e-notariado (homologação)
+
+> Módulo **CCN** — importação de pessoas via XML (`POST /api/uploads`, `POST /api/imports`).  
+> **CNS de teste (compartilhado com CENSEC HML):** `995936`  
+> **Não** repetir `CCN_X_API_KEY` nas notas do vault — só linkar esta seção.  
+> **Docs:** [[Orius/integracoes/tabelionato-notas/ccn/00-indice-ccn]] · [[Orius/integracoes/tabelionato-notas/ambiente-homologacao-api]] · Gateway n8n: [[Orius/integracoes/tabelionato-notas/ccn/automacao/n8n-upload-xml-gateway]]
+
+| Campo                             | Valor                                                     |
+| --------------------------------- | --------------------------------------------------------- |
+| CNS (homologação)                 | `995936`                                                  |
+| URL base                          | `https://pessoas-hml.e-notariado.org.br/`                 |
+| Swagger                           | https://pessoas-hml.e-notariado.org.br/swagger/index.html |
+| Id do cartório (`X-Subscription`) | `d2efe9cc-23f9-4bd2-06c0-08ddf76de010`                    |
+| Prefixo API key (logs)            | `ORIUS TECNOLOGIA  GOIANIAGO\|6e4aef5e…`                  |
+
+```env
+CNS_HOMOLOGACAO=995936
+CCN_HML_BASE_URL=https://pessoas-hml.e-notariado.org.br
+CCN_X_API_KEY=ORIUS TECNOLOGIA  GOIANIAGO|6e4aef5e74f09a4ebf029655e893c93812ecbf62179d6458911582e20a96c021
+CCN_X_SUBSCRIPTION=d2efe9cc-23f9-4bd2-06c0-08ddf76de010
+CCN_X_AMBIENTE=homologacao
+```
+
+**Headers na API e-notariado:**
+
+| Header | Valor |
+|--------|--------|
+| `X-Api-Key` | `CCN_X_API_KEY` (app + `\|` + token) |
+| `X-Subscription` | `CCN_X_SUBSCRIPTION` — obrigatório em `POST /api/imports` |
+
+**Gateway n8n** (`POST /ccn/uploads`): Basic Auth n8n + header `X-Ccn-Api-Key` (= `CCN_X_API_KEY`) + `X-Ambiente` (`homologacao` \| `producao`).  
+**Postman:** `postman/CCN-Upload-XML-n8n.postman_environment.template.json`
+
+---
+
 ## RIB — API Acompanhamento Registral + Pagamentos (OAuth)
 
 > `POST /v1/auth/token` em `api.registrodeimoveis.org.br` (homolog: `testes-api.registrodeimoveis.org.br`).  

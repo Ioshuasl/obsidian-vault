@@ -59,7 +59,61 @@ Use `upload.id` e `upload.location` no passo seguinte: [[Orius/integracoes/tabel
 | `homologacao` (default) | `https://pessoas-hml.e-notariado.org.br` |
 | `producao` | `https://pessoas.e-notariado.org.br` |
 
-Chaves HML: [[Orius/integracoes/tabelionato-notas/ambiente-homologacao-api#CCN — Cadastro de pessoas]]
+Credenciais HML: [[env#CCN — Cadastro de pessoas e-notariado (homologação)]]
+
+## Teste com Postman
+
+### Arquivos
+
+| Item | Caminho no repo |
+|------|-----------------|
+| Coleção | `postman/CCN-Upload-XML-n8n.postman_collection.json` |
+| Environment (template) | `postman/CCN-Upload-XML-n8n.postman_environment.template.json` |
+| XML mínimo (cópia local) | `scripts/ccn/exemplo-ccn-minimo.xml` |
+| XML inválido (teste raiz) | `scripts/ccn/exemplo-ccn-sem-pessoas.xml` |
+
+### Variáveis do environment
+
+| Variável | Valor |
+|----------|--------|
+| `n8n_base_url` | `https://api-n8n.gbrqne.easypanel.host` |
+| `n8n_webhook_mode` | `webhook-test` (editor) ou `webhook` (workflow ativo) |
+| `N8N_BASIC_AUTH_USER` / `N8N_BASIC_AUTH_PASSWORD` | [[env#n8n — Easypanel (API + webhooks Basic Auth)]] |
+| `CCN_X_API_KEY` | [[env#CCN — Cadastro de pessoas e-notariado (homologação)]] |
+| `CCN_X_AMBIENTE` | `homologacao` |
+| `CCN_XML_PATH` | Caminho absoluto do XML — ver abaixo |
+
+**`CCN_XML_PATH` (Windows):**
+
+```
+c:\Users\kenio\automacoes e testes\scripts\ccn\exemplo-ccn-minimo.xml
+```
+
+No Postman, o request **Upload XML CCN — HML** usa esse caminho no campo `file` (pre-request). Se preferir, selecione o arquivo manualmente no body **form-data**.
+
+### Passo a passo
+
+1. Importe coleção + environment no Postman.
+2. Preencha `CCN_X_API_KEY` e confira `CCN_XML_PATH`.
+3. No n8n, abra o workflow `CCN Upload XML` e clique **Execute workflow** (modo `webhook-test`).
+4. Envie **Upload XML CCN — HML** — esperado HTTP `200`, `success: true`, `upload.id` e `upload.location` (salvos no env como `ccn_upload_id` / `ccn_upload_location`).
+5. Requests de erro (422): sem arquivo, sem API key, raiz inválida.
+
+### Exemplo XML mínimo (válido)
+
+Arquivo espelhado em `scripts/ccn/exemplo-ccn-minimo.xml`. Raiz `<pessoas>` + um CPF/nome — suficiente para passar na validação local e no upload HML.
+
+```xml
+<?xml version="1.0" encoding="ISO8859-1"?>
+<pessoas>
+  <pessoa>
+    <cpf>11144477735</cpf>
+    <nome>Joao da Silva</nome>
+  </pessoa>
+</pessoas>
+```
+
+XML completo com todos os grupos de campos: [[Orius/integracoes/tabelionato-notas/ccn/xml/exemplo-xml]].
 
 ## Push
 

@@ -81,11 +81,43 @@ MAPA_ONR_API_BEARER_POLIGONOS=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkI
 
 ---
 
+## n8n — Easypanel (API + webhooks Basic Auth)
+
+> Instância Orius: automações n8n-as-code (`n8nac`), webhooks ONR/CENSEC/SIGEF.  
+> **CLI:** `npx --yes n8nac env auth set <ambiente> --api-key-stdin` — a key também está aqui para referência.  
+> **Não** repetir credenciais nas notas de integração — só linkar `[[env#n8n — Easypanel (API + webhooks Basic Auth)]]`.  
+> **Docs:** [[Orius/integracoes/registro-imoveis/memorial-sigef-pdf-json-n8n]] · Repo `c:\Users\kenio\automacoes e testes`
+
+| Campo | Valor |
+|-------|--------|
+| Base URL | `https://api-n8n.gbrqne.easypanel.host` |
+| UI / editor | `https://api-n8n.gbrqne.easypanel.host` |
+| API key (`iat` JWT) | 2026-06-01 (aprox.) |
+| API key (`exp` JWT) | 2026-07-01 (aprox.) |
+| Prefixo API key (logs) | `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMmFm…` |
+| Webhook Basic Auth — usuário | `orius` |
+| Webhook Basic Auth — senha | `master@orius` |
+
+```env
+N8N_BASE_URL=https://api-n8n.gbrqne.easypanel.host
+N8N_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMmFmNjljYS0wNjc0LTQ3YTQtYjhkMS04MmM4YWY2MWI1YmIiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwianRpIjoiNzFiYTM1MTctMjQ4ZC00ZTA4LWIzYTItYTdjOTE5NmExZjA0IiwiaWF0IjoxNzgwMzQwMTY5LCJleHAiOjE3ODI4Nzg0MDB9.abwmigVp59GEsWN9s6-YguaPMciuUvwmdKLr8A82Zck
+N8N_BASIC_AUTH_USER=orius
+N8N_BASIC_AUTH_PASSWORD=master@orius
+```
+
+**Ambientes n8nac** (`n8nac-config.json`): `extensao n8n teste` · `n8n-censec` (mesma instância).
+
+**Webhook exemplo (Parse Memorial SIGEF):** `POST {N8N_BASE_URL}/webhook/sigef/memorial/parse` — produção, workflow ativo. Teste: `/webhook-test/…` + *Execute workflow* no editor.
+
+**Postman:** `postman/n8n-orius.postman_environment.json` (gitignored) ou templates em `postman/`.
+
+---
+
 ## RIB — API Acompanhamento Registral + Pagamentos (OAuth)
 
 > `POST /v1/auth/token` em `api.registrodeimoveis.org.br` (homolog: `testes-api.registrodeimoveis.org.br`).  
 > **Não** repetir `client_secret` nas notas — só referenciar esta seção.  
-> **Docs:** [[Orius/integracoes/registro-imoveis/api-registro-imoveis/RFG-01-autenticacao]] · [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice]]
+> **Docs:** [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFG-01-autenticacao]] · [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]]
 
 | Ambiente | Base URL |
 |----------|----------|

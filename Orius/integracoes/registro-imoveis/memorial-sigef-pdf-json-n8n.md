@@ -66,7 +66,7 @@ flowchart LR
 
 ### Autenticação
 
-**HTTP Basic Auth** (mesmas credenciais dos demais webhooks n8n do projeto). Não gravar usuário/senha nesta nota.
+**HTTP Basic Auth** — credenciais em [[env#n8n — Easypanel (API + webhooks Basic Auth)]] (`orius` / senha no vault). API REST do n8n (CLI `n8nac`): `N8N_API_KEY` na mesma seção.
 
 ### Request
 

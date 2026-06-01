@@ -55,12 +55,12 @@ Credenciais `client_id` / `client_secret`: portais CNIB → **Usuários → Aces
 
 | Código | Método | Caminho | Uso |
 |--------|--------|---------|-----|
-| [[CNIB-01-autenticacao\|CNIB-01]] | `POST` | `https://auth.id.onr.org.br/connect/token` | Token OAuth2 |
-| [[CNIB-02-consultar\|CNIB-02]] | `POST` | `/api/ordem/consultar` | Consulta por CPF/CNPJ ou hash |
-| [[CNIB-03-visualizar-ordens\|CNIB-03]] | `POST` | **`/api/v2/ordem/visualizar`** | Listar/detalhar ordens (**recomendado**) |
-| [[CNIB-04-responder-ordem\|CNIB-04]] | `POST` | `/api/ordem/responder` | Responder uma ordem |
-| [[CNIB-05-responder-lista\|CNIB-05]] | `POST` | `/api/ordem/responder/lista` | Responder várias ordens |
-| [[CNIB-06-documentos-tipos\|CNIB-06]] | `POST` | `/api/documentos/tipos` | Domínio auxiliar (tipos/status) |
+| CNIB-01 | `POST` | `https://auth.id.onr.org.br/connect/token` | [[CNIB-01-autenticacao]] |
+| CNIB-02 | `POST` | `/api/ordem/consultar` | [[CNIB-02-consultar]] |
+| CNIB-03 | `POST` | `/api/v2/ordem/visualizar` | [[CNIB-03-visualizar-ordens]] |
+| CNIB-04 | `POST` | `/api/ordem/responder` | [[CNIB-04-responder-ordem]] |
+| CNIB-05 | `POST` | `/api/ordem/responder/lista` | [[CNIB-05-responder-lista]] |
+| CNIB-06 | `POST` | `/api/documentos/tipos` | [[CNIB-06-documentos-tipos]] |
 
 ### Legado (evitar em código novo)
 

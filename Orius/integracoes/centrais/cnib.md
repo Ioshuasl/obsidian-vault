@@ -12,7 +12,8 @@ Central Nacional de Indisponibilidade de Bens — **Registro de Imóveis** (ecos
 
 ## Documentação técnica
 
-[[Orius/integracoes/registro-imoveis/cnib]]
+- Conceito e impacto no RI: [[Orius/integracoes/registro-imoveis/cnib]]
+- **API REST (endpoints):** [[Orius/integracoes/registro-imoveis/api-cnib-serventias/00-indice]]
 
 ## Produto
 

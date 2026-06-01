@@ -60,7 +60,7 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 
 | Integração | Palavras-chave | Documentação | Central / portal |
 |------------|----------------|--------------|------------------|
-| **CNIB** | CNIB, indisponibilidade, IA, IE | [[Orius/integracoes/registro-imoveis/cnib]] | [[Orius/integracoes/centrais/cnib]] |
+| **CNIB** | CNIB, indisponibilidade, IA, IE | [[Orius/integracoes/registro-imoveis/cnib]] · [[Orius/integracoes/registro-imoveis/api-cnib-serventias/00-indice]] | [[Orius/integracoes/centrais/cnib]] |
 | **Protocolo ONR** | protocolo, exame e cálculo, registro eletrônico | [[Orius/integracoes/registro-imoveis/onr-protocolo]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / estatísticas ONR** | mapa ONR, estatísticas, extrato, DOI, DOIWEB, hash | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] · [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia|guia]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / API polígonos (SIG-RI)** | polígono, shapefile, SIG-RI, SIGEF, IERI-e, georreferenciamento | [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos]] | [[Orius/integracoes/centrais/onr]] |

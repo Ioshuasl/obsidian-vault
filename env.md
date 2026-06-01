@@ -4,7 +4,7 @@ area: meta
 tags: [plane, api, credenciais, ambiente]
 status: revisado
 criado: 2026-05-29
-atualizado: 2026-05-29
+atualizado: 2026-06-01
 fonte: cursor
 ---
 
@@ -56,3 +56,25 @@ Hoje: **Ioshua Lopes** (`ioshua@oriustecnologia.com.br`). Scripts em `Meta/integ
 | Work items | `/workspaces/{PLANE_WORKSPACE}/projects/{PLANE_PROJECT_ID}/work-items/` |
 
 `PLANE_PROJECT_ID` e estados vêm da nota `Meta/integracoes/plane/projetos/<slug>.md` do projeto ativo.
+
+---
+
+## Mapa ONR — API polígonos (Bearer)
+
+> Usar em `Authorization: Bearer …` nos endpoints `…/sistemas/api/v1/poligonos/*`.  
+> **Não** colar esta chave nas notas de integração do vault — só referenciar esta seção.  
+> A API **Mapa e Estatísticas** (`/api-estatisticas`) usa fluxo diferente (chave intranet Estatísticas + `POST /auth` + hash SHA1) — ver [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia]].
+
+| Campo | Valor |
+|-------|--------|
+| Gerada em | 2026-06-01 (aprox., `iat` do JWT) |
+| Expira em | 2027-06-01 (aprox., `exp` do JWT) |
+| Prefixo (logs) | `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2…` |
+
+```env
+MAPA_ONR_API_BEARER_POLIGONOS=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozMjE4NSwiaXNzIjoiYXBpLW1hcGEtb25yIiwiYXVkIjoidXN1YXJpby1tYXBhLW9uciIsInR5cGUiOiJhcGlfa2V5IiwiaWF0IjoxNzgwMzE4NjEyLCJleHAiOjE4MTE4NTQ2MTJ9.k_iSp_LDzJYMSdFAvsRJ29hg8zB4kr6RukfEp0P_7_I
+```
+
+**Intranet:** Configurações → Chave API para envio de polígonos · Renovar antes do `exp` se a ONR invalidar antes.
+
+**Docs:** [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos]] · [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]]

@@ -12,6 +12,7 @@ fonte: cursor
 > **Produto:** [[Orius/empresa/produtos/registro-imoveis|Registro de Imóveis]] · **Índice:** [[Orius/integracoes/registro-imoveis/00-indice|Integrações RI]]
 > **Central:** [[Orius/integracoes/centrais/onr|ONR]] · **Relacionado:** [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas|Mapa — API estatísticas/DOI]] (API distinta)
 > **Base:** https://www.mapa.onr.org.br · **SIG-RI / Mapa:** Provimento CNJ 195/2025
+> **Credencial (Bearer):** [[env#Mapa ONR — API polígonos (Bearer)]] — não duplicar a chave nesta nota
 
 ---
 

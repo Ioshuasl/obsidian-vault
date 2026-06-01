@@ -12,6 +12,7 @@ fonte: cursor
 > **Produto:** [[Orius/empresa/produtos/registro-imoveis|Registro de Imóveis]] · **Índice:** [[Orius/integracoes/registro-imoveis/00-indice|Integrações RI]] · **Hub:** [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]]
 > **Central:** [[Orius/integracoes/centrais/onr|ONR]] · **Relacionado:** [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos|API polígonos SIG-RI]] (integração distinta)
 > **Base:** `https://mapa.onr.org.br/api-estatisticas`
+> **Credenciais:** chave **Estatísticas** na intranet + token `/auth` — ver [[env#Mapa ONR — API polígonos (Bearer)]] só se for reutilizar o mesmo segredo (fluxos distintos; polígonos usam Bearer direto)
 
 ---
 

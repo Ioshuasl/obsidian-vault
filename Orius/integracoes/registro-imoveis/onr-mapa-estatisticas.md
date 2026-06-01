@@ -12,6 +12,7 @@ fonte: cursor
 > **Produto:** [[Orius/empresa/produtos/registro-imoveis|Registro de Imóveis]] · **Índice:** [[Orius/integracoes/registro-imoveis/00-indice|Integrações RI]]
 > **Central:** [[Orius/integracoes/centrais/onr|ONR]]
 > **Outra API do Mapa:** [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos|polígonos / SIG-RI]] — não confundir
+> **Credenciais:** [[env#Mapa ONR — API polígonos (Bearer)]] · chave Estatísticas (intranet) documentada no guia
 
 ---
 

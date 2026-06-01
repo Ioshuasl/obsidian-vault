@@ -89,7 +89,7 @@ Padrão RIB: `codigo`, `descricao`, `campos` — ver [[Orius/integracoes/registr
 
 - Fluxo: <!-- FFP-xx -->
 - Depende de: <!-- RFP-xx, RFC-xx -->
-- Manual bruto (repo): `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — seção `[XXX-00]`
+- Manual bruto (repo): `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — seção `[XXX-00]`
 
 ---
 

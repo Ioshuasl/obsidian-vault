@@ -50,4 +50,4 @@ Classifica o **tipo/canal** do atendimento eletrônico (exigências, contatos, h
 | `91` | Importar/listar **respostas de exigência** no sistema do cartório |
 | `90` | Demais fluxos ligados ao acompanhamento registral na plataforma |
 
-**Manual bruto:** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[TBD-07] - AETipoAtendimento` (pág. 96 do PDF v2.2)
+**Manual bruto:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[TBD-07] - AETipoAtendimento` (pág. 96 do PDF v2.2)

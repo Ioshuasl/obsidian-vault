@@ -155,7 +155,7 @@ Padrão RIB: `codigo`, `descricao`, `campos` — ver [[visao-geral#Formato das r
 
 - Próximo passo: [[RAE-02-detalhes-resposta-exigencia]]
 - Domínios: [[dominio/00-indice-dominio]]
-- Manual bruto: `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[RAE-01]` (PDF v2.2, pág. 85)
+- Manual bruto: `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[RAE-01]` (PDF v2.2, pág. 85)
 
 ---
 

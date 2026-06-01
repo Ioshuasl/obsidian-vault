@@ -152,7 +152,7 @@ sequenceDiagram
 
 - Próximos passos de integração: [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice#Acompanhamento registral (protocolo)]]
 - Cobrança (mesmo token): [[Orius/integracoes/registro-imoveis/rib-cobranca]]
-- Manual bruto (repo): `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — seção `[RFG-01] - Autenticação` (pág. 9 do PDF)
+- Manual bruto (repo): `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — seção `[RFG-01] - Autenticação` (pág. 9 do PDF)
 
 ---
 

@@ -347,7 +347,7 @@ Fluxos conceituais do manual: [[FFP-01-fluxo-envio-protocolo]] · [[FFP-02-fluxo
 | RFP-05 / 06 / 07 | Consultar protocolos após processamento (pendente) |
 | [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice]] | Hub |
 
-**Manual bruto (repo):** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[RFP-02]` (págs. 17–26 do PDF v2.2)
+**Manual bruto (repo):** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[RFP-02]` (págs. 17–26 do PDF v2.2)
 
 ---
 

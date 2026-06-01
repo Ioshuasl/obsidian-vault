@@ -209,7 +209,7 @@ sequenceDiagram
 | [[RFC-01-geracao-cobranca]] / [[RFC-02-listagem-cobrancas]] | Cobrança avulsa (sem protocolo) |
 | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | Nota legada RIB |
 
-**Manual bruto:** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[RFP-03]` (págs. 27–36 do PDF v2.2)
+**Manual bruto:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[RFP-03]` (págs. 27–36 do PDF v2.2)
 
 ---
 

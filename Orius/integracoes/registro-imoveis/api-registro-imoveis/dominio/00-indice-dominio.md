@@ -38,6 +38,6 @@ Enums e códigos referenciados nos bodies e respostas da API RIB (manual v2.2). 
 
 ## Fonte
 
-- Manual: `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — seção *Tabelas de Domínio* (págs. 93–99 do PDF v2.2)
+- Manual: `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — seção *Tabelas de Domínio* (págs. 93–99 do PDF v2.2)
 
 Voltar: [[Orius/integracoes/registro-imoveis/api-registro-imoveis/00-indice]]

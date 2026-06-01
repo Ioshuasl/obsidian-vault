@@ -44,4 +44,4 @@ Ao cadastrar interação (**RAE-03**), informar `formaAtendimento` quando o flux
 
 Relacionado: [[TBD-07-aetipo-atendimento]], [[TBD-08-aesituacao]], [[TBD-13-aeacao]] (mesmo POST em RAE-03).
 
-**Fonte:** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[TBD-10] - AEFormaAtendimento` (pág. 98 do PDF v2.2)
+**Fonte:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[TBD-10] - AEFormaAtendimento` (pág. 98 do PDF v2.2)

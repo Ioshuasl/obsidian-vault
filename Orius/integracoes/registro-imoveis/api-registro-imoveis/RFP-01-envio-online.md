@@ -326,7 +326,7 @@ Fluxo completo (diagramas oficiais): [[FFP-01-fluxo-envio-protocolo]] · [[FFP-0
 | [[RFP-05-listagem-protocolos]] / [[RFP-07-detalhe-protocolo-v2]] | Listar e detalhar |
 | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | Nota legada sobre `/v1/cobranca` |
 
-**Manual bruto (repo):** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — seção `[RFP-01]` (págs. 11–16 do PDF v2.2)
+**Manual bruto (repo):** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — seção `[RFP-01]` (págs. 11–16 do PDF v2.2)
 
 ---
 

@@ -56,4 +56,4 @@ Ao importar o detalhe (**RAE-02**), montar a linha do tempo ordenando por `data`
 
 Relacionado: [[TBD-08-aesituacao]], [[TBD-13-aeacao]], [[TBD-14-aeextensoes-arquivos]] (cadastro de interação em RAE-03).
 
-**Fonte:** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[TBD-12] - AEOrigem` (pág. 98 do PDF v2.2)
+**Fonte:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[TBD-12] - AEOrigem` (pág. 98 do PDF v2.2)

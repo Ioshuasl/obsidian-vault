@@ -121,7 +121,7 @@ flowchart LR
 | [[RFP-05-listagem-protocolos]] / [[RFP-06-detalhe-protocolo-v1]] | Consultas após integração |
 | [[RFC-04-cancelamento-cobranca]] | Cancelamento de cobrança |
 
-**Manual bruto:** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[RFP-04]` (pág. 37 do PDF v2.2)
+**Manual bruto:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[RFP-04]` (pág. 37 do PDF v2.2)
 
 ---
 

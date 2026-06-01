@@ -57,4 +57,4 @@ O array `arquivos` no body é **opcional**; cada campo dentro do objeto é obrig
 
 Relacionado: [[TBD-13-aeacao]] (body da mesma requisição), [[TBD-12-aeorigem]] (quem aparece no histórico após o POST).
 
-**Fonte:** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[TBD-14] - AEExtensoesArquivos` (pág. 99 do PDF v2.2)
+**Fonte:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[TBD-14] - AEExtensoesArquivos` (pág. 99 do PDF v2.2)

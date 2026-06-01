@@ -45,4 +45,4 @@ Não consta na listagem **RAE-01** nem no body **RAE-03**.
 
 Relacionado: [[TBD-07-aetipo-atendimento]] (`tipoAtendimento` 91 = resposta de exigência), [[TBD-08-aesituacao]].
 
-**Fonte:** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[TBD-11] - AETipoContato` (pág. 98 do PDF v2.2)
+**Fonte:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[TBD-11] - AETipoContato` (pág. 98 do PDF v2.2)

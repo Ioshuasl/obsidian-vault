@@ -53,4 +53,4 @@ Após o POST, a nova linha em `interacoes` deve refletir `origem` = cartório ([
 
 Relacionado: [[TBD-07-aetipo-atendimento]] (`tipoAtendimento` 91), [[TBD-10-aeforma-atendimento]].
 
-**Fonte:** `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md` — `[TBD-13] - AEAcao` (pág. 99 do PDF v2.2)
+**Fonte:** `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md` — `[TBD-13] - AEAcao` (pág. 99 do PDF v2.2)

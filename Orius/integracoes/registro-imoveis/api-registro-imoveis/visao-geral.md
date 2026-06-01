@@ -134,4 +134,4 @@ flowchart LR
 ## Fonte
 
 - Manual: *Manual de integração da API do Acompanhamento Registral + Pagamentos* **v2.2**
-- Repo: `api-registro-imoveis/manual-api-api-registro-imoveis-pagamentos-v2.2.md`
+- Repo: `api-registro-imoveis/manual-api-acompanhamento-registral-pagamentos-v2.2.md`

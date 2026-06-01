@@ -35,8 +35,8 @@ Documentação **Orius** por código de funcionalidade, extraída do manual CORI
 
 | Código | Descrição | Nota | Status |
 |--------|-----------|------|--------|
-| **RFP-01** | Envio online (sem anexo) | — | pendente |
-| **RFP-02** | Envio em lote (com anexos, background) | — | pendente |
+| **RFP-01** | Envio online (sem anexo) | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-01-envio-online]] | documentado |
+| **RFP-02** | Envio em lote (com anexos, background) | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-02-envio-lote]] | documentado |
 | **RFP-03** | Cobrança automatizada no protocolo | — | pendente |
 | **RFP-04** | Exclusão do protocolo | — | pendente |
 | **RFP-05** | Listagem dos protocolos integrados | — | pendente |

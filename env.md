@@ -78,3 +78,26 @@ MAPA_ONR_API_BEARER_POLIGONOS=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkI
 **Intranet:** Configurações → Chave API para envio de polígonos · Renovar antes do `exp` se a ONR invalidar antes.
 
 **Docs:** [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos]] · [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]]
+
+---
+
+## RIB — API Acompanhamento Registral + Pagamentos (OAuth)
+
+> `POST /v1/auth/token` em `api.registrodeimoveis.org.br` (homolog: `testes-api.registrodeimoveis.org.br`).  
+> **Não** repetir `client_secret` nas notas — só referenciar esta seção.  
+> **Docs:** [[Orius/integracoes/registro-imoveis/acompanhamento-registral/RFG-01-autenticacao]] · [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]]
+
+| Ambiente | Base URL |
+|----------|----------|
+| Produção | `https://api.registrodeimoveis.org.br` |
+| Homologação | `https://testes-api.registrodeimoveis.org.br` |
+
+```env
+# Preencher quando o cartório/integrador fornecer credenciais RIB
+RIB_API_CLIENT_ID=
+RIB_API_CLIENT_SECRET=
+RIB_API_GRANT_TYPE=client_credentials
+# Se grant_type=password:
+RIB_API_USERNAME=
+RIB_API_PASSWORD=
+```

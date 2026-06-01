@@ -25,6 +25,7 @@ flowchart TB
     POL[Mapa API polígonos]
   end
   subgraph rib [RIB - registrodeimoveis.org.br]
+    ACOMP[Acompanhamento + Pagamentos]
     COB[Cobrança]
     ED[Edital eletrônico]
   end
@@ -32,12 +33,15 @@ flowchart TB
   RI --> PROT
   RI --> MAPA
   RI --> POL
+  RI --> ACOMP
   RI --> COB
   RI --> ED
+  ACOMP --> RIBhub[[RIB swagger]]
   CNIB --> ONRhub[[ONR]]
   PROT --> ONRhub
   MAPA --> ONRhub
   POL --> ONRhub
+  ACOMP -. mesmo swagger .-> COB
   COB -. mesmo swagger .-> ED
 ```
 
@@ -60,6 +64,7 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 | **Protocolo ONR** | protocolo, exame e cálculo, registro eletrônico | [[Orius/integracoes/registro-imoveis/onr-protocolo]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / estatísticas ONR** | mapa ONR, estatísticas, extrato, DOI, DOIWEB, hash | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] · [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-guia|guia]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / API polígonos (SIG-RI)** | polígono, shapefile, SIG-RI, SIGEF, IERI-e, georreferenciamento | [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos]] | [[Orius/integracoes/centrais/onr]] |
+| **Acompanhamento registral + pagamentos RIB** | protocolo, acompanhamento, exigência, PIX, RFP, RFC, RAE | [[Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice]] · [[Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral|visão geral]] | api.registrodeimoveis.org.br |
 | **Cobrança RIB** | cobrança, pagamento, hash | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | registrodeimoveis.org.br |
 | **Edital RIB** | edital, diário registral, JWT | [[Orius/integracoes/registro-imoveis/rib-edital]] | api.registrodeimoveis.org.br |
 

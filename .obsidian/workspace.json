@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Orius/integracoes/registro-imoveis/onr-protocolo.md",
+                "file": "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-01-envio-online.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "onr-protocolo"
+              "title": "RFP-01-envio-online"
             }
           }
         ]
@@ -183,13 +183,16 @@
   },
   "active": "2f384d181413af64",
   "lastOpenFiles": [
-    "Orius/integracoes/registro-imoveis/acompanhamento-registral/_template-funcionalidade.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-02-envio-lote.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/visao-geral.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFP-01-envio-online.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/RFG-01-autenticacao.md",
+    "Orius/integracoes/registro-imoveis/onr-protocolo.md",
+    "Orius/integracoes/registro-imoveis/acompanhamento-registral/_template-funcionalidade.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral/00-indice.md",
     "Orius/integracoes/registro-imoveis/acompanhamento-registral",
     "Orius/integracoes/registro-imoveis/rib-cobranca.md",
     "Orius/integracoes/registro-imoveis/rib-edital.md",
-    "Orius/integracoes/registro-imoveis/onr-protocolo.md",
     "env.md",
     "Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos.md",
     "Orius/integracoes/registro-imoveis/onr-mapa-estatisticas-referencia-api.md",
@@ -208,9 +211,6 @@
     "Orius/desenvolvimento/frontend/protesto/telas/P_MOTIVOS_CANCELAMENTO.md",
     "Orius/desenvolvimento/frontend/protesto/telas/P_MOTIVOS.md",
     "Orius/desenvolvimento/frontend/protesto/telas/P_LIVRO_NATUREZA.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_LIVRO_ANDAMENTO.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_ESPECIE.md",
-    "Orius/desenvolvimento/frontend/protesto/telas/P_CERTIDAO.md",
     "Sem título.base",
     "Orius/empresa/produtos/notas",
     "Orius/empresa/produtos/imoveis",

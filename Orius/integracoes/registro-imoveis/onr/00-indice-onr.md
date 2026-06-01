@@ -28,6 +28,7 @@ Central [[Orius/integracoes/centrais/onr|ONR]] · Produto [[Orius/empresa/produt
 | CNIB | [[../cnib]] |
 | Protocolo eletrônico | [[../onr-protocolo]] |
 | Mapa / estatísticas | [[../onr-mapa-estatisticas]] |
+| Mapa / API polígonos (SIG-RI) | [[../onr-mapa-api-poligonos]] |
 | Cobrança RIB | [[../rib-cobranca]] |
 | Edital RIB | [[../rib-edital]] |
 

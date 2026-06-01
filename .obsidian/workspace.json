@@ -11,10 +11,14 @@
             "id": "1f1ca1bde10d41f5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Orius/integracoes/registro-imoveis/onr-mapa-estatisticas.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "onr-mapa-estatisticas"
             }
           }
         ]
@@ -179,6 +183,8 @@
   },
   "active": "1f1ca1bde10d41f5",
   "lastOpenFiles": [
+    "Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos.md",
+    "Orius/integracoes/registro-imoveis/onr-protocolo.md",
     "Orius/desenvolvimento/api/protesto/rotas/P_ANDAMENTO.md",
     "env.md",
     "Bem-vindo.md",
@@ -204,8 +210,6 @@
     "Sem título.base",
     "TEMPLATE.md",
     "Orius/empresa/produtos/notas/integracoes-centrais-notas.md",
-    "Orius/empresa/produtos/imoveis/onr-ri-digital-negocio.md",
-    "Orius/empresa/produtos/imoveis/tipos-de-atos-registrais.md",
     "Orius/empresa/produtos/notas",
     "Orius/empresa/produtos/imoveis",
     "Orius/empresa/produtos/protesto",

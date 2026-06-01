@@ -21,7 +21,8 @@ flowchart TB
   subgraph onr [ONR]
     CNIB[CNIB indisponibilidade]
     PROT[Protocolo eletrônico]
-    MAPA[Mapa e estatísticas]
+    MAPA[Mapa estatísticas DOI]
+    POL[Mapa API polígonos]
   end
   subgraph rib [RIB - registrodeimoveis.org.br]
     COB[Cobrança]
@@ -30,11 +31,13 @@ flowchart TB
   RI --> CNIB
   RI --> PROT
   RI --> MAPA
+  RI --> POL
   RI --> COB
   RI --> ED
   CNIB --> ONRhub[[ONR]]
   PROT --> ONRhub
   MAPA --> ONRhub
+  POL --> ONRhub
   COB -. mesmo swagger .-> ED
 ```
 
@@ -56,6 +59,7 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 | **CNIB** | CNIB, indisponibilidade, IA, IE | [[Orius/integracoes/registro-imoveis/cnib]] | [[Orius/integracoes/centrais/cnib]] |
 | **Protocolo ONR** | protocolo, exame e cálculo, registro eletrônico | [[Orius/integracoes/registro-imoveis/onr-protocolo]] | [[Orius/integracoes/centrais/onr]] |
 | **Mapa / estatísticas ONR** | mapa ONR, estatísticas, extrato, DOI | [[Orius/integracoes/registro-imoveis/onr-mapa-estatisticas]] | [[Orius/integracoes/centrais/onr]] |
+| **Mapa / API polígonos (SIG-RI)** | polígono, shapefile, SIG-RI, SIGEF, IERI-e, georreferenciamento | [[Orius/integracoes/registro-imoveis/onr-mapa-api-poligonos]] | [[Orius/integracoes/centrais/onr]] |
 | **Cobrança RIB** | cobrança, pagamento, hash | [[Orius/integracoes/registro-imoveis/rib-cobranca]] | registrodeimoveis.org.br |
 | **Edital RIB** | edital, diário registral, JWT | [[Orius/integracoes/registro-imoveis/rib-edital]] | api.registrodeimoveis.org.br |
 
@@ -64,7 +68,8 @@ Código/scripts: `C:\Users\kenio\soap-ui test`
 | Serviço | Base / Swagger |
 |---------|----------------|
 | CNIB 2.0 | https://serventia-api.onr.org.br/swagger |
-| Mapa ONR | https://mapa.onr.org.br/api-estatisticas |
+| Mapa ONR — estatísticas | https://mapa.onr.org.br/api-estatisticas |
+| Mapa ONR — polígonos | https://www.mapa.onr.org.br/sistemas/api/v1/poligonos/ |
 | RIB (cobrança + edital) | https://www.registrodeimoveis.org.br/swagger |
 
 ## Relacionado

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Orius/integracoes/tabelionato-notas/censec/visao-geral-e-api.md",
+                "file": "Orius/integracoes/tabelionato-notas/tabinf-ibge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "visao-geral-e-api"
+              "title": "tabinf-ibge"
             }
           }
         ]
@@ -194,16 +194,20 @@
   },
   "active": "e33ad7c475dab943",
   "lastOpenFiles": [
+    "Pessoal/financas/mensal/2026-05.md",
+    "Orius/integracoes/tabelionato-notas/ccn/xml/exemplo-xml.md",
+    "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-uploads.md",
+    "Orius/integracoes/tabelionato-notas/ccn/automacao/n8n-upload-xml-gateway.md",
+    "Orius/integracoes/tabelionato-notas/ccn/visao-geral-e-autenticacao.md",
+    "Orius/integracoes/tabelionato-notas/ccn.md",
+    "Orius/integracoes/tabelionato-notas/doi.md",
+    "Orius/integracoes/tabelionato-notas/censec/visao-geral-e-api.md",
     "Orius/integracoes/tabelionato-notas/censec/00-indice-censec.md",
     "Orius/integracoes/tabelionato-notas/censec/automacao/n8n-upload-json-gateway.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/exemplo-xml.md",
-    "Orius/integracoes/tabelionato-notas/ccn/automacao/n8n-upload-xml-gateway.md",
     "Orius/integracoes/tabelionato-notas/ccn/api/fluxo-importacao.md",
     "env.md",
     "Orius/integracoes/tabelionato-notas/doi/automacao/n8n-validate-json-gateway.md",
-    "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-uploads.md",
     "Orius/integracoes/tabelionato-notas/ccn/automacao",
-    "Orius/integracoes/tabelionato-notas/ccn.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/validacoes-xml.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes/regime-bem.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes/tipo-nacionalidade.md",
@@ -218,11 +222,7 @@
     "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-endereco.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/entidade-pessoa.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/estrutura-raiz.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/00-indice-xml.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml",
-    "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-erros.md",
-    "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-get.md",
-    "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-post.md",
     "Orius/integracoes/tabelionato-notas/ccn/api",
     "Orius/integracoes/tabelionato-notas/ccn",
     "Orius/integracoes/tabelionato-notas/doi/automacao",

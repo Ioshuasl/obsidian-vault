@@ -14,7 +14,12 @@ Envio de dados estatísticos (arquivo **TABINF.ZIP**) — **Notas** + IBGE.
 
 [[Orius/integracoes/tabelionato-notas/tabinf-ibge]]
 
-Layout recibo: [[Orius/integracoes/tabelionato-notas/tabinf-layout-tabinf12]]
+- Índice modular: [[Orius/integracoes/tabelionato-notas/tabinf/00-indice-tabinf]]
+- O que é e quando usar: [[Orius/integracoes/tabelionato-notas/tabinf/visao-geral-e-quando-usar]]
+- Especificação dos arquivos: [[Orius/integracoes/tabelionato-notas/tabinf/especificacao-arquivos-gerados]]
+- Especificação dos campos: [[Orius/integracoes/tabelionato-notas/tabinf/especificacao-campos]]
+- Regras de validação: [[Orius/integracoes/tabelionato-notas/tabinf/regras-validacao]]
+- Tabelas de domínio: [[Orius/integracoes/tabelionato-notas/tabinf/tabelas-dominio]]
 
 ## Produto
 

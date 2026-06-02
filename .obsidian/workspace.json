@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Orius/integracoes/tabelionato-notas/tabinf-ibge.md",
+                "file": "Orius/integracoes/tabelionato-notas/tabinf/tabelas-dominio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tabinf-ibge"
+              "title": "tabelas-dominio"
             }
           }
         ]
@@ -194,6 +194,15 @@
   },
   "active": "e33ad7c475dab943",
   "lastOpenFiles": [
+    "Orius/integracoes/tabelionato-notas/tabinf/regras-validacao.md",
+    "Orius/integracoes/tabelionato-notas/tabinf/especificacao-campos.md",
+    "Orius/integracoes/tabelionato-notas/tabinf/especificacao-arquivos-gerados.md",
+    "Orius/integracoes/tabelionato-notas/tabinf/00-indice-tabinf.md",
+    "Orius/integracoes/centrais/tabinf-ibge.md",
+    "Orius/integracoes/tabelionato-notas/tabinf-ibge.md",
+    "Orius/integracoes/tabelionato-notas/tabinf/tabelas-dominio.md",
+    "Orius/integracoes/tabelionato-notas/tabinf/visao-geral-e-quando-usar.md",
+    "Orius/integracoes/tabelionato-notas/tabinf",
     "Pessoal/financas/mensal/2026-05.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/exemplo-xml.md",
     "Orius/integracoes/tabelionato-notas/ccn/api/endpoint-uploads.md",
@@ -214,14 +223,6 @@
     "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes/tipo-documento.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes/00-indice-enumeracoes.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml/enumeracoes",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/tipos-anexos-complementares.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-conjuge.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-biometria.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-carteira-habilitacao.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-documento.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/tipo-endereco.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/entidade-pessoa.md",
-    "Orius/integracoes/tabelionato-notas/ccn/xml/estrutura-raiz.md",
     "Orius/integracoes/tabelionato-notas/ccn/xml",
     "Orius/integracoes/tabelionato-notas/ccn/api",
     "Orius/integracoes/tabelionato-notas/ccn",
@@ -229,7 +230,6 @@
     "Orius/integracoes/tabelionato-notas/doi/regras-validacao",
     "Orius/integracoes/tabelionato-notas/doi/tabelas-dominio",
     "Orius/integracoes/tabelionato-notas/doi/campos-json",
-    "Orius/integracoes/tabelionato-notas/doi",
     "Sem título.canvas"
   ]
 }

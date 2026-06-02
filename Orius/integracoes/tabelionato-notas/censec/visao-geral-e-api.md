@@ -92,12 +92,12 @@ Copie a chave de acesso e configure nos parametros do sistema
 
 ### Transmissão do payload JSON
 
-| | |
-|---|---|
-| **Método** | `POST` |
-| **Path** | `/api/cargas/upload-json` |
-| **Header** | `X-Api-Key` (chave do cartório) |
-| **Body** | JSON com `cns`, `quinzena` e blocos por central |
+|            |                                                 |
+| ---------- | ----------------------------------------------- |
+| **Método** | `POST`                                          |
+| **Path**   | `/api/cargas/upload-json`                       |
+| **Header** | `X-Api-Key` (chave do cartório)                 |
+| **Body**   | JSON com `cns`, `quinzena` e blocos por central |
 
 Fluxo recomendado com validação prévia: [[Orius/integracoes/tabelionato-notas/censec/automacao/n8n-upload-json-gateway]] (webhook n8n → mesma API).
 

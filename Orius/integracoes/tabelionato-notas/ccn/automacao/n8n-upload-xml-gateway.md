@@ -13,7 +13,15 @@ operacao: CCN_Uploads
 
 # CCN — upload XML (n8n)
 
-Gateway que recebe um **XML CCN** via webhook, valida localmente e repassa para `POST /api/uploads` do e-notariado.
+Gateway que recebe um **XML CCN** via webhook, valida localmente, executa `POST /api/uploads` e em seguida `POST /api/imports` no e-notariado.
+
+## Fluxo interno
+
+```
+Webhook → Validar XML → POST /api/uploads → POST /api/imports → Resposta
+```
+
+Ver [[Orius/integracoes/tabelionato-notas/ccn/api/fluxo-importacao]].
 
 ## Workflow
 
@@ -34,16 +42,18 @@ Gateway que recebe um **XML CCN** via webhook, valida localmente e repassa para 
 | Body | `multipart/form-data` — campo **`file`** (aceita alias `xml`) |
 | Header opcional | `X-Ambiente: homologacao` ou `producao` (default: homologacao) |
 | Header CCN | `X-Ccn-Api-Key` (formato `app\|token`) — ou variável n8n `CCN_X_API_KEY` |
+| Header subscription | `X-Ccn-Subscription` (UUID cartório) — ou variável n8n `CCN_X_SUBSCRIPTION` |
+| Header opcional | `X-Ccn-Import-Type` (default: `CcnPessoaFisica`) |
 
 ## Resposta
 
 | HTTP | Situação |
 |------|----------|
-| `200` | `success: true`, objeto `upload` (`id`, `location`, `name`, `contentType`) |
-| `422` | Validação local (arquivo, raiz `<pessoas>`, API key ausente) |
-| `4xx/5xx` | Erro retornado pela API e-notariado |
+| `200` | `success: true`, objetos `upload` e `importacao` |
+| `422` | Validação local (arquivo, raiz `<pessoas>`, API key/subscription ausente) |
+| `4xx/5xx` | Erro retornado pela API e-notariado (`stage`: `upload` ou `import`) |
 
-Use `upload.id` e `upload.location` no passo seguinte: [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-post]] (futuro).
+Use `importacao.id` para acompanhar: [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-get]].
 
 ## Validação local
 
@@ -51,6 +61,7 @@ Use `upload.id` e `upload.location` no passo seguinte: [[Orius/integracoes/tabel
 - Tamanho máximo 25 MB
 - Raiz `<pessoas>` detectada no início do arquivo
 - `X-Ccn-Api-Key` ou `CCN_X_API_KEY` configurada
+- `X-Ccn-Subscription` ou `CCN_X_SUBSCRIPTION` configurada
 
 ## Ambientes upstream
 

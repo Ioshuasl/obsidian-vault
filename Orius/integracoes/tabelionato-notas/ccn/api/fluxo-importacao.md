@@ -38,12 +38,12 @@ Ver [[Orius/integracoes/tabelionato-notas/ccn/visao-geral-e-autenticacao#Headers
 
 ## Etapas
 
-| Etapa | Endpoint | Documentação |
-|-------|----------|----------------|
-| 1. Enviar XML | `POST /api/uploads` | [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-uploads]] |
-| 2. Registrar importação | `POST /api/imports` | [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-post]] |
-| 3. Acompanhar processamento | `GET /api/imports/{id}` | [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-get]] |
-| 4. Listar erros (opcional) | `GET /api/imports/{id}/erros` | [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-erros]] |
+| Etapa                       | Endpoint                      | Documentação                                                           |
+| --------------------------- | ----------------------------- | ---------------------------------------------------------------------- |
+| 1. Enviar XML               | `POST /api/uploads`           | [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-uploads]]       |
+| 2. Registrar importação     | `POST /api/imports`           | [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-post]]  |
+| 3. Acompanhar processamento | `GET /api/imports/{id}`       | [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-get]]   |
+| 4. Listar erros (opcional)  | `GET /api/imports/{id}/erros` | [[Orius/integracoes/tabelionato-notas/ccn/api/endpoint-imports-erros]] |
 
 ## Tipo de importação
 
